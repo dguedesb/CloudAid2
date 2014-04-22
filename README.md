@@ -17,13 +17,19 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 [1] https://github.com/jorgearj/USDLPricing_API
 
 
--------------------------- Current Status ---------------------
--TripleStore population: Completed
--Search Module: Complete
--Decision Module: Under development
---Normalization: Completed
---JAVA to XMCDA: Completed
---MCDM Integration: Ongoing
+---------------------------------------------------------- Current Status ---------------------------------------------------------- 
+
+--TripleStore population: Completed
+
+--Search Module: Completed
+
+--Decision Module: Under development
+
+-----Normalization: Completed
+
+-----JAVA to XMCDA: Completed
+
+-----MCDM Integration: Ongoing
 
 
--Aggregation Module: On hold.
+--Aggregation Module: On hold.
