@@ -11,7 +11,19 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 -Dynamic Price calculation -> Development and usage of the LinkedUSDL Pricing API.
 
--New aggregation algorithm that is able to handle incomparability and incomplete information. 
+-New aggregation algorithm that is capable of handling incomparability and incomplete information. 
 
 
 [1] https://github.com/jorgearj/USDLPricing_API
+
+
+-------------------------- Current Status ---------------------
+-TripleStore population: Completed
+-Search Module: Complete
+-Decision Module: Under development
+--Normalization: Completed
+--JAVA to XMCDA: Completed
+--MCDM Integration: Ongoing
+
+
+-Aggregation Module: On hold.
