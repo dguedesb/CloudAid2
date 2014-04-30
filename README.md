@@ -26,8 +26,13 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 --Decision Module: Completed.
 
 --Aggregation Module: Under Development
+
 ----Extract specialized service offering's data: Load Balances,Databases,Caching,..
+
 ----Structure the MCDM output into a more suitable output for the problem at hand.
+
 ----Research about aggregation techniques/approaches
+
 ----Algorithm development
+
 ----Algorith testing
