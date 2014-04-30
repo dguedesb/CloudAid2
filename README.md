@@ -23,13 +23,11 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 --Search Module: Completed
 
---Decision Module: Under development
+--Decision Module: Completed.
 
------Normalization: Completed
-
------JAVA to XMCDA: Completed
-
------MCDM Integration: Ongoing
-
-
---Aggregation Module: On hold.
+--Aggregation Module: Under Development
+----Extract specialized service offering's data: Load Balances,Databases,Caching,..
+----Structure the MCDM output into a more suitable output for the problem at hand.
+----Research about aggregation techniques/approaches
+----Algorithm development
+----Algorith testing
