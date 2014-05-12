@@ -29,11 +29,11 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 ----Extract specialized service offering's data: Load Balances,Databases,Caching,..
 
-----AmazonElastinc Loadbalancing - Done
+------AmazonElastinc Loadbalancing - Done
 
-----Amazon Glacier - Done
+------Amazon Glacier - Done
 
-----Amazon RDS - Done
+------Amazon RDS - Done
 
 ----Structure the MCDM output into a more suitable output for the problem at hand - Done
 
