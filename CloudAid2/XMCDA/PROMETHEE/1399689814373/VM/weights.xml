@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmc:XMCDA xmlns:xmc="http://www.decision-deck.org/2009/XMCDA-2.1.0">
+  <criteriaValues mcdaConcept="Importance" name="significance">
+    <criterionValue>
+      <criterionID>Crit0</criterionID>
+      <value>
+        <real>0.37593985</real>
+      </value>
+    </criterionValue>
+    <criterionValue>
+      <criterionID>Crit1</criterionID>
+      <value>
+        <real>0.28571427</real>
+      </value>
+    </criterionValue>
+    <criterionValue>
+      <criterionID>Crit2</criterionID>
+      <value>
+        <real>0.33834586</real>
+      </value>
+    </criterionValue>
+  </criteriaValues>
+</xmc:XMCDA>

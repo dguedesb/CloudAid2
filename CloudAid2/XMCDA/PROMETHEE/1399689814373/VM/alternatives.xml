@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmc:XMCDA xmlns:xmc="http://www.decision-deck.org/2009/XMCDA-2.1.0">
+  <alternatives>
+    <alternative id="Alt1" name="m1.medium_4951_TIME248205623637718mswin-AmazonSpotInstance_TIME248205623643278"/>
+    <alternative id="Alt2" name="m2.xlarge_5480_TIME248205655176144mswin-AmazonSpotInstance_TIME248205655182986"/>
+    <alternative id="Alt3" name="m1.xlarge_5020_TIME248205626989940linux-AmazonSpotInstance_TIME248205626996782"/>
+    <alternative id="Alt4" name="m1.small_4882_TIME248205620405662linux-AmazonSpotInstance_TIME248205620420201"/>
+    <alternative id="Alt5" name="m1.small_4905_TIME248205621708234mswin-AmazonSpotInstance_TIME248205621713794"/>
+    <alternative id="Alt6" name="c1.xlarge_5342_TIME248205645931555linux-AmazonSpotInstance_TIME248205645941818"/>
+    <alternative id="Alt7" name="m3.xlarge_4790_TIME248205616074158linux-AmazonSpotInstance_TIME248205616079717"/>
+    <alternative id="Alt8" name="m1.large_4974_TIME248205624872297linux-AmazonSpotInstance_TIME248205624879139"/>
+    <alternative id="Alt9" name="c1.medium_5296_TIME248205642465582linux-AmazonSpotInstance_TIME248205642471997"/>
+    <alternative id="Alt10" name="m1.medium_3000_TIME247806258807012linux-AmazonOnDemandInstance_TIME247806258833953"/>
+    <alternative id="Alt11" name="m1.large_4997_TIME248205625904178mswin-AmazonSpotInstance_TIME248205625911448"/>
+    <alternative id="Alt12" name="c3.xlarge_5112_TIME248205632830136linux-AmazonSpotInstance_TIME248205632838689"/>
+    <alternative id="Alt13" name="m2.2xlarge_5503_TIME248205656212301linux-AmazonSpotInstance_TIME248205656219143"/>
+    <alternative id="Alt14" name="m1.medium_4928_TIME248205622674259linux-AmazonSpotInstance_TIME248205622680246"/>
+    <alternative id="Alt15" name="c1.medium_5319_TIME248205644376251mswin-AmazonSpotInstance_TIME248205644391218"/>
+    <alternative id="Alt16" name="m2.xlarge_5457_TIME248205654175481linux-AmazonSpotInstance_TIME248205654182751"/>
+    <alternative id="Alt17" name="m1.small_2978_TIME247806257724671linux-AmazonOnDemandInstance_TIME247806257732796"/>
+    <alternative id="Alt18" name="c1.medium_3176_TIME247806267493111linux-AmazonOnDemandInstance_TIME247806267500809"/>
+  </alternatives>
+</xmc:XMCDA>

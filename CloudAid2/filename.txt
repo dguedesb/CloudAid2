@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <!--
+			...:::::...
+		 :::::::::::::::::
+	  .:::::''::::::::::::::.
+	 :::::::   '::::::::::::::
+   :::::::::	 '::::::::::::::
+  ::::::::::		 ':::::::::::
+ :::::::::: 			::::::::::
+.::::::::				  ::::::::.
+::::::::				   ::::::::
+::::::::				   ::::::::
+::::::::				   ::::::::
+::::::::				   ::::::::
+'::::::::				  ::::::::'
+ :::::::::: 			::::::::::
+  :::::::::::.		 .:::::::::::
+   :::::::::::::::::::::::::::::
+	 :::::::::::::::::::::::::
+	  ':::::::::::::::::::::'
+		 :::::::::::::::::
+			''':::::'''
+
+	Hello there!
+	Looking to put a dent in the universe of data?
+	findthebest.com/jobs?dogecat
+
+-->
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="canonical" href="http://cloud-computing.findthebest.com/l/150/Lunacloud" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="verify-v1" content="lNYmjN6pYU0M7ekDOEFtHhvT6hR/namYD7ZkWvOoKYI=" /> 
+  <meta name="google-site-verification" content="KbzmyqL7g41rGhbWmCFaEPagttHRegp0US0OJEobacE" /> 
+  <meta property="fb:page_id" content="321286657983" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> 
+  <link rel="shortcut icon" href="/sites/all/themes/ftb1/favicon.ico" type="image/x-icon" /> 
+  <link rel="apple-touch-icon" href="/rx/img/touch-icon-iphone.png" /> 
+  <link rel="apple-touch-icon" sizes="76x76" href="/rx/img/touch-icon-ipad.png" /> 
+  <link rel="apple-touch-icon" sizes="120x120" href="/rx/img/touch-icon-iphone-retina.png" /> 
+  <link rel="apple-touch-icon" sizes="152x152" href="/rx/img/touch-icon-ipad-retina.png" /> 
+  <title>Lunacloud Pricing &amp; Specs - Cloud Computing Providers</title> 
+  <link rel="stylesheet" media="all" href="http://cdn2.findthebest.com/rx/core.328.css" />
+  <link rel="stylesheet" media="all" href="http://cdn2.findthebest.com/rx/desktop.328.css" />
+  <link rel="stylesheet" media="all" href="http://cdn2.findthebest.com/rx/detail.328.css" /> 
+  <link type="text/css" rel="stylesheet" media="all" href="http://cdn2.findthebest.com/sites/default/files/css/css_184ba9e56e34a908b8c6bfc9d7dc9228.ver.060d18c9bfd5230a8c181572ef7b63d6e6654854-l.css" /> 
+  <!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ftb1/ie.css?l" />
+<![endif]--> 
+  <!--[if IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/ftb1/ie7.css?l" />
+<![endif]--> 
+  <meta property="og:image" content="http://img2.findthebest.com/sites/default/files/252/media/images/Lunacloud_328240.png" /> 
+  <meta property="og:type" content="listing" /> 
+  <meta property="fb:app_id" content="160255997338782" /> 
+  <meta name="keywords" content="cloud computing, cloud hosting, VPS, dedicated servers, slice hosting, cloud computing services, data center, web server, virtual pc, clouding computing, saas, dedicated server, online service, server hosting, computer services, software as a service, dedicated hosting, data storage, virtual hosting, linux hosting, hosting company, hosting provider, vps hosting, shared hosting," />
+  <meta name="description" content="Find details for Lunacloud Cloud Computing Provider including, pricing, reviews, features, and more. Then compare it to other cloud computing providers." /> 
+  <meta property="og:description" content="Find details for Lunacloud Cloud Computing Provider including, pricing, reviews, features, and more. Then compare it to other cloud computing providers." /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="shortcut icon" href="http://img1.findthebest.com/sites/all/themes/ftb1/favicon.ico" type="image/x-icon" /> 
+  <!--[if lt IE 9]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+  <!--[if gte IE 9]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <!--[endif]---->
+  <!--[if lt IE 8]><script src="/sites/all/modules/custom/lib/json.ftb.min.js"></script><![endif]-->
+  <script>/*<![CDATA[*/_gaq=window._gaq||[];FTB={"configurations":null,"IS_EMPLOYEE":false,"IS_ODESKER":false,"IS_DEVELOPER":false,"IS_FTB_OWNED":1,"GOOGLE_LOGIN":null,"login_delay":10,"tld":"findthebest.com","analytics_buckets":{"gmaps":true,"filters":true,"users":true,"bugs":true,"user_list":true,"wordpress":true,"claims":true,"js_errors":true,"presrp_filter":true,"edit_error":true,"rss_component":true,"testing":true,"emails":true},"analytics_is_enabled":true,"analytics_ajax_enabled":true,"gatekeeper":["User Agent Tracking","Rate Limiter Hurdle Test","SRP-SQUARE-FOOTER-AD","AD_BOX_BOTTOM_QA","FTB Timer","Detail Share Accessibility","Carousel","New Custom Pages","Eyebrow Nav","Flyout Nav","CBG changes","Use Map Key","track gmaps"],"IS_INTL_SITE":false,"IS_FTB":true,"IS_FTD":false,"IS_FTC":false,"IS_ENGLISH":true,"use_image_cdn":true,"cdn_domain":".findthebest.com","IS_WIDGET":false,"IS_LOCAL":false,"net_name":"FindTheBest","app_id":252,"app_name":"Cloud Computing Providers","singular_item":"Cloud Computing","app_singular":"Cloud Computing","app_plural":"Cloud Computing","subdomain":"cloud-computing","clone_of":0,"intl_of":0,"swap_commas":0,"has_images":true,"lang":1,"rev_type":"review","js_ver":328,"partner_tweet":"","app_img":"_1191107.jpg","default_imgs":{"mountain":{"file_name":"default_mountain.svg","width":100,"height":100},"person":{"file_name":"default_avatar_hi.png","width":100,"height":100}},"page_type":"detail","sponsored_id":150,"sponsored":true,"fb_app_id":"160255997338782","fb_scope":"email,user_education_history,user_work_history,user_activities,user_interests,user_groups,user_hometown,user_location, publish_actions","CBG":{"publishers":{"25":{"pid":"25","name":"B-School","alias":"bschool","domain":"http:\/\/www.b-school.com\/","ga_id":"UA-44612449-14","imgurl":"","color":"","amzn_id":"","created":"2013-12-13 14:39:59","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=25&key=94337d92d593b38262e2e05d8e424d86"},"19":{"pid":"19","name":"Automoblog","alias":"automoblog","domain":"automoblog.net","ga_id":"UA-44612449-10","imgurl":"","color":"b30000","amzn_id":"","created":"2013-11-21 07:08:07","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=19&key=52ee42a3b9071e2180a110597cd27d3f"},"10":{"pid":"10","name":"The Fiscal Times","alias":"thefiscaltimes","domain":"http:\/\/thefiscaltimes.com\/","ga_id":"","imgurl":"","color":"e23c2e","amzn_id":"asd","created":"2013-08-29 11:10:28","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=10&key=6fcc6ef5641661be325199a83a7d91ed"},"11":{"pid":"11","name":"Christian Science Monitor","alias":"csmonitor","domain":"http:\/\/www.csmonitor.com\/","ga_id":"UA-44612449-4","imgurl":"http:\/\/images.findthebest.com\/sites\/default\/files\/cbg_images\/CSMONITOR-logo-smaller.png","color":"","amzn_id":"","created":"2013-09-19 18:04:21","ad_units":{"ATF_728x90":true,"ATF_468x60":true,"ATF_160x600":true,"BTF_160x600":true,"BTF_728x90_SB":true,"BTF_468x60_SB":true,"ATF_300x250":true,"BTF_300x250":true,"BTF_728x90":true,"BTF_468x60":true,"ATF_970x90":true},"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=11&key=c8ad702d7bac71f86dafd280db27223c"},"14":{"pid":"14","name":"TIME","alias":"time","domain":"techland.time.com","ga_id":"UA-44612449-7","imgurl":"","color":"ed1c2e","amzn_id":"","created":"2013-10-10 08:57:10","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=14&key=f9f3e6b907fc146413440a4cb5b035dd"},"15":{"pid":"15","name":"Firmology","alias":"firmology","domain":"firmology.com","ga_id":"","imgurl":"http:\/\/images.findthebest.com\/sites\/default\/files\/cbg_images\/firmology-logo-small-e1356818956881.png","color":"181818","amzn_id":"","created":"2013-10-10 10:53:45","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=15&key=988616aab5a5491eb08413126f4f8de2"},"18":{"pid":"18","name":"Android Guys","alias":"androidguys","domain":"androidguys.com","ga_id":"","imgurl":"","color":"6ac9ec","amzn_id":"agftb-20","created":"2013-11-20 16:44:28","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=18&key=ee321945a16372119ebdb8acaa4bb590"},"16":{"pid":"16","name":"RealClearTechnology","alias":"realcleartechnology","domain":"realcleartechnology.com","ga_id":"realc02c-20","imgurl":"","color":"444444","amzn_id":"realc02c-20","created":"2013-11-20 09:34:26","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=16&key=e3ca7e0ef85f0b9e8a4f544f5ed98c12"},"17":{"pid":"17","name":"TheGadgetBook","alias":"thegadgetbook","domain":"thegadgetbook.com\/","ga_id":"UA-44612449-6","imgurl":"","color":"","amzn_id":"","created":"2013-11-20 11:05:10","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=17&key=bd59f29765bb905487a3d80f38d710b7"},"21":{"pid":"21","name":"MobileTechReview","alias":"mobiletechreview","domain":"mobiletechreview.com","ga_id":"UA-44612449-12","imgurl":"","color":"bb0000","amzn_id":"","created":"2013-11-26 10:39:19","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=21&key=c1ed826d0fe172d67bac1937c65d414e"},"22":{"pid":"22","name":"BetaNews","alias":"betanews","domain":"betanews.com\/","ga_id":"UA-44612449-11","imgurl":"","color":"1c4396","amzn_id":"","created":"2013-11-26 10:53:48","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=22&key=128f6da9e4e3a828b89eb9a46e861b09"},"24":{"pid":"24","name":"Videomaker","alias":"videomaker","domain":"http:\/\/www.videomaker.com\/","ga_id":"UA-44612449-13","imgurl":"","color":"aaaaaa","amzn_id":"","created":"2013-12-11 08:38:36","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=24&key=687ad98f46cc154ccd67f4a583b49a3e"},"39":{"pid":"39","name":"Benzinga","alias":"benzinga","domain":"http:\/\/www.benzinga.com\/","ga_id":"","imgurl":"","color":"0A5E80","amzn_id":"","created":"2014-02-26 10:24:39","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=39&key=84413c9c93ba8e134b2060842a7ad68e"},"29":{"pid":"29","name":"PC Advisor UK","alias":"PcadvsorUk","domain":"http:\/\/www.pcadvisor.co.uk\/","ga_id":"","imgurl":"","color":"f30421","amzn_id":"ftb14-21","created":"2014-01-07 15:48:34","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=29&key=1d6134646d6d4648e57232f68ed2306f"},"33":{"pid":"33","name":"ajc","alias":"ajc","domain":"http:\/\/www.ajc.com\/","ga_id":"","imgurl":"","color":"#002a8","amzn_id":"","created":"2014-02-03 10:56:04","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=33&key=0f45d12374dc7865f2da137abcb1e52c"},"30":{"pid":"30","name":"Valuewalk","alias":"Valuewalk","domain":"http:\/\/www.valuewalk.com\/","ga_id":"","imgurl":"","color":"001","amzn_id":"valueinves08c-20","created":"2014-01-21 08:03:45","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=30&key=45187c531c0d4b1c40a7f06c02de2b69"},"31":{"pid":"31","name":"IB Times","alias":"ibtimes","domain":"http:\/\/www.ibtimes.com\/","ga_id":"","imgurl":"","color":"434343","amzn_id":"","created":"2014-01-29 09:33:26","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=31&key=71849a2ec2f735bf2f48ae9bbb2e17cc"},"32":{"pid":"32","name":"RealClearPolitics","alias":"realclearpolitics","domain":"http:\/\/www.realclearpolitics.com\/","ga_id":"","imgurl":"","color":"d30015","amzn_id":"","created":"2014-01-29 10:29:13","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=32&key=1d2f95d0ae1f69185113beeb786aaaa7"},"34":{"pid":"34","name":"Techlicious","alias":"techlicious","domain":"http:\/\/www.techlicious.com\/","ga_id":"","imgurl":"","color":"a23","amzn_id":" techftb-20","created":"2014-02-11 11:17:14","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=34&key=0895f060a9e105c58514b2d1b581502d"},"35":{"pid":"35","name":"She Knows","alias":"sheknows","domain":"sheknows.com","ga_id":"","imgurl":"","color":"f32772","amzn_id":"sheknocom-20","created":"2014-02-14 09:06:21","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=35&key=5a6be45555f07667ccea1eaae121dd68"},"36":{"pid":"36","name":"RealClearScience","alias":"realclearscience","domain":"http:\/\/www.realclearscience.com\/","ga_id":"","imgurl":"","color":"37414A","amzn_id":"","created":"2014-02-20 14:43:04","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=36&key=ff9f7e4b4c3c6de5bd9f78f8e13d9616"},"37":{"pid":"37","name":"Digital Trends","alias":"digitaltrends","domain":"digitaltrends.com","ga_id":"","imgurl":"","color":"1591da","amzn_id":"","created":"2014-02-24 16:19:37","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=37&key=a7b45cd4287c11a04db46bd327f9e0f0"},"38":{"pid":"38","name":"Babble","alias":"Babble","domain":"babble.com","ga_id":"","imgurl":"","color":"f31","amzn_id":"","created":"2014-02-25 08:53:28","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=38&key=f9132faeea294f10bf1d13158c3f8399"},"40":{"pid":"40","name":"The Huffington Post","alias":"huffingtonpost","domain":"http:\/\/www.huffingtonpost.com\/","ga_id":"","imgurl":"","color":"2D7061","amzn_id":"","created":"2014-02-27 09:39:20","ad_units":null,"user_url":"http:\/\/www.findthebest.com\/cbg\/user?pid=40&key=498d6bc0faa4abd7c9fb1d600d9c6517"}}},"ads":{"page_url":"http:\/\/cloud-computing.findthebest.com\/l\/150\/Lunacloud"},"ad_units":[{"unit_id":"ATF_728x90","div_id":"all-header","sizes":[728,90],"manual":false,"range":{"min":750,"max":null}},{"unit_id":"ATF_468x60","div_id":"all-header-mid","sizes":[468,60],"manual":false,"range":{"min":500,"max":750}},{"unit_id":"M_ATF_320x50","div_id":"all-header-mobile","sizes":[320,50],"manual":false,"range":{"min":null,"max":500}},{"unit_id":"BTF_728x90_SB","div_id":"middle-ad-large","sizes":[728,90],"manual":false,"range":{"min":765,"max":1040}},{"unit_id":"BTF_468x60_SB","div_id":"middle-ad-mid","sizes":[468,60],"manual":false,"range":{"min":500,"max":765}},{"unit_id":"M_TOP_300x250","div_id":"middle-ad-mobile","sizes":[300,250],"manual":false,"range":{"min":0,"max":500}},{"unit_id":"BTF_728x90","div_id":"all-footer","sizes":[728,90],"manual":false,"range":{"min":750,"max":null}},{"unit_id":"BTF_468x60","div_id":"all-footer-mid","sizes":[468,60],"manual":false,"range":{"min":500,"max":750}},{"unit_id":"M_BOT_300x250","div_id":"all-footer-mobile","sizes":[300,250],"manual":false,"range":{"min":null,"max":500}}],"ad_targeting":[{"name":"sd","value":"cloud-computing"},{"name":"d","value":"findthebest.com"},{"name":"c","value":"Software"},{"name":"class","value":"ITNeeds"},{"name":"suite","value":"CloudComputing"},{"name":"cat","value":"Software"},{"name":"subcat","value":"BusinessSoftware"},{"name":"pt","value":"DD"},{"name":"lid","value":"150"},{"name":"o","value":"ftb"}],"question_data":{"id":"13","_last_modified":"2014-02-12 10:00:15","_uid_creator":null,"uid":"27","is_active":"t","yes_and_no":"f","archived":"f","created_on":"2013-10-07 16:48:20","title":"FTC October 2013 Poll B","question_yes":"Please explain:","question_no":"Please explain:","question_yes_type":"text_box","question_no_type":"text_box","answer_yes_type":"radio","answer_no_type":"radio","other_yes":"f","other_no":"f","randomize_yes":"f","randomize_no":"f","survey_embed":"","survey_prompt_percentage":"0","question_id":"13","active_apps":"","skip_yes_no_question":null,"html":"\n\t\t<div id='helpful-page-wrapper' class='que-all'>\n\t\t\t<div class='grid-wrap'>\n\t\t\t\t<div class='que-default-q'>Was this page helpful?<\/div>\n\t\t\t\t<div class='que-right'>\n\t\t\t\t\t<div data-choice='Yes' class='que-help-btn helpful-yes thm-btn'>Yes<\/div>\n\t\t\t\t\t<div data-choice='No' class='que-help-btn helpful-no thm-btn'>No<\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>"},"lazy_items":{"d3":{"js":["sites\/all\/modules\/custom\/lib\/d3\/d3.custom.min.js"]},"gfx":{"deps":["d3"],"core":"gfx"},"edit":{"core":"edit"},"full_edit":{"core":"full_edit"},"sic_naics_edit":{"core":"sic_naics_edit"},"narrative_edit":{"core":"narrative_edit"},"widget_designer":{"core":"widget_designer"},"asg":{"js":["sites\/all\/modules\/custom\/lib_ftb\/Autosuggest\/asg.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/lib_ftb\/Autosuggest\/asg.css"],"flag":"FTB.asg"},"taglist":{"js":["sites\/all\/modules\/custom\/lib_ftb\/TagList.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/lib_ftb\/TagList.css"],"flag":"TagList"},"jquery-svg":{"js":["sites\/all\/modules\/custom\/lib_ftb\/jquery.svg-util.js"]},"carousel":{"js":["sites\/all\/modules\/custom\/lib_ftb\/Carousel\/carousel.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/lib_ftb\/Carousel\/carousel.css"]},"helpful":{"js":["sites\/all\/modules\/custom\/helpful_question\/helpful_polling.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/helpful_question\/helpful_polling.css"]},"smart_rating":{"deps":["jquery-svg","helpful"],"js":["sites\/all\/modules\/custom\/smart_rating\/smart_rating_msg.js","sites\/all\/modules\/custom\/viz\/MorphPie.js","sites\/all\/modules\/custom\/viz\/SmartPie.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/viz\/SmartPie.css"]},"user_lists":{"core":"user_lists"},"bug_form":{"js":["sites\/all\/modules\/custom\/lib\/chosen\/chosen-FTB.jquery.js","sites\/all\/modules\/custom\/common\/analytics\/analytics.js","sites\/all\/modules\/custom\/lib\/fileuploader.js","sites\/all\/modules\/custom\/user_lists\/botaBOX.js","sites\/all\/modules\/custom\/main\/bugform.js"],"css":["sites\/all\/modules\/custom\/lib\/fileuploader.css","sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/user_lists\/botaBOX.css","sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/main\/bugform.css","sites\/all\/modules\/custom\/lib\/chosen\/chosen.css"]},"sctn_shr":{"js":["sites\/all\/modules\/custom\/common\/social\/section\/section_share.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/common\/social\/section\/section_share.css"]},"gmaps":{"js":["\/\/maps.googleapis.com\/maps\/api\/js?libraries=places&sensor=false&region=US&key=AIzaSyCHqdr2Rrs4JUDKRCkBjgVbpx6KLEFeC6k&callback=init_gmaps"],"def":"init_gmaps"},"ImgShare":{"js":["sites\/all\/modules\/custom\/widgets\/ImgShare.js"],"css":["sites\/all\/themes\/_css\/sites\/all\/modules\/custom\/widgets\/ImgShare.css"],"stub":["ImgShare.show"]}},"user":{"uid":0}};go_soon_timeout=100;dd_imgs=[{"src":"http:\/\/img2.findthebest.com\/sites\/default\/files\/252\/media\/images\/Lunacloud_328240.png","thumbnail_url":"http:\/\/img2.findthebest.com\/sites\/default\/files\/252\/media\/images\/t2\/Lunacloud_328240.png","w":"480","h":"480","caption":"Lunacloud","attr":"Lunacloud"}];detail={"id":150,"title":"Lunacloud","full_title":"Lunacloud","thumbnail":"http:\/\/img2.findthebest.com\/sites\/default\/files\/252\/media\/images\/t2\/Lunacloud_328240.png","claim_possible":true,"claim_mode":"thing","reviews":[{"id":"71821","votes":{"up":0,"down":0},"review":{"title":"Great","text":"Lunarcloud is amazing! You won't believe the throughput and speed you'll get from them at great value!","date":"9 months ago","comments_total":null},"rating":{"main":5,"attr":[{"k":1,"v":5},{"k":2,"v":4},{"k":3,"v":5}]},"user":{"name":"DRJ","id":"183161","avatar":"\/rx\/img\/default_avatar_35.png","points":null}},{"id":"3332","votes":{"up":12,"down":22},"review":{"title":"Very good AWS alternative","text":"Very simple to open an account and get started in a couple of minutes, launching Linux and Windows Cloud Servers. So far, very good!","date":"19 months ago","comments_total":null},"rating":{"main":5,"attr":[{"k":1,"v":5},{"k":2,"v":5},{"k":3,"v":5}]},"user":{"name":"Ant\u00f3nio Miguel Ferreira","id":"58212","avatar":"http:\/\/graph.facebook.com\/1535924926\/picture?width=35&height=35","points":null}}],"reviews_init":{"attr":{"1":"Reliability\/Performance","2":"Support","3":"Value"},"max":2},"sections":[{"title":"Overview","id":0,"perma_id":"2hVr2f"},{"title":"Features","id":1,"perma_id":"3sAKkL"},{"title":"Specs","id":3,"perma_id":"42VoZ1"},{"title":"Company","id":4,"perma_id":"1HAMnZ"},{"title":"Reviews","id":"rev"}],"sctn_shr":{"tpl":"<div class=\"sctn-wrap section-btn\">\n\t<div class=\"sctn-anchor-wrap\">\n\t\t\n\t\t\t\t<a class=\"sctn-anchor\" rel=\"nofollow\" href=\"#\">\n\t\t\t<span class=\"sctn-anchor-icon spr\"><\/span>\n\t\t<\/a>\n\n\t\t\t\t<div class=\"sctn-hover-net\"><\/div>\n\n\t\t \n\t\t<a class=\"sctn-shr\" rel=\"nofollow\" href=\"#\">\n\t\t\t<span class=\"sctn-shr-icon spr\"><\/span>\n\t\t\t<span class=\"sctn-shr-text link\">Share<\/span>\n\t\t<\/a>\n\t\t\n\t\t\t\t<div class=\"sctn-link-wrap\">\n\t\t\t<input type=\"text\" class=\"sctn-link\" value=\"\">\n\t\t<\/div>\n\n\t\t\t\t<div class=\"sctn-btns-wrap\">\n\t\t\t<a class=\"shr shr-anchor\"><span class=\"shr-icon spr\"><\/span><\/a>\n\t\t\t<div class=\"shr shr-twitter\"><div class=\"shr-icon\"><\/div><\/div>\n\t\t\t<div class=\"shr shr-facebook\"><div class=\"shr-icon\"><\/div><\/div>\n\t\t\t<div class=\"shr shr-embed\"><div class=\"shr-icon\"><\/div><\/div>\n\t\t<\/div>\n\n\t<\/div>\n<\/div>\n"}};rev_form={"REVIEW_MIN_LENGTH_WORDS":15,"user_name":null,"val":0,"item_id":150,"item_url":["http:\/\/cloud-computing.findthebest.com\/l\/150\/Lunacloud","Lunacloud"],"type":"review","is_standard":true,"is_inline":true};/*]]>*/</script> 
+  <script>
+		(function () {
+			function async(url) {
+				var node = document.getElementsByTagName('script')[0],
+				s = document.createElement('script');
+				s.async = true;
+				s.type = 'text/javascript';
+				s.src = url;
+				node.parentNode.insertBefore(s, node);
+			}
+			if (!FTB.ads) {
+				var noop = $.noop;
+				window.render_ad_unit = noop;
+				window.refresh_ad_units = noop;
+				window.refresh_ad_unit = noop;
+				window.init_ads = noop;
+				return;
+			}
+			async('//www.googletagservices.com/tag/js/gpt.js');
+			googletag = window.googletag || {cmd: []};
+			adq = [];
+		}());
+	</script> 
+  <script id="check-cbg">(function (document) {
+	var publishers = FTB.CBG ? FTB.CBG.publishers : '',
+		hash = window.location.hash,
+		pid_vals = hash ? hash.match(/pid=([^&]*)/) : '',
+		pid_param = pid_vals ? pid_vals[1] : '',
+		pid = '',
+		valid_pid = false,
+		cbg_cookie,
+		valid_cookie;
+
+	if (pid_param) {
+		pid = checkValidCBG(pid_param, publishers);
+		valid_pid = !!pid;
+	}
+	cbg_cookie = getCbgCookie();
+	valid_cookie = !!publishers[cbg_cookie];
+
+	if (valid_pid || valid_cookie) {
+		var curr_pid = pid || cbg_cookie;
+		FTB.CBG.current = publishers ? publishers[curr_pid] : '';
+	}
+
+	function getCbgCookie() {
+		var cbg_cookie = document.cookie.match('(?:^|;) ?_ftb_cbg=([^;]*)(?:;|$)');
+		if (!cbg_cookie) {
+			return '';
+		} else {
+			return cbg_cookie[1];
+		}
+	}
+
+	function checkValidCBG(pid_param, publishers) {
+		if (publishers[pid_param]) {
+			return pid_param;
+		}
+		else {
+			for (var pub_id in publishers) {
+				if (publishers.hasOwnProperty(pub_id)) {
+					var temp_pub = publishers[pub_id];
+					if (temp_pub.alias === pid_param) {
+						return pub_id;
+					}
+				}
+			}
+		}
+		return '';
+	}
+
+}(document));</script> 
+  <script data-analytics="{&quot;ga_code&quot;:&quot;UA-9929225-2&quot;,&quot;ga_code_2&quot;:null,&quot;comp_ga_id&quot;:&quot;&quot;,&quot;domain_name&quot;:&quot;.findthebest.com&quot;,&quot;is_widget&quot;:false}" id="analytics-code">(function (document) {
+
+	var ga,
+		data = $('#analytics-code').data('analytics'),
+		ga_code = data.ga_code,
+		ga_code_2 = data.ga_code_2,
+		comp_ga_id = data.comp_ga_id,
+		domain_name = data.domain_name,
+		is_widget = data.is_widget;
+
+	_gaq.push(['_setAccount', ga_code]);
+	_gaq.push(['_setDomainName', domain_name]);
+	_gaq.push(['_setSiteSpeedSampleRate', 10]); // Track sitespeed on 10% of pageviews
+	_gaq.push(['_trackPageview']);
+
+	// Add tracking for publisher's account
+	if (ga_code_2 && !is_widget) {
+		_gaq.push(['b._setAccount', ga_code_2]);
+		_gaq.push(['b._setDomainName', domain_name]);
+		_gaq.push(['b._trackPageview']);
+	}
+
+	// Add tracking for comp specific account
+	if (comp_ga_id) {
+		_gaq.push(['c._setAccount', comp_ga_id]);
+		_gaq.push(['c._setDomainName', domain_name]);
+		_gaq.push(['c._trackPageview']);
+	}
+
+	ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+
+}(document));</script> 
+ </head> 
+ <body class="not-front not-logged-in no-sidebars page-l-150-lunacloud section-l ftb-owned detail"> 
+  <div id="page"> 
+   <div id="page-inner"> 
+    <div id="pub-header-wrap"></div> 
+    <div id="p-header" class="clearfix"> 
+     <div class="grid-wrap"> 
+      <span id="cbg-header-logo"></span>
+      <script>(function () {
+	var curr_publisher = FTB.CBG.current || '',
+		all_ad_units = FTB.ad_units;
+
+	if (curr_publisher) {
+//		changeCbgHeaderLogo(curr_publisher);	// Marketing decided not to show publisher logo.
+		changeCbgAdTargeting(curr_publisher);
+		if (all_ad_units && curr_publisher.ad_units) {
+			changeCbgAdUnits(curr_publisher, all_ad_units);
+		}
+	}
+
+	function changeCbgHeaderLogo(curr_publisher) {
+		var name = curr_publisher.name || '',
+			domain = curr_publisher.domain || '',
+			image = curr_publisher.imgurl || '',
+			pub_logo = image ? '<a id="cbg-logo" href="' + domain + '" title="' + name + '"><img src="' + image + '"/></a>' : '';
+
+		$('#cbg-header-logo').html(pub_logo);
+	}
+
+	function changeCbgAdTargeting(curr_publisher) {
+		FTB.ad_targeting = FTB.ad_targeting || [];
+		FTB.ad_targeting.push({name: 'cbg', value: curr_publisher.alias.toLowerCase()});
+	}
+
+	function changeCbgAdUnits(curr_publisher, all_ad_units) {
+		var curr_unit = '';
+		for (var i = 0, len = all_ad_units.length; i < len; i++) {
+			curr_unit = all_ad_units[i].unit_id;
+			if (curr_publisher.ad_units[curr_unit]) {
+				FTB.ad_units[i].unit_id = 'CBG_' + curr_unit;
+			}
+		}
+	}
+}());</script> 
+      <div class="mob-tog-wrap nosel left"> 
+       <div id="mob-menu-tog"> 
+        <span class="line thm-bg"></span> 
+        <span class="line thm-bg"></span> 
+        <span class="line thm-bg"></span> 
+        <span class="remove thm-color">&times;</span> 
+       </div> 
+      </div> 
+      <a id="p-logo" class="spr" href="http://www.findthebest.com" title="Compare product features, ratings and reviews at FindTheBest.com"></a> 
+      <div id="p-nav-menu-tog" class="nosel" data-cat="121"> 
+       <span class="text thm-hover">Software <span class="arrow thm-on-bt"></span> </span> 
+      </div> 
+      <div id="p-user-menu"> 
+       <div id="p-join" class="thm-hover">
+        <span id="p-join-icon" class="spr"></span>
+        <span class="text link">Join</span>
+       </div> 
+       <div id="p-sign-in" class="thm-hover">
+        <span id="p-sign-in-icon" class="spr"></span>
+        <span class="text">Sign in</span>
+       </div> 
+       <div class="my-account-menu">
+        <span class="login_join" onclick="FTB.show_registration();">Join</span>
+        <span class="site-login-link login_link popup_login_dlg">Sign In</span>
+       </div> 
+      </div> 
+      <div class="mob-tog-wrap nosel right"> 
+       <div id="mob-search-tog">
+        <span id="search-tog-icon" class="spr"></span>
+        <span class="remove">&times;</span>
+       </div> 
+      </div> 
+      <form id="p-searchbar"> 
+       <input id="search_input" autocapitalize="off" /> 
+       <div id="p-sb-button" class="ss_but stnd-btn thm-btn"> 
+        <div class="mag-glass-icon spr"></div> 
+       </div> 
+       <div id="searchbar-dropdown" class="thm-bt thm-arrow-up s-results-list"></div> 
+      </form> 
+      <div id="p-cat-drop" data-init="false"></div> 
+     </div> 
+     <div id="p-nav-menu-wrap" class="grid-wrap" data-init="false" style="display: none;"></div> 
+    </div> 
+    <div id="header-ad"> 
+     <div class="ad" id="all-header-massive"></div> 
+     <div class="ad" id="all-header"></div> 
+     <div class="ad" id="all-header-mid"></div> 
+     <div class="ad ad-shadow" id="all-header-mobile"></div> 
+    </div> 
+    <script>
+					(function () {
+						var width = window.innerWidth || $(window).width, i, on;
+						for (i = 0; i < FTB.ad_units.length; i = i + 1) {
+							on = FTB.ad_units[i];
+							if (on.div_id.indexOf('all-header') === 0) {
+								if (width > (on.range.min || 0) && width <= (on.range.max  || Number.MAX_VALUE)) {
+									$('#' + on.div_id).addClass('active');
+									return;
+								}
+							}
+						}
+					}());
+				</script> 
+    <div class="grid-wrap bread-wrapper"> 
+     <div id="bread-crumb" class="bread-crumb-sec"> 
+      <span class="bread-wrap"><a class="bread level-1" href="http://www.findthebest.com">Home</a></span>
+      <span class="bread-sep">&raquo;</span>
+      <span class="bread-wrap"><a class="bread level-2" href="http://www.findthebest.com/category/Software">Software</a></span>
+      <span class="bread-sep">&raquo;</span>
+      <span class="bread-wrap"><a class="bread level-3" href="http://cloud-computing.findthebest.com">Cloud Computing</a></span>
+      <span class="bread-sep">&raquo;</span>
+      <span class="bread-wrap">Detail</span> 
+     </div> 
+    </div> 
+    <div id="main"> 
+     <div id="main-inner" class="clearfix"> 
+      <div id="pub-left-wrap"></div> 
+      <div id="pub-right-wrap"></div> 
+      <div class="grid-wrap clearfix"> 
+       <div id="share_buttons" class="clearfix"> 
+        <div id="embed_butt" style="width:77px" class="open ico detail"> 
+         <span class="embw spr">&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+         <label id="embed_butt_label">Embed</label> 
+         <div class="tip">
+           Embed a widget version of this page
+         </div> 
+        </div> 
+        <div class="shr-wrap"> 
+         <div class="shr shr-facebook"> 
+          <div class="shr-icon"></div> 
+         </div> 
+         <div class="shr shr-twitter"> 
+          <div class="shr-icon"></div> 
+         </div> 
+         <div class="shr shr-googleplus"> 
+          <div class="shr-icon"></div> 
+         </div> 
+         <div class="shr shr-email"> 
+          <div class="shr-icon"></div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="content"> 
+       <div id="content-inner"> 
+        <div id="content-inner-wrapper" class="grid-wrap"> 
+         <div id="content-area">
+          <div id="detail-float"> 
+           <div class="grid-wrap"> 
+            <div class="float-inner clearfix"> 
+             <div class="float-item"> 
+              <div id="main-img-thumb">
+               <img src="http://img2.findthebest.com/sites/default/files/252/media/images/Lunacloud_328240.png" />
+              </div> 
+              <div class="name">
+               Lunacloud
+              </div> 
+             </div> 
+             <div class="section-summary"> 
+              <div data-section-id="0" class="section-nav first active id-0">
+               <span class="title-text">Overview</span>
+               <div class="current"></div>
+              </div>
+              <div data-section-id="1" class="section-nav id-1">
+               <span class="title-text">Features</span>
+               <div class="current"></div>
+              </div>
+              <div data-section-id="3" class="section-nav id-3">
+               <span class="title-text">Specs</span>
+               <div class="current"></div>
+              </div>
+              <div data-section-id="4" class="section-nav id-4">
+               <span class="title-text">Company</span>
+               <div class="current"></div>
+              </div>
+              <div data-section-id="rev" class="section-nav id-rev">
+               <span class="title-text">Reviews</span>
+               <div class="current"></div>
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div id="detail-wrap" class="hreview"> 
+           <a id="detail-top-nav" href="/"> <span class="lsaquo">‹</span>&nbsp;See all Cloud Computing </a> 
+           <div id="detail-page" class="clearfix"> 
+            <div id="detail-main"> 
+             <div id="editable-detail-header"> 
+              <div id="detail-header" class="clearfix item"> 
+               <div id="detail-image" style="width: 370px" class="clearfix">
+                <div id="img-large-wrap" style="height: 280px; width: 370px;"> 
+                 <div id="img-large"> 
+                  <div class="img-wrap" style="height: 280px; width: 370px"> 
+                   <div class="img-attr-wrap"> 
+                    <img alt="Lunacloud" class="detail-image dd-img photo" style="max-width: 370px; max-height: 280px;" src="http://img2.findthebest.com/sites/default/files/252/media/images/t2/Lunacloud_328240.png" /> 
+                    <div class="img-attr t02">
+                     <div class="img-attr-alt"></div>
+                     <div class="img-attr-attr">
+                      Lunacloud
+                     </div>
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div>
+               </div> 
+               <div id="detail-info"> 
+                <div class="detail-info-title"> 
+                 <h1 class="fn">Lunacloud Cloud Computing Provider</h1> 
+                </div> 
+                <div id="detail-actions" class="clearfix"> 
+                 <span class="link detail-action add-to"><span id="save-icon" class="spr detail-action-icon">&nbsp;</span>Add to List</span>
+                 <span id="write-a-review" class="detail-action link add-review-button"><span id="review-icon" class="spr detail-action-icon">&nbsp;</span>Write a Review</span>
+                 <span id="edit-listing" class="detail-action link"><span id="edit-icon" class="spr detail-action-icon">&nbsp;</span>Edit</span>
+                 <span id="claim-listing" class="js-claim detail-action link"><span class="spr claim-icon detail-action-icon">&nbsp;</span>Claim</span> 
+                </div> 
+                <ul id="overview-features">
+                 <li><span class="overview-span">
+                   <div class="tip">
+                    Lowest possible price provided by the cloud computing company (measured in cents per hour)
+                   </div>Base Plan Cost:</span> $0.02 per hour</li>
+                 <li><span class="overview-span">
+                   <div class="tip">
+                    With IaaS (Infrastructure as a Service) you must create the environment to develop and execute web applicaitons. With PaaS (Platform as a Service) you must develop and execute web applications on an environment created by the PaaS provider.
+                   </div>Computing Category:</span> Infrastructure as a Service</li>
+                 <li><span class="overview-span">
+                   <div class="tip">
+                    The software license refers to the agreement between you the user and the cloud computing provider about how you can use their cloud resources management software. 
+                   </div>Software License:</span> Open Source</li>
+                </ul> 
+                <div id="detail-user-ftb-rating" class="clearfix"> 
+                 <div id="detail-user-rating"> 
+                  <span class="rating-name">User Rating</span> 
+                  <div class="stars-container ur-star-container"> 
+                   <span class="ur-avg med">4.4</span> 
+                   <div class="rating-container stars clearfix med"> 
+                    <div class="rating-bar  green" style="width: 88%"></div> 
+                    <div class="rating-bar-back js-stared"></div> 
+                    <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                    <span data-star="1" class="spacer"></span>
+                    <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                    <span data-star="2" class="spacer"></span>
+                    <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                    <span data-star="3" class="spacer"></span>
+                    <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                    <span data-star="4" class="spacer"></span>
+                    <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                   </div> 
+                   <div class="num-urr">
+                    5 ratings
+                   </div> 
+                  </div> 
+                 </div> 
+                 <div id="detail-your-rating"> 
+                  <span class="rating-name">Add Your Rating</span> 
+                  <div class="add-stars-container"> 
+                   <div class="rateable"> 
+                    <div class="rating-container stars clearfix med"> 
+                     <div class="rating-bar " style="width: 0%"></div> 
+                     <div class="rating-bar-back js-stared"></div> 
+                     <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                     <span data-star="1" class="spacer"></span>
+                     <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                     <span data-star="2" class="spacer"></span>
+                     <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                     <span data-star="3" class="spacer"></span>
+                     <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                     <span data-star="4" class="spacer"></span>
+                     <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                    </div> 
+                   </div> 
+                   <div class="add-stars-text">
+                    click stars to begin review
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div id="detail-section-wrapper">
+              <div id="detail-section-nav" style="width: 100%;">
+               <div data-section-id="0" class="section-nav first active id-0">
+                <span class="title-text">Overview</span>
+                <div class="current"></div>
+               </div>
+               <div data-section-id="1" class="section-nav id-1">
+                <span class="title-text">Features</span>
+                <div class="current"></div>
+               </div>
+               <div data-section-id="3" class="section-nav id-3">
+                <span class="title-text">Specs</span>
+                <div class="current"></div>
+               </div>
+               <div data-section-id="4" class="section-nav id-4">
+                <span class="title-text">Company</span>
+                <div class="current"></div>
+               </div>
+               <div data-section-id="rev" class="section-nav id-rev">
+                <span class="title-text">Reviews</span>
+                <div class="current"></div>
+               </div>
+              </div>
+             </div>
+             <div id="s-mobile">
+              <div class="fs-wrap"> 
+               <div class="fs-window"> 
+                <div class="fs-val">
+                 Navigate To...
+                </div> 
+                <div class="fs-arrow"></div> 
+               </div> 
+               <div class="fs-opts"> 
+                <div class="fs-opt top-link">
+                 Top
+                </div> 
+                <div class="fs-opt section-nav" data-section-id="0">
+                 Overview
+                </div>
+                <div class="fs-opt section-nav" data-section-id="1">
+                 Features
+                </div>
+                <div class="fs-opt section-nav" data-section-id="3">
+                 Specs
+                </div>
+                <div class="fs-opt section-nav" data-section-id="4">
+                 Company
+                </div>
+                <div class="fs-opt section-nav" data-section-id="rev">
+                 Reviews
+                </div> 
+               </div> 
+               <div class="fs-mask"></div> 
+              </div>
+             </div> 
+             <div id="detail-sections">
+              <div data-section-id="0" data-perma-id="2hVr2f" class="id-0 detail-section open linkable perma-linkable">
+               <h2 class="section-title"><span class="title-text">Overview</span>
+                <div class="section-btn section-edit">
+                 <span class="edit-off"><span class="spr icon"></span><span class="link words">Edit</span></span>
+                </div></h2>
+               <div class="section-body">
+                <div class="detail-col full-split-row"> 
+                 <div class="data-block is-editable" data-id="d_33"> 
+                  <div class="full-split-wrapper clearfix"> 
+                   <div class="full-split-left"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldedit even"> 
+                       <td class="fname"> Provider</td> 
+                       <td class="fdata"><b>Lunacloud</b></td> 
+                      </tr>
+                      <tr class="component two-column fieldedit odd"> 
+                       <td class="fname"> Year Founded</td> 
+                       <td class="fdata">2011</td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div> 
+                   <div class="full-split-right"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldcombo even"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Computing Category 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           With IaaS (Infrastructure as a Service) you must create the environment to develop and execute web applicaitons. With PaaS (Platform as a Service) you must develop and execute web applications on an environment created by the PaaS provider.
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">Infrastructure as a Service <br /><a class="dir" href="/d/z/Infrastructure-as-a-Service">Compare Infrastructure as a Service Cloud Computing Providers</a></td> 
+                      </tr>
+                      <tr class="component two-column fieldlist odd"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Control Interface 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           The program or application used by the cloud computing subscriber to access their data on the provider's cloud. 
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">Compare by Control Interface
+                        <div class="list_scroll">
+                         <table class="list_table" id="rep_access_program">
+                          <tbody>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/a/Web-Based-Application_-_Control-Panel">Web Based Application/Control Panel</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/a/API-%28Application-Programming-Interface%29">API (Application Programming Interface)</a></td>
+                           </tr>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/a/Command-Line">Command Line</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/a/Graphical-User-Interface">Graphical User Interface</a></td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </div></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="detail-col full-split-row"> 
+                 <div class="data-block is-editable" data-id="d_42"> 
+                  <div class="full-split-wrapper clearfix">
+                   <div class="full-split-top"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component one-column first overview even"> 
+                       <td colspan="2" class="fullrow fdata">
+                        <div class="dd-overview-visuals">
+                         <div style="width:33.3333333333%" class="dd-overview-box field-popup" data-field="cheapest" data-val="0.02">
+                          <div class="dd-overview-label-wrap">
+                           <div class="dd-overview-label">
+                            <div class="tip">
+                             Lowest possible price provided by the cloud computing company (measured in cents per hour)
+                            </div>Base Plan Cost
+                           </div>
+                          </div>
+                          <div id="vz1" style="width:130;height:130px;"></div>
+                         </div>
+                         <div style="width:33.3333333333%" class="dd-overview-box field-popup" data-field="incost" data-val="0">
+                          <div class="dd-overview-label-wrap">
+                           <div class="dd-overview-label">
+                            <div class="tip">
+                             Inbound data transfer cost per GB.
+                            </div>Inbound Bandwidth Price
+                           </div>
+                          </div>
+                          <div id="vz2" style="width:130;height:130px;"></div>
+                         </div>
+                         <div style="width:33.3333333333%" class="dd-overview-box field-popup" data-field="outcost" data-val="10">
+                          <div class="dd-overview-label-wrap">
+                           <div class="dd-overview-label">
+                            <div class="tip">
+                             Outbound data transfer cost per GB.
+                            </div>Outbound Bandwidth Price
+                           </div>
+                          </div>
+                          <div id="vz3" style="width:130;height:130px;"></div>
+                         </div>
+                        </div></td> 
+                      </tr>
+                      <tr class="component two-column fieldedit odd"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Base Plan Details 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           The cheapest plan details concerning CPU and RAM specifics, disk memory and bandwidth.
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">512 MB RAM, 1 vCPU, 10 GB DISK - 2 cents/hour</td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div> 
+                   <div class="full-split-left"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldcombo even"> 
+                       <td class="fname"> Subscription Type</td> 
+                       <td class="fdata">Pay as you go <br /><a class="dir" href="/d/d/Pay-as-you-go">Compare Pay as you go Cloud Computing Providers</a></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div> 
+                   <div class="full-split-right"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldediturl odd"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Pricing Link 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           Pricing details for hosting solution
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata"><a href="https://www.lunacloud.com/en/cloud-server" rel="nofollow" class="outbound_lnk" target="_blank">Pricing Link</a> <small>(lunacloud.com)</small></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="detail-col full-row">
+                 <div class="data-block is-editable" data-id="d_51">
+                  <table class="data-block-body">
+                   <tbody>
+                    <tr class="component one-column first chart even"> 
+                     <td colspan="2" class="fullrow fdata">
+                      <div class="car_main car_init" style="width: 100%">
+                       <div class="car_item car_item_0">
+                        <div class="bar-chart">
+                         <div class="title">
+                          Base Plan Cost
+                         </div>
+                         <div class="bar first clearfix">
+                          <div class="label">
+                           Lunacloud
+                          </div>
+                          <div class="val">
+                           $0.02 per hour
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:40%;background-color:"></div>
+                          </div>
+                         </div>
+                         <div class="bar clearfix">
+                          <div class="label">
+                           Pay as you go
+                          </div>
+                          <div class="val">
+                           $0.05 per hour
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:100%;background-color:"></div>
+                          </div>
+                         </div>
+                         <div class="bar clearfix">
+                          <div class="label">
+                           Open Source
+                          </div>
+                          <div class="val">
+                           $0.02 per hour
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:40%;background-color:"></div>
+                          </div>
+                         </div>
+                         <div class="bar clearfix">
+                          <div class="label">
+                           All Cloud Computing
+                          </div>
+                          <div class="val">
+                           $0.02 per hour
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:40%;background-color:"></div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="car_item car_item_1" style="display: none">
+                        <div class="bar-chart">
+                         <div class="title">
+                          Outbound Bandwidth Price
+                         </div>
+                         <div class="bar first clearfix">
+                          <div class="label">
+                           Lunacloud
+                          </div>
+                          <div class="val">
+                           10.00&cent; per GB
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:100%;background-color:"></div>
+                          </div>
+                         </div>
+                         <div class="bar clearfix">
+                          <div class="label">
+                           Pay as you go
+                          </div>
+                          <div class="val">
+                           0.16&cent; per GB
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:1.6%;background-color:"></div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="car_item car_item_2" style="display: none">
+                        <div class="bar-chart">
+                         <div class="title">
+                          Guaranteed Network Availability
+                         </div>
+                         <div class="bar first clearfix">
+                          <div class="label">
+                           Lunacloud
+                          </div>
+                          <div class="val">
+                           100.00%
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:100%;background-color:"></div>
+                          </div>
+                         </div>
+                         <div class="bar clearfix">
+                          <div class="label">
+                           Pay as you go
+                          </div>
+                          <div class="val">
+                           99.99%
+                          </div>
+                          <div class="line">
+                           <div class="fill" style="left:0%;width:99.99%;background-color:"></div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="nav_ctrls bg_grad">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div data-index="0" class="marker enabled mark_0"></div>
+                        <div data-index="1" class="marker mark_1"></div>
+                        <div data-index="2" class="marker mark_2"></div>
+                       </div>
+                      </div></td> 
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </div> 
+               </div>
+              </div> 
+              <div id="dd-ad-mid"> 
+               <div class="ad" id="middle-ad-large"></div> 
+               <div class="ad" id="middle-ad-mid"></div> 
+               <div class="ad" id="middle-ad-mobile"></div> 
+              </div>
+              <div data-section-id="1" data-perma-id="3sAKkL" class="id-1 detail-section open linkable perma-linkable">
+               <h2 class="section-title"><span class="title-text">Features</span>
+                <div class="section-btn section-edit">
+                 <span class="edit-off"><span class="spr icon"></span><span class="link words">Edit</span></span>
+                </div></h2>
+               <div class="section-body">
+                <div class="detail-col full-split-row"> 
+                 <div class="data-block is-editable" data-id="d_54"> 
+                  <div class="full-split-wrapper clearfix"> 
+                   <div class="full-split-left"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldlist odd"> 
+                       <td class="fname"> Free Security Features</td> 
+                       <td class="fdata">
+                        <div class="list_scroll">
+                         <table class="list_table" id="rep_freesecurity">
+                          <tbody>
+                           <tr class="odd">
+                            <td>Advanced email/password Security</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Advanced Firewall</td>
+                           </tr>
+                           <tr class="odd">
+                            <td>Failover Features</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Persistency</td>
+                           </tr>
+                           <tr class="odd">
+                            <td>Snapshot Backup</td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </div></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div> 
+                   <div class="full-split-right"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldlist even"> 
+                       <td class="fname"> Paid Security Features</td> 
+                       <td class="fdata">
+                        <div class="list_scroll">
+                         <table class="list_table" id="rep_paidsecurity">
+                          <tbody>
+                           <tr class="odd">
+                            <td>Backup Storage</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Snapshot Backup</td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </div></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="split-2 detail-col split-row clearfix">
+                 <div class="detail-split-left">
+                  <div class="data-block is-editable" data-id="d_61">
+                   <table class="data-block-body">
+                    <tbody>
+                     <tr class="component two-column first fieldcombo odd"> 
+                      <td class="fname"> Licensee of the TRUSTe Privacy Program</td> 
+                      <td class="fdata">No</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo even"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Autoscaling 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          Scalability is a desirable property of a system, which indicates its ability to either handle growing amounts of work in a fluid manner or to be readily enlarged.
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">Yes (Free)</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo odd"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Virtual Private Servers 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          A Virtual Private Server (VPS, also referred to as Virtual Dedicated Server, VDS or Dynamic Dedicated Server) is a method of splitting a server. Each virtual server can run its own full-fledged operating system, and each server can be independently rebooted.
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">Yes (Extra Charge)</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo even"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Root Access 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          Does cloud allow root access
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">Yes</td> 
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                 </div>
+                 <div class="detail-split-right">
+                  <div class="data-block is-editable" data-id="d_66">
+                   <table class="data-block-body">
+                    <tbody>
+                     <tr data-field="SLA" data-val="100" class="component two-column first fieldeditnumber odd"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Guaranteed Network Availability 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          The minimum guaranteed availability described in the Service Level Agreement
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">100%</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo even"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Load Balancing 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          In computer networking, load balancing is a technique to distribute workload evenly across two or more computers, CPUs, hard drives, or other resources, in order to get optimal resource utilization, maximize throughput, minimize response time, and avoid overload.
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">Yes (Free)</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo odd"> 
+                      <td class="fname"> 
+                       <div class="has-help-text">
+                        Monitoring 
+                        <div class="spr info-icon">
+                         <div class="tip">
+                          A system that constantly monitors the cloud network for slow or failing components and that notifies the network administrator in case of outages via email, pager or other alarms.
+                         </div>
+                        </div>
+                       </div></td> 
+                      <td class="fdata">No</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo even"> 
+                      <td class="fname"> File Hosting Service</td> 
+                      <td class="fdata">Yes (Extra Charge)</td> 
+                     </tr>
+                     <tr class="component two-column fieldcombo odd"> 
+                      <td class="fname"> Web Hosting Service</td> 
+                      <td class="fdata">Yes (Free)</td> 
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div>
+                 </div>
+                </div> 
+               </div>
+              </div>
+              <div data-section-id="3" data-perma-id="42VoZ1" class="id-3 detail-section linkable perma-linkable">
+               <h2 class="section-title"><span class="title-text">Specs &amp; Support</span>
+                <div class="section-btn section-edit">
+                 <span class="edit-off"><span class="spr icon"></span><span class="link words">Edit</span></span>
+                </div></h2>
+               <div class="section-body">
+                <div class="detail-col full-split-row"> 
+                 <div class="data-block is-editable" data-id="d_77"> 
+                  <div class="full-split-wrapper clearfix"> 
+                   <div class="full-split-left"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldlist odd"> 
+                       <td class="fname"> Compatible OS</td> 
+                       <td class="fdata">Compare by Compatible OS
+                        <div class="list_scroll">
+                         <table class="list_table" id="rep_OperatingSystem">
+                          <tbody>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/c/Cent-OS">Cent OS</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/c/Debian">Debian</a></td>
+                           </tr>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/c/Fedora-11">Fedora 11</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/c/Linux-Operating-Systems">Linux Operating Systems</a></td>
+                           </tr>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/c/openSUSE-Linux">openSUSE Linux</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/c/Red-Hat-5.1">Red Hat 5.1</a></td>
+                           </tr>
+                           <tr class="odd">
+                            <td><a class="dir" href="/d/c/Ubuntu-Linux">Ubuntu Linux</a></td>
+                           </tr>
+                           <tr class="even">
+                            <td><a class="dir" href="/d/c/Windows-Server-2008">Windows Server 2008</a></td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </div></td> 
+                      </tr>
+                      <tr class="component two-column fieldlist even"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Processor 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           32/64 bit processor type
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">64 Bit</td> 
+                      </tr>
+                      <tr class="component two-column fieldlist odd"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Programming Languages Supported 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           The programming languages supported if the provider is a development environment, NA if it is not. 
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">All (Root Server Access)</td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div> 
+                   <div class="full-split-right"> 
+                    <table class="data-block-body">
+                     <tbody>
+                      <tr class="component two-column first fieldcombo even"> 
+                       <td class="fname"> 
+                        <div class="has-help-text">
+                         Free Support 
+                         <div class="spr info-icon">
+                          <div class="tip">
+                           This signifies that the cloud computing provider offers free support for their services.
+                          </div>
+                         </div>
+                        </div></td> 
+                       <td class="fdata">Yes</td> 
+                      </tr>
+                      <tr class="component two-column fieldlist odd"> 
+                       <td class="fname"> Support Services</td> 
+                       <td class="fdata">
+                        <div class="list_scroll">
+                         <table class="list_table" id="rep_support">
+                          <tbody>
+                           <tr class="odd">
+                            <td>Phone</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Urgent Response</td>
+                           </tr>
+                           <tr class="odd">
+                            <td>Online Resources</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Live Chat</td>
+                           </tr>
+                           <tr class="odd">
+                            <td>Knowledge Base</td>
+                           </tr>
+                           <tr class="even">
+                            <td>Online Guides</td>
+                           </tr>
+                           <tr class="odd">
+                            <td>Support Videos</td>
+                           </tr>
+                          </tbody>
+                         </table>
+                        </div></td> 
+                      </tr>
+                      <tr class="component two-column fieldediturl even"> 
+                       <td class="fname"> Website</td> 
+                       <td class="fdata"><a href="http://www.lunacloud.com" class="outbound_lnk" target="_blank">Website</a> <small>(lunacloud.com)</small></td> 
+                      </tr>
+                     </tbody>
+                    </table> 
+                   </div>
+                  </div>
+                 </div>
+                </div> 
+               </div>
+              </div>
+              <div data-section-id="4" data-perma-id="1HAMnZ" class="id-4 detail-section linkable perma-linkable">
+               <h2 class="section-title"><span class="title-text">Company Information</span>
+                <div class="section-btn section-edit">
+                 <span class="edit-off"><span class="spr icon"></span><span class="link words">Edit</span></span>
+                </div></h2>
+               <div class="section-body">
+                <div class="split-2 detail-col full-row clearfix">
+                 <div class="data-block is-editable" data-id="d_93">
+                  <h3 class="data-block-header">Contact Information</h3>
+                  <table class="data-block-body">
+                   <tbody>
+                    <tr class="component two-column first address odd"> 
+                     <td class="fname"> Address</td> 
+                     <td class="fdata">London <br /></td> 
+                    </tr>
+                    <tr class="component two-column fieldediturl even"> 
+                     <td class="fname"> 
+                      <div class="has-help-text">
+                       Contact Link 
+                       <div class="spr info-icon">
+                        <div class="tip">
+                         Link to the contact page of a website.
+                        </div>
+                       </div>
+                      </div></td> 
+                     <td class="fdata"><a href="http://www.lunacloud.com" rel="nofollow" class="outbound_lnk" target="_blank">Contact Link</a> <small>(lunacloud.com)</small></td> 
+                    </tr>
+                    <tr class="component two-column fieldeditphone odd"> 
+                     <td class="fname"> 
+                      <div class="has-help-text">
+                       Phone 
+                       <div class="spr info-icon">
+                        <div class="tip">
+                         Main phone number for the entity.
+                        </div>
+                       </div>
+                      </div></td> 
+                     <td class="fdata"><span class="phone_number"><a href="tel:442076858499">+442076858499</a></span></td> 
+                    </tr>
+                    <tr class="component two-column fieldeditemail even"> 
+                     <td class="fname"> 
+                      <div class="has-help-text">
+                       Email 
+                       <div class="spr info-icon">
+                        <div class="tip">
+                         Main email address for entity.
+                        </div>
+                       </div>
+                      </div></td> 
+                     <td class="fdata"><a class="outbound_email" target="_blank" href="mailto:info@lunacloud.com?body=%0A%0A---%0AThis+inquiry+is+brought+to+you+by+FindTheBest.+Please+ensure+your+product%2Fservice+listing+is+correct+by+visiting+http%3A%2F%2Fcloud-computing.findthebest.com%2Fl%2F150%2FLunacloud&amp;subject=Information+Request">info@lunacloud.com</a></td> 
+                    </tr>
+                   </tbody>
+                  </table>
+                 </div>
+                </div> 
+               </div>
+              </div> 
+              <div class="id-rev detail-section"> 
+               <h2 class="section-title">Reviews</h2> 
+               <div class="section-body"> 
+                <div id="rr-wrap" class="clearfix"> 
+                 <div id="rr-overview"> 
+                  <span class="link ro-review-link bg-blue stnd-btn">Write a review</span> 
+                  <div id="ro-helpful-reviews" class="clearfix"> 
+                   <div class="ro-users full"> 
+                    <h3 class="ro-sub-title">Users Say</h3> 
+                    <div class="rating-overview">
+                     <div class="rating-title">
+                      Most Recent
+                     </div>
+                     <div class="rating-stars"> 
+                      <span class="ur-avg small">5.0</span> 
+                      <div class="rating-container stars clearfix small"> 
+                       <div class="rating-bar  green" style="width: 100%"></div> 
+                       <div class="rating-bar-back"></div> 
+                      </div>
+                     </div>
+                     <div class="rev-text">
+                      ”Lunarcloud is amazing! You won't believe the throughput and speed you'll get from them at great value!” 
+                      <span data-rev-id="71821" class="rev-link link">Read more</span>
+                     </div>
+                     <div class="user">
+                      <div class="avatar">
+                       <a class="profile-link" href="http://www.findthebest.com/profile/183161/DRJ" rel="nofollow"><img src="/rx/img/default_avatar_35.png" alt="DRJ" width="16" height="16" /></a>
+                      </div> 
+                      <a class="profile-link" href="http://www.findthebest.com/profile/183161/DRJ" rel="nofollow">DRJ</a>
+                     </div>
+                    </div> 
+                    <div class="ro-box clearfix"> 
+                     <div class="ro-breakdown "> 
+                      <div class="rating-container-breakdown-outer clearfix"> 
+                       <div data-filter="5" class="num rr-filter link">
+                        5 stars
+                       </div> 
+                       <div class="rating-container-breakdown"> 
+                        <div class="rating-num">
+                         3
+                        </div> 
+                        <div class="rating-bar" style="width: 60%"></div> 
+                       </div> 
+                      </div>
+                      <div class="rating-container-breakdown-outer clearfix"> 
+                       <div class="num">
+                        4 stars
+                       </div> 
+                       <div class="rating-container-breakdown"> 
+                        <div class="rating-num">
+                         1
+                        </div> 
+                        <div class="rating-bar" style="width: 20%"></div> 
+                       </div> 
+                      </div>
+                      <div class="rating-container-breakdown-outer clearfix"> 
+                       <div class="num">
+                        3 stars
+                       </div> 
+                       <div class="rating-container-breakdown"> 
+                        <div class="rating-num">
+                         1
+                        </div> 
+                        <div class="rating-bar" style="width: 20%"></div> 
+                       </div> 
+                      </div>
+                      <div class="rating-container-breakdown-outer clearfix"> 
+                       <div class="num">
+                        2 stars
+                       </div> 
+                       <div class="rating-container-breakdown"> 
+                        <div class="rating-num">
+                         0
+                        </div> 
+                        <div class="rating-bar" style="width: 0%"></div> 
+                       </div> 
+                      </div>
+                      <div class="rating-container-breakdown-outer clearfix"> 
+                       <div class="num">
+                        1 stars
+                       </div> 
+                       <div class="rating-container-breakdown"> 
+                        <div class="rating-num">
+                         0
+                        </div> 
+                        <div class="rating-bar" style="width: 0%"></div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <div class="ro-att"> 
+                      <div class="ro-attr-sec"> 
+                       <div class="ro-attr clearfix ro-overall"> 
+                        <span class="ro-attr-label">Overall</span> 
+                        <span class="ro-attr-avg"> <span class="ur-avg small">4.4</span> 
+                         <div class="rating-container stars clearfix small"> 
+                          <div class="rating-bar  green" style="width: 88%"></div> 
+                          <div class="rating-bar-back"></div> 
+                         </div></span> 
+                       </div> 
+                       <div class="ro-attr clearfix"> 
+                        <span class="ro-attr-label">Reliability/Performance</span> 
+                        <span class="ro-attr-avg"> <span class="ur-avg small">5.0</span> 
+                         <div class="rating-container stars clearfix small"> 
+                          <div class="rating-bar  green" style="width: 100%"></div> 
+                          <div class="rating-bar-back"></div> 
+                         </div></span> 
+                       </div> 
+                       <div class="ro-attr clearfix"> 
+                        <span class="ro-attr-label">Support</span> 
+                        <span class="ro-attr-avg"> <span class="ur-avg small">4.5</span> 
+                         <div class="rating-container stars clearfix small"> 
+                          <div class="rating-bar  green" style="width: 90%"></div> 
+                          <div class="rating-bar-back"></div> 
+                         </div></span> 
+                       </div> 
+                       <div class="ro-attr clearfix"> 
+                        <span class="ro-attr-label">Value</span> 
+                        <span class="ro-attr-avg"> <span class="ur-avg small">5.0</span> 
+                         <div class="rating-container stars clearfix small"> 
+                          <div class="rating-bar  green" style="width: 100%"></div> 
+                          <div class="rating-bar-back"></div> 
+                         </div></span> 
+                       </div>
+                      </div> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                 <div id="rr-all-header" class="clearfix"> 
+                  <div class="rr-review-title">
+                   All Reviews
+                  </div> 
+                  <div class="rr-showing">
+                   Showing 1 - 2 of 2 reviews
+                  </div> 
+                  <div class="rr-sort-wrap">
+                   Sorted by 
+                   <div class="fs-wrap"> 
+                    <div class="fs-window">
+                     <div class="fs-val">
+                      Relevance
+                     </div>
+                     <div class="fs-arrow"></div>
+                    </div> 
+                    <div class="fs-opts"> 
+                     <div class="fs-opt rr-sort" data-value="rel">
+                      Relevance
+                     </div> 
+                     <div class="fs-opt rr-sort" data-value="mh">
+                      Helpfulness
+                     </div> 
+                     <div class="fs-opt rr-sort" data-value="date">
+                      Newest
+                     </div> 
+                     <div class="fs-opt rr-sort" data-value="high-to-low">
+                      Highest rated
+                     </div> 
+                     <div class="fs-opt rr-sort" data-value="low-to-high">
+                      Lowest rated
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                 <div class="rr-reviews"></div> 
+                 <div class="rr-showing">
+                  Showing 1 - 2 of 2 reviews
+                 </div> 
+                 <noscript> 
+                  <div> 
+                   <h4>Great</h4> 
+                   <b>By: DRJ | Rating: 5 / 5 | 9 months ago</b> 
+                   <div>
+                    Lunarcloud is amazing! You won't believe the throughput and speed you'll get from them at great value!
+                   </div>
+                  </div> 
+                  <div> 
+                   <h4>Very good AWS alternative</h4> 
+                   <b>By: Ant&oacute;nio Miguel Ferreira | Rating: 5 / 5 | 19 months ago</b> 
+                   <div>
+                    Very simple to open an account and get started in a couple of minutes, launching Linux and Windows Cloud Servers. So far, very good!
+                   </div>
+                  </div>
+                 </noscript>
+                 <div id="rf-review-wrap"> 
+                  <div id="rf-head" class="clearfix"> 
+                   <div id="rf-listing-img">
+                    <img src="http://img2.findthebest.com/sites/default/files/252/media/images/t/Lunacloud_328240.png" />
+                   </div> 
+                   <div id="rf-title">
+                    Review Lunacloud
+                   </div> 
+                  </div> 
+                  <div id="rf-message">
+                    Please add a rating and a written review.You will need to be logged in to submit. 
+                  </div> 
+                  <div class="rf-wrap rf-error-sec clearfix"></div> 
+                  <div class="rf-wrap rf-rating-sec clearfix"> 
+                   <div class="rf-subtitle rf-left"> 
+                    <span class="rf-st-icon spr"></span> Rate this Cloud Computing 
+                   </div> 
+                   <div id="rf-o-rating" class="rf-right"> 
+                    <div class="rf-missed-wrap rf-missed-rating">
+                     <span class="rf-missed-icon spr"></span>
+                    </div> 
+                    <div id="rf-o-stars" class="ur-star-container active"> 
+                     <div class="rating-container stars clearfix large"> 
+                      <div class="rating-bar " style="width: 0%"></div> 
+                      <div class="rating-bar-back js-stared"></div> 
+                      <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                      <span data-star="1" class="spacer"></span>
+                      <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                      <span data-star="2" class="spacer"></span>
+                      <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                      <span data-star="3" class="spacer"></span>
+                      <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                      <span data-star="4" class="spacer"></span>
+                      <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                     </div>
+                    </div> 
+                    <span id="rf-click-text">click stars to rate</span> 
+                   </div> 
+                  </div> 
+                  <div class="rf-wrap rf-review-sec clearfix"> 
+                   <div class="rf-subtitle rf-left">
+                    <span class="rf-st-icon spr"></span>Write your review
+                   </div> 
+                   <div id="rf-review-box" class="rf-right"> 
+                    <div class="rf-missed-wrap rf-missed-title"> 
+                     <span class="rf-missed-icon spr"></span> 
+                    </div> 
+                    <input id="rf-review-title" maxlength="100" class="rf-input" placeholder="Add a title" /> 
+                    <div class="rf-missed-wrap rf-missed-review"> 
+                     <span class="rf-missed-icon spr"></span> 
+                    </div> 
+                    <textarea id="rf-review-body" maxlength="20000" class="rf-input" placeholder="Add a review"></textarea> 
+                    <div id="rf-help-review"> 
+                     <span class="rf-help-title">A good review is:</span>Both detailed and specific 
+                     <span class="rf-help-title" style="margin-top: 10px;">Consider writing about:</span>
+                     <ul>
+                      <li>Pros and cons</li>
+                      <li>Some things people might not know about the listing</li>
+                     </ul> 
+                    </div> 
+                    <div id="rf-word-count">
+                     15 words to go
+                    </div> 
+                   </div> 
+                  </div> 
+                  <div class="rf-wrap rf-attr-ratings clearfix hide"> 
+                   <div class="rf-subtitle rf-left"> 
+                    <span class="rf-st-icon spr"></span> Rate specific features 
+                    <span class="rf-subtitle-text">(optional)</span> 
+                   </div> 
+                   <div id="rf-detail-rating-wrap" class="rf-right"> 
+                    <div data-attr-key="1" class="rf-detail-rating"> 
+                     <div class="rf-attribute">
+                      Reliability/Performance
+                     </div> 
+                     <div class="rf-at-stars"> 
+                      <div class="rating-container stars clearfix med"> 
+                       <div class="rating-bar " style="width: 0%"></div> 
+                       <div class="rating-bar-back js-stared"></div> 
+                       <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="1" class="spacer"></span>
+                       <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="2" class="spacer"></span>
+                       <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="3" class="spacer"></span>
+                       <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="4" class="spacer"></span>
+                       <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                      </div>
+                     </div> 
+                    </div> 
+                    <div data-attr-key="2" class="rf-detail-rating"> 
+                     <div class="rf-attribute">
+                      Support
+                     </div> 
+                     <div class="rf-at-stars"> 
+                      <div class="rating-container stars clearfix med"> 
+                       <div class="rating-bar " style="width: 0%"></div> 
+                       <div class="rating-bar-back js-stared"></div> 
+                       <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="1" class="spacer"></span>
+                       <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="2" class="spacer"></span>
+                       <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="3" class="spacer"></span>
+                       <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="4" class="spacer"></span>
+                       <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                      </div>
+                     </div> 
+                    </div> 
+                    <div data-attr-key="3" class="rf-detail-rating"> 
+                     <div class="rf-attribute">
+                      Value
+                     </div> 
+                     <div class="rf-at-stars"> 
+                      <div class="rating-container stars clearfix med"> 
+                       <div class="rating-bar " style="width: 0%"></div> 
+                       <div class="rating-bar-back js-stared"></div> 
+                       <span data-star="1" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="1" class="spacer"></span>
+                       <span data-star="2" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="2" class="spacer"></span>
+                       <span data-star="3" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="3" class="spacer"></span>
+                       <span data-star="4" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span>
+                       <span data-star="4" class="spacer"></span>
+                       <span data-star="5" class="star"> <span class="spr star-icon"></span><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></span> 
+                      </div>
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                  <div id="rf-input-wrap" class="rf-wrap clearfix"> 
+                   <div class="rf-left">
+                    &nbsp;
+                   </div> 
+                   <div id="rf-submit" class="rf-right"> 
+                    <div class="rf-user-post">
+                     Your display name is set to 
+                     <b class="rf-name"></b> 
+                     <span class="link">[Edit]</span>
+                    </div> 
+                    <div class="rf-display-name clearfix"> 
+                     <div class="rf-dn-error"></div> 
+                     <input class="rf-dn-input rf-input" maxlength="60" value="" /> 
+                     <div class="rf-dn-save bg-blue stnd-btn"> 
+                      <span class="spin"></span> 
+                      <span class="save">Save</span> 
+                      <span class="saving">Saving</span> 
+                     </div> 
+                     <div class="rf-dn-help">
+                      Your display name will be displayed on your profile page and next to your reviews.
+                     </div> 
+                    </div> 
+                    <div id="rf-post-review" class="stnd-btn bg-blue">
+                     Post Review
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div>
+             </div> 
+            </div> 
+            <div id="detail-sidebar">
+             <div class="float-block-wrap">
+              <div class="float-block">
+               <div class="data-block not-editable" data-id="d_0">
+                <h3 class="data-block-header">Additional Information</h3>
+                <table class="data-block-body">
+                 <tbody>
+                  <tr class="component one-column button_new even"> 
+                   <td colspan="2" class="fullrow fdata">
+                    <div class="button_large">
+                     <a class="purchase_button stnd-btn bg-orange  sponsor_button" style="font-weight:bold;text-decoration:none; width:200px;" href="/sponsor_event?app=252&amp;p=det&amp;lids=150&amp;ct=b&amp;urli=1" target="_blank" rel="nofollow">Try It Now</a>
+                    </div></td> 
+                  </tr>
+                 </tbody>
+                </table>
+               </div>
+              </div>
+             </div>
+             <div class="data-block not-editable" data-id="d_14">
+              <h3 class="data-block-header">Do you work here?</h3>
+              <table class="data-block-body">
+               <tbody>
+                <tr class="component one-column html odd"> 
+                 <td colspan="2" class="fullrow fdata">
+                  <div class="button_large">
+                   <a class="js-claim stnd-btn bg-blue ad_seo_nofollow" style="font-size:15px;font-weight:bold;text-decoration:none; width:200px;" target="_top" data-ga-label="Custom Claim Button" rel="nofollow">CLAIM THIS LISTING</a>
+                  </div></td> 
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <div id="sidebar-bottom"></div>
+            </div> 
+           </div> 
+           <div id="detail-below"> 
+            <div id="listing_answers"> 
+             <table class="questions_block"> 
+              <tbody>
+               <tr> 
+                <td class="faq_detail"><h2 class="faq-title-text section-title">FAQ for Lunacloud</h2>
+                 <ul>
+                  <li><span class="rsaquo">›</span><a href="http://cloud-computing.findthebest.com/q/150/2821/What-does-the-base-plan-cost-from-Lunacloud-cloud-computing" class="questions">What does the base plan cost from Lunacloud cloud computing?</a></li>
+                  <li><span class="rsaquo">›</span><a href="http://cloud-computing.findthebest.com/q/150/2823/What-are-the-compatible-operating-systems-supported-by-Lunacloud-cloud-computing" class="questions">What are the compatible operating systems supported by Lunacloud cloud computing?</a></li>
+                  <li><span class="rsaquo">›</span><a href="http://cloud-computing.findthebest.com/q/150/2849/What-features-does-Lunacloud-provide-in-their-cloud-computing-service" class="questions">What features does Lunacloud provide in their cloud computing service?</a></li>
+                 </ul></td> 
+               </tr> 
+              </tbody>
+             </table> 
+            </div> 
+            <div class="carousel-block open"> 
+             <div class="carousel-title section-title">
+              Related topics
+             </div> 
+             <div class="carousel-wrapper cc-section-body"> 
+              <div class="carousel-viewport"> 
+               <ul class="carousel"> 
+                <li> <a class="carousel-item" href="http://web-hosting.findthebest.com"> <span class="ci-img-wrap"><img src=" http://img3.findthebest.com/sites/default/files/174/media/images/t/_738350_i0.png" /></span> <span class="ci-img-link">Web Hosting</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://backup-software.findthebest.com"> <span class="ci-img-wrap"><img src=" http://img1.findthebest.com/sites/default/files/687/media/images/t/_1191092.png" /></span> <span class="ci-img-link">Backup Software</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://online-backup.findthebest.com"> <span class="ci-img-wrap"><img src=" http://img2.findthebest.com/sites/default/files/841/media/images/t/_690003_i0.png" /></span> <span class="ci-img-link">Online Backup &amp; Storage Services</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://web-cms.findthebest.com"> <span class="ci-img-wrap"><img src=" http://img3.findthebest.com/sites/default/files/667/media/images/t/_620086_i0.png" /></span> <span class="ci-img-link">Web Content Management Systems (CMS)</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/17/Microsoft-Windows-Azure"> <span class="ci-img-wrap"><img src=" http://img3.findthebest.com/sites/default/files/252/media/images/t/Microsoft_Windows_Azure_63558.jpg" /></span> <span class="ci-img-link">Microsoft Windows Azure</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/38/Agathon-Group"> <span class="ci-img-wrap"><img src=" http://img1.findthebest.com/sites/default/files/252/media/images/t/Agathon_Group_167086.png" /></span> <span class="ci-img-link">Agathon Group</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/121/ThinkGrid"> <span class="ci-img-wrap"><img src=" http://img2.findthebest.com/sites/default/files/252/media/images/t/ThinkGrid_412682_i0.jpg" /></span> <span class="ci-img-link">ThinkGrid</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/152/Webuzo"> <span class="ci-img-wrap"><img src=" http://img3.findthebest.com/sites/default/files/252/media/images/t/Webuzo_418230_i0.jpg" /></span> <span class="ci-img-link">Webuzo</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/182/iWeb-Cloud-Servers"> <span class="ci-img-wrap"><img src=" http://img1.findthebest.com/sites/default/files/252/media/images/t/_1164433.png" /></span> <span class="ci-img-link">iWeb Cloud Servers</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/170/SherWeb"> <span class="ci-img-wrap"><img src=" http://img2.findthebest.com/sites/default/files/252/media/images/t/_612280_i0.png" /></span> <span class="ci-img-link">SherWeb</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/162/CloudSigma"> <span class="ci-img-wrap"><img src=" http://img3.findthebest.com/sites/default/files/252/media/images/t/_483312_i0.jpg" /></span> <span class="ci-img-link">CloudSigma</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/73/Cisco"> <span class="ci-img-wrap"><img src=" http://img1.findthebest.com/sites/default/files/252/media/images/t/Cisco_67298.png" /></span> <span class="ci-img-link">Cisco</span> </a> </li> 
+                <li> <a class="carousel-item" href="http://cloud-computing.findthebest.com/l/91/Jump-Box"> <span class="ci-img-wrap"><img src=" http://img2.findthebest.com/sites/default/files/252/media/images/t/Jump_Box_67512.gif" /></span> <span class="ci-img-link">Jump Box</span> </a> </li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div id="footer-ad"> 
+          <div class="ad" id="all-footer"></div> 
+          <div class="ad" id="all-footer-mid"></div> 
+          <div class="ad" id="all-footer-mobile"></div> 
+         </div> 
+         <div class="app_footer"> 
+          <div class="app_footer_text f-collapse">
+           <h4 class="f-collapse-title">Data sources</h4>
+           <div class="f-collapse-data">
+            This data was collected from company websites and data sheets. 
+           </div>
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="pub-footer-wrap"></div> 
+   </div> 
+  </div> 
+  <div id="closure-blocks" class="region region-closure">
+   <div id="block-main-0" class="block block-main region-odd odd region-count-1 count-1">
+    <div class="block-inner"> 
+     <div class="content"> 
+      <a rel="nofollow" style="display: none;" href="/blkhol/email">BlkHol Email</a>
+      <div class="popup_login_box round3 popup_frame" style="display:none;"> 
+       <div class="popup_login_dlg_body clearfix"> 
+        <div class="login-loading t02"></div> 
+        <div id="login-title">
+         Welcome to FindTheBest
+        </div> 
+        <div id="login-message" style="display:none;">
+         Hi! We see you would like to submit a rating. Please login or create an account to do so. Thank you!
+        </div> 
+        <div id="return-login"> 
+         <div id="reveal-login" class="round3"> 
+          <div id="ftb-sign-in-lnk">
+           Sign in through FindTheBest
+          </div> 
+          <div id="reveal-login-form"> 
+           <form action="/l/150/Lunacloud" accept-charset="UTF-8" method="post" id="user-login-small-form" class="ajax-form ajax-form"> 
+            <div>
+             <div class="form-item" id="edit-name-wrapper"> 
+              <input type="text" maxlength="128" name="name" id="edit-name" size="30" value="" placeholder="Email" autocapitalize="off" autocorrect="off" class="form-text required" /> 
+             </div> 
+             <div class="form-item" id="edit-pass-wrapper"> 
+              <input type="password" name="pass" id="edit-pass" maxlength="128" size="30" placeholder="Password" class="form-text required" /> 
+             </div> 
+             <a href="/user/password" class="link forgot-password" rel="NOFOLLOW">Forgot your Email / Password?</a>
+             <input type="submit" name="op" id="edit-submit" value="Login" class="form-submit ajax-trigger stnd-btn bg-blue" /> 
+             <input type="hidden" name="dest" id="edit-dest" value="" /> 
+             <input type="hidden" name="form_build_id" id="form-FVqi5nj9Z-Zs6RCNZoHBL3mHzlzZtUZOaXwc1yxtcPg" value="form-FVqi5nj9Z-Zs6RCNZoHBL3mHzlzZtUZOaXwc1yxtcPg" /> 
+             <input type="hidden" name="form_id" id="edit-user-login-small-form" value="user_login_small_form" /> 
+            </div>
+           </form> 
+          </div> 
+         </div> 
+         <div class="login-or">
+          or
+         </div> 
+         <div class="social-logins"> 
+          <div class="social-prefix">
+           Sign In With
+          </div> 
+          <div class="google-login-btn stnd-btn bg-bright-red" onclick="FTB.perform_login('google', 'https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=http%3A%2F%2Fwww.findthebest.com%2Fgoogle-login%2Foauth2callback&amp;client_id=118409257978.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;state=cloud-computing.findthebest.com');">
+           <span class="btn-icon-wrap"><span class="gp spr">&nbsp;</span></span>
+           <span class="social-btn-text">Sign in with Google</span>
+          </div>
+          <div class="fb_login_button large stnd-btn bg-darkblue">
+           <span class="btn-icon-wrap"><span class="fb spr">&nbsp;</span></span>
+           <span class="social-btn-text">Sign in with Facebook</span>
+          </div> 
+          <span class="social-claus">Don't worry, we never post without your permission.</span> 
+         </div> 
+        </div> 
+        <div id="new-login"> 
+         <div id="create-account-title">
+          Don't have an account?
+         </div> 
+         <div class="create-account-section"> 
+          <div id="create-account-btn"> 
+           <a class="stnd-btn" href="javascript:void(0);" onclick="FTB.show_registration(); return false;"><span class="spr">&nbsp;</span>Sign Up</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <div id="login-footer"> 
+        <ul> 
+         <li><a rel="nofollow" href="http://www.findthebest.com/add_edit_policy">Content Policy</a></li> 
+         <li><a rel="nofollow" href="http://www.findthebest.com/privacy">Privacy</a></li> 
+         <li><a rel="nofollow" href="http://www.findthebest.com/terms">Terms &amp; Conditions</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div id="fb-root"></div> 
+      <!-- open footer --> 
+      <div id="footer"> 
+       <div id="mob-footer-tog" class="spr-a">
+        More info about this site
+       </div> 
+       <div class="grid-wrap"> 
+        <div class="ft-nav"> 
+         <div class="ft-col-wrap"> 
+          <h5 class="ft-title">Company</h5> 
+          <div class="ft-col"> 
+           <ul class="ft-list"> 
+            <li><a href="http://www.findthebest.com/get-to-know-us" rel="nofollow" class="ft-link">About</a></li> 
+            <li><a href="http://www.findthebest.com/advertisers" rel="nofollow" class="ft-link">Advertising</a></li> 
+            <li><a href="http://www.findthebest.com/let-us-help-you" rel="nofollow" class="ft-link">Contact Us</a></li> 
+            <!--
+									<li><a href='http://blog.findthebest.com' rel="nofollow" class='ft-link'>Blog</a></li>
+									<li><a href='http://www.findthebest.com/press-center' rel="nofollow" class='ft-link'>Press</a></li>
+									--> 
+           </ul> 
+           <ul class="ft-list"> 
+            <li><a href="http://www.findthebest.com/site-policies/privacy-policy" rel="nofollow" class="ft-link">Privacy</a></li> 
+            <li><a href="http://www.findthebest.com/site-policies/terms-and-conditions" rel="nofollow" class="ft-link">Terms</a></li> 
+            <!--
+									<li><a href='http://www.findthebest.com/work-with-us' rel="nofollow" class='ft-link'>Partner With Us</a></li>
+									<li><a href='http://www.findthebest.com/businesses' rel="nofollow" class='ft-link'>Businesses</a></li>
+
+									<li><a href='http://www.findthebest.com/careers' rel="nofollow" class='ft-link'>Careers</a></li>
+									--> 
+           </ul> 
+           <!--
+								<ul class='ft-list'>
+									<li><a href='http://team.findthebest.com' rel="nofollow" class='ft-link'>Team</a></li>
+									<li><a href='http://www.findthebest.com/site-policies/content-policy' rel="nofollow" class='ft-link'>Content Policy</a></li>
+
+
+								</ul>
+								--> 
+          </div> 
+         </div> 
+         <div class="ft-col-wrap"> 
+          <h5 class="ft-title">Network</h5> 
+          <div class="ft-col"> 
+           <ul class="ft-list">
+            <li><a href="http://www.findthedata.org" rel="nofollow" class="ft-link">FindTheData</a></li>
+            <li><a href="http://www.findthecompany.com" rel="nofollow" class="ft-link">FindTheCompany</a></li>
+            <li><a href="http://homes.findthebest.com" rel="nofollow" class="ft-link">Real Estate</a></li>
+           </ul> 
+           <ul class="ft-list">
+            <li><a href="http://www.death-record.com" rel="nofollow" class="ft-link">Death-Record</a></li>
+            <li><a href="http://www.locategrave.org" rel="nofollow" class="ft-link">LocateGrave</a></li>
+            <li><a href="http://www.weatherdb.com" rel="nofollow" class="ft-link">WeatherDB</a></li>
+           </ul> 
+          </div> 
+         </div> 
+         <div class="ft-col-wrap connect"> 
+          <h5 class="ft-title">Connect</h5> 
+          <div class="ft-col"> 
+           <ul class="ft-list"> 
+            <li> <a href="https://www.facebook.com/FindTheBest" rel="nofollow" class="ft-link"> <span class="facebook spr">Facebook<strong></strong></span> Follow us on Facebook</a> </li> 
+            <li> <a href="https://twitter.com/FindTheBest" rel="nofollow" class="ft-link"> <span class="twitter spr">Twitter<strong></strong></span> Follow us on Twitter</a> </li> 
+            <li> <a href="https://plus.google.com/109983372437179990715/posts" rel="nofollow" class="ft-link"> <span class="googleplus spr">+1<strong></strong></span> Follow us on Google+</a> </li> 
+            <!--<li>
+										<a href='http://www.linkedin.com/company/findthebest' rel="nofollow" class='ft-link'>
+										<span class='linkedin spr'>in<strong></strong></span>
+										Follow us on LinkedIn</a>
+									</li>--> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ft-b clearfix"> 
+         <div class="copyright">
+          &copy; 2014 FindTheBest.com, Inc. All Rights Reserved.
+         </div> 
+         <div class="fs-wrap"> 
+          <div class="fs-window">
+           <div class="fs-val">
+            FindTheBest
+           </div> 
+           <div class="fs-arrow"></div> 
+          </div> 
+          <div class="fs-opts"> 
+           <a href="http://www.findthebest.co.nz" class="fs-opt" rel="nofollow"> New Zealand</a>
+           <a href="http://www.findthebest.co.uk" class="fs-opt" rel="nofollow"> United Kingdom</a>
+           <a href="http://www.findthebest.com" class="fs-opt" rel="nofollow">United States</a>
+           <a href="http://www.findthebest.com.au" class="fs-opt" rel="nofollow"> Australia</a>
+           <a href="http://www.findthebest.de" class="fs-opt" rel="nofollow"> Deutschland</a>
+           <a href="http://www.findthebest.es" class="fs-opt" rel="nofollow"> Espa&ntilde;a</a>
+           <a href="http://www.findthebest.fr" class="fs-opt" rel="nofollow"> France</a>
+           <a href="http://www.findthebest.in" class="fs-opt" rel="nofollow"> India</a>
+           <a href="http://www.findthebest.it" class="fs-opt" rel="nofollow"> Italy</a>
+           <a href="http://www.findthebest.jp" class="fs-opt" rel="nofollow"> Japan</a>
+           <a href="http://www.findthebest.or.kr" class="fs-opt" rel="nofollow"> Korea</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- close footer --> 
+     </div> 
+    </div>
+   </div> 
+   <!-- /block-inner, /block --> 
+  </div> 
+  <script src="http://cdn1.findthebest.com/rx/core.328.js"></script>
+  <script src="http://cdn1.findthebest.com/rx/desktop.328.js"></script>
+  <script src="http://cdn1.findthebest.com/rx/detail.328.js"></script> 
+  <script src="http://cdn1.findthebest.com/sites/default/files/js/js_5353e535ba8ec305c4af095308a0abf8.ver.060d18c9bfd5230a8c181572ef7b63d6e6654854-l.js"></script> 
+  <script>
+			$('#loading,#loading-msg').css('display', 'none');
+		</script> 
+  <script>
+dataLayer = [];
+dataLayer.push({subcat:'Internet & Web Services'});dataLayer.push({'sd':'cloud-computing'});dataLayer.push({'d':'findthebest.com'});dataLayer.push({'c':'Software'});dataLayer.push({'class':'IT Needs'});dataLayer.push({'suite':'Cloud Computing'});dataLayer.push({'cat':'Software'});dataLayer.push({'subcat':'Business Software'});dataLayer.push({'pt':'DD'});dataLayer.push({'lid':'150'});dataLayer.push({'o':'ftb'});dataLayer.push({mobile:$(window).width()<=750?'yes':'no'});dataLayer.push({appname:'Cloud Computing Providers'});
+</script>
+  <noscript>
+   <iframe src="//www.googletagmanager.com/ns.html?id=GTM-8XMN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-8XMN');</script> 
+  <script>
+			/*<![CDATA[*/
+			vzq=[{"type":"horizontal-meter","prefix":"$","suffix":" per hour","medians_string":"0|0|0|0|0|0|0|0|0|0|0.015|0.02|0.02|0.03|0.033|0.05|0.05|0.08|0.08|0.12|0.12","high_good":-2,"visual_calc":"minmax","add_commas":1,"suffix_placement":"auto","data_type":"number","vals":[1,0.02,130]},{"type":"horizontal-meter","prefix":"","suffix":"\u00a2 per GB","medians_string":"0|0|0|0|0|0|0|0|0|0|0|0|0|0|0.17|8.5|10|11.11|15|17|31.8","high_good":-2,"visual_calc":"medians","add_commas":1,"suffix_placement":"auto","data_type":"currency","vals":[2,0,130]},{"type":"horizontal-meter","prefix":"","suffix":"\u00a2 per GB","medians_string":"0|0|0|0|0|0|0|0|0|0.05|0.16|0.19|10|10|12|12|12|15|17|31.8|50","high_good":-2,"visual_calc":"medians","add_commas":1,"suffix_placement":"auto","data_type":"currency","vals":[3,10,130]}];$(function(){ setTimeout(function(){ viz.render(vzq); }, 1); });window.FTB && FTB.setUpStars && FTB.setUpStars();
+			/*]]>*/
+			</script>   
+ </body>
+</html>

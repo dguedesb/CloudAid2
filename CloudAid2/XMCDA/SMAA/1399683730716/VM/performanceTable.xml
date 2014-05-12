@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmc:XMCDA xmlns:xmc="http://www.decision-deck.org/2009/XMCDA-2.1.0">
+  <performanceTable>
+    <alternativePerformances>
+      <alternativeID>Alt1</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.06307692</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.7225131</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.20625</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt2</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.47384617</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.18848167</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.2125</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt3</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.40923077</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.38743454</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>1.0</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt4</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>1.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.05</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt5</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.90575916</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.05</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt6</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.16307692</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.083769634</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>1.0</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt7</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.40923077</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.29057592</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.0</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt8</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.17846154</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.7382199</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.475</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt9</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.8376963</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.16875</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt10</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.06307692</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.17329843</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.20625</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt11</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.17846154</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.35078534</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.475</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt12</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.17846154</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.44973823</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.0</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt13</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>1.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.48125</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt14</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.06307692</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.90575916</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.20625</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt15</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.5340314</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.16875</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt16</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.47384617</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.5445026</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.2125</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt17</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.6287958</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.05</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+    <alternativePerformances>
+      <alternativeID>Alt18</alternativeID>
+      <performance>
+        <criterionID>Crit2</criterionID>
+        <value name="cloudtaxonomy:MemorySize">
+          <real>0.0</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit0</criterionID>
+        <value name="price">
+          <real>0.12094241</real>
+        </value>
+      </performance>
+      <performance>
+        <criterionID>Crit1</criterionID>
+        <value name="cloudtaxonomy:DiskSize">
+          <real>0.16875</real>
+        </value>
+      </performance>
+    </alternativePerformances>
+  </performanceTable>
+</xmc:XMCDA>

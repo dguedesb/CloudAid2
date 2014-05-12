@@ -1,0 +1,1 @@
+{"vars":[{"name":"gbout","val":50.0,"details":"Total GB of data that you expect to send out from Amazon EC2 to the internet."},{"name":"usagehours","val":732.0,"details":"The number of hours that you\u0027ll be using the instance."}]}
