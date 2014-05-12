@@ -175,18 +175,18 @@ public class DecisionCore {
 				{
 					if(matrix[i][j] == 1){
 					
-						graphb.append("" + compResults.getServices().get(i).getMyID() + " ->" + compResults.getServices().get(j).getMyID() + ";\n" );
+						graphb.append("" + compResults.getServices().get(i).getMyID() + " -> " + compResults.getServices().get(j).getMyID() + ";\n" );
 						compResults.getServices().get(i).inferior++;
 					}
 					else if(matrix[i][j] == -1){
 					
-						graphb.append("" + compResults.getServices().get(j).getMyID() + " ->" + compResults.getServices().get(i).getMyID() + ";\n" );
+						graphb.append("" + compResults.getServices().get(j).getMyID() + " -> " + compResults.getServices().get(i).getMyID() + ";\n" );
 						compResults.getServices().get(j).inferior++;
 					}
 					else if(matrix[i][j] == 0)
 					{
-						graphb.append("" + compResults.getServices().get(i).getMyID() + " ->" + compResults.getServices().get(j).getMyID() + ";\n" );
-						graphb.append("" + compResults.getServices().get(j).getMyID() + " ->" + compResults.getServices().get(i).getMyID() + ";\n" );
+//						graphb.append("" + compResults.getServices().get(i).getMyID() + " ->" + compResults.getServices().get(j).getMyID() + ";\n" );
+//						graphb.append("" + compResults.getServices().get(j).getMyID() + " ->" + compResults.getServices().get(i).getMyID() + ";\n" );
 						compResults.getServices().get(i).incomparableWith.add(compResults.getServices().get(j));
 						compResults.getServices().get(j).incomparableWith.add(compResults.getServices().get(i));
 					}
