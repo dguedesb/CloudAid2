@@ -1,0 +1,2932 @@
+@prefix :      <http://PricingAPIAmazonElasticLBOfferings.com#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cloudtaxonomy: <http://rdfs.genssiz.org/CloudTaxonomy#> .
+@prefix gr:    <http://purl.org/goodrelations/v1#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix core:  <http://www.linked-usdl.org/ns/usdl-core#> .
+@prefix usdk:  <http://www.linked-usdl.org/ns/usdl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix price: <http://www.linked-usdl.org/ns/usdl-price#> .
+@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix legal: <http://www.linked-usdl.org/ns/usdl-legal#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+:CostperGBProcessedPC-PP_TIME247780873268563
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780873268563" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780873289945 .
+
+:pp-AmazonElasticLB_TIME247780874533504
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780874533504" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780874670775 , :AmazonCostperHperLBPC-PP_TIME247780874553603 .
+
+:gbinTIME247780873362215
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780873362215" .
+
+:qv_TIME247780754346577_195
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:amazonElasticLB_GB_cost_TIME247780875198475
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780875198475" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780875247653_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780875247653
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780875247653_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780875247653_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780875216436_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780875216436
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780875216436_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780875216436_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780875247653_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780875216436_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780875216436 , :gbinTIME247780875247653 .
+
+:qv_TIME247780877259243
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780754235820_281
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754369242_187
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:AmazonElasticLB_TIME247780876426640
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780876426640" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754405163_288 , :qv_TIME247780754217004_280 , :qv_TIME247780754235820_281 , :qv_TIME247780754254636_282 , :qv_TIME247780754273024_283 , :qv_TIME247780754328616_286 , :qv_TIME247780754309801_285 , :qv_TIME247780876445455 , :qv_TIME247780754346577_287 , :qv_TIME247780754291840_284 , :qv_TIME247780754449209_290 , :qv_TIME247780754430821_289 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_279 .
+
+:AmazonlbcostTIME247780874156759
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780874156759" ;
+        price:hasValue  :qv_TIME247780874166167 .
+
+:AmazonCostperHperLBPC-PP_TIME247780875479003
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780875479003" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780875496536 .
+
+:qv_TIME247780754449209_336
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:qv_TIME247780753740620_146
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754291840_215
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780753761146_78
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780753761146_170
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780754217004_280
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:AmazonElasticLB-us-west_TIME247780875449496
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-west_TIME247780875449496" ;
+        core:includes       :AmazonElasticLB_TIME247780875419134 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780875459332 .
+
+:pp-AmazonElasticLB_TIME247780861609126
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780861609126" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780870504766 , :AmazonCostperHperLBPC-PP_TIME247780862883475 .
+
+:usagehoursTIME247780877194670
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780877194670" .
+
+:AmazonElasticLB-eu-ireland_TIME247780875888676
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-eu-ireland_TIME247780875888676" ;
+        core:includes       :AmazonElasticLB_TIME247780875857887 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780875898512 .
+
+:qv_TIME247780754127629_59
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:AmazonLBGBcostTIME247780876819207
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780876819207" ;
+        price:hasValue  :qv_TIME247780876830754 .
+
+:qv_TIME247780753761146_9
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:AmazonElasticLB_TIME247780874489886
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780874489886" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754346577_195 , :qv_TIME247780754291840_192 , :qv_TIME247780754273024_191 , :qv_TIME247780754217004_188 , :qv_TIME247780754405163_196 , :qv_TIME247780754254636_190 , :qv_TIME247780754430821_197 , :qv_TIME247780754449209_198 , :qv_TIME247780754235820_189 , :qv_TIME247780754309801_193 , :qv_TIME247780874501860 , :qv_TIME247780754328616_194 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_187 .
+
+:qv_TIME247780753718383_99
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754405163_357
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780875868150
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "eu-ireland" .
+
+:qv_TIME247780754235820_235
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:AmazonCostperHperLBPC-PP_TIME247780871547337
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780871547337" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780871573850 .
+
+:qv_TIME247780871172302
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:amazonElasticLB_GB_cost_TIME247780875613708
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780875613708" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780875665879_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780875665879
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780875665879_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780875665879_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780875634234_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780875634234
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780875634234_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780875634234_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780875665879_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780875634234_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780875634234 , :gbinTIME247780875665879 .
+
+:AmazonElasticLB-eu-ireland_TIME247780872071616
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-eu-ireland_TIME247780872071616" ;
+        core:includes       :AmazonElasticLB_TIME247780872029280 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780872086156 .
+
+:qv_TIME247780754042102_141
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:amazonElasticLB_lb_cost_TIME247780870993979
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780870993979" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780871018354_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780871018354
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780871018354_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780871018354_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780871083782_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780871083782
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780871083782_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780871083782_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780871059834_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780871059834
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780871059834_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780871059834_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780871018354_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780871083782_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780871059834_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780871018354 , :usagehoursTIME247780871083782 , :amazonnlbTIME247780871059834 .
+
+:qv_TIME247780754328616_355
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780877469211
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-syd" .
+
+:gbinTIME247780871200098
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780871200098" .
+
+:qv_TIME247780872168261
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:usagehoursTIME247780876746510
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780876746510" .
+
+:qv_TIME247780754235820_189
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:gbinTIME247780875247653
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780875247653" .
+
+:qv_TIME247780753761146_124
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:gbinTIME247780876093940
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780876093940" .
+
+:qv_TIME247780754217004_234
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780754254636_213
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:amazonElasticLB_lb_cost_TIME247780873671395
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780873671395" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780873691493_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780873691493
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780873691493_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780873691493_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780873746658_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780873746658
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780873746658_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780873746658_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780873727842_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780873727842
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780873727842_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780873727842_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780873691493_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780873746658_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780873727842_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780873691493 , :usagehoursTIME247780873746658 , :amazonnlbTIME247780873727842 .
+
+:AmazonElasticLB-sa-east-1_TIME247780877944312
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-sa-east-1_TIME247780877944312" ;
+        core:includes       :AmazonElasticLB_TIME247780877912240 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780877954148 .
+
+:AmazonlbcostTIME247780878021714
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780878021714" ;
+        price:hasValue  :qv_TIME247780878032405 .
+
+:amazonElasticLB_lb_cost_TIME247780875093277
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780875093277" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875111238_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780875111238
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875111238_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780875111238_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780875161699_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780875161699
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780875161699_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780875161699_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875143738_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780875143738
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875143738_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780875143738_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780875111238_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780875161699_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780875143738_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780875111238 , :usagehoursTIME247780875161699 , :amazonnlbTIME247780875143738 .
+
+:qv_TIME247780754430821_312
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780754217004_188
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:CostperGBProcessedPC-PP_TIME247780875596175
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780875596175" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780875613708 .
+
+:qv_TIME247780753696574_144
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:gbinTIME247780872842640
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780872842640" .
+
+:qv_TIME247780753812462_149
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:qv_TIME247780754127629_151
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780875965223
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:qv_TIME247780871611910
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:gbinTIME247780877723653
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780877723653" .
+
+:qv_TIME247780754430821_266
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780754151576_60
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780754328616_309
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780754449209_221
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:AmazonCostperHperLBPC-PP_TIME247780874553603
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780874553603" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780874575840 .
+
+:qv_TIME247780754273024_283
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780876830754
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780754291840_353
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:amazonElasticLB_GB_cost_TIME247780873289945
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780873289945" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780873362215_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780873362215
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780873362215_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780873362215_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780873311327_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780873311327
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780873311327_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780873311327_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780873362215_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780873311327_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780873311327 , :gbinTIME247780873362215 .
+
+:qv_TIME247780753788515_79
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780877053551
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-tokyo" .
+
+:qv_TIME247780754096839_58
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:AmazonElasticLB-apac-sin_TIME247780876522857
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-sin_TIME247780876522857" ;
+        core:includes       :AmazonElasticLB_TIME247780876426640 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780876538252 .
+
+:qv_TIME247780753718383_30
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754346577_333
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:pp-AmazonElasticLB_TIME247780872578362
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780872578362" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780872756686 , :AmazonCostperHperLBPC-PP_TIME247780872622409 .
+
+:qv_TIME247780877700989
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780754369242_325
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780753665356_74
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754309801_262
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:AmazonElasticLB_TIME247780877912240
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780877912240" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754291840_353 , :qv_TIME247780754309801_354 , :qv_TIME247780754328616_355 , :qv_TIME247780877923786 , :qv_TIME247780754430821_358 , :qv_TIME247780754346577_356 , :qv_TIME247780754405163_357 , :qv_TIME247780754254636_351 , :qv_TIME247780754449209_359 , :qv_TIME247780754273024_352 , :qv_TIME247780754217004_349 , :qv_TIME247780754235820_350 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_348 .
+
+:qv_TIME247780754346577_287
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:CostperGBProcessedPC-PP_TIME247780877213914
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780877213914" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780877231874 .
+
+:qv_TIME247780754405163_242
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754127629_105
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:AmazonlbcostTIME247780873186885
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780873186885" ;
+        price:hasValue  :qv_TIME247780873197149 .
+
+:qv_TIME247780751216725_50
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:amazonElasticLB_lb_cost_TIME247780877994345
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780877994345" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780878021714_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780878021714
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780878021714_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780878021714_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780878076023_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780878076023
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780878076023_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780878076023_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780878058063_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780878058063
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780878058063_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780878058063_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780878021714_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780878076023_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780878058063_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780878021714 , :usagehoursTIME247780878076023 , :amazonnlbTIME247780878058063 .
+
+:AmazonlbcostTIME247780871018354
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780871018354" ;
+        price:hasValue  :qv_TIME247780871030755 .
+
+:qv_TIME247780876445455
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-sin" .
+
+:qv_TIME247780754369242_279
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780754151576_14
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780753696574_52
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780870572332
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:amazonnlbTIME247780876699898
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780876699898" .
+
+:pp-AmazonElasticLB_TIME247780875898512
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780875898512" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780876025091 , :AmazonCostperHperLBPC-PP_TIME247780875919466 .
+
+:pp-AmazonElasticLB_TIME247780877954148
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780877954148" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780878095267 , :AmazonCostperHperLBPC-PP_TIME247780877974674 .
+
+:AmazonElasticLB-us-west_TIME247780871494310
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-west_TIME247780871494310" ;
+        core:includes       :AmazonElasticLB_TIME247780871448554 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780871514837 .
+
+:qv_TIME247780754273024_237
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754405163_196
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754328616_240
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780872813561
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780753665356_120
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754291840_307
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:amazonElasticLB_GB_cost_TIME247780873791560
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780873791560" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780873848863_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780873848863
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780873848863_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780873848863_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780873813369_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780873813369
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780873813369_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780873813369_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780873848863_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780873813369_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780873813369 , :gbinTIME247780873848863 .
+
+:qv_TIME247780874726795
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780870894340
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-west-2" .
+
+:qv_TIME247780753788515_102
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:AmazonCostperHperLBPC-PP_TIME247780872622409
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780872622409" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780872651915 .
+
+:qv_TIME247780753718383_122
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754254636_351
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:CostperGBProcessedPC-PP_TIME247780872756686
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780872756686" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780872775502 .
+
+:qv_TIME247780754096839_173
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:AmazonElasticLB-us-east_TIME247780860554153
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-east_TIME247780860554153" ;
+        core:includes       :AmazonElasticLB_TIME247780859404246 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780861609126 .
+
+:qv_TIME247780753665356_5
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:gbinTIME247780870614668
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780870614668" .
+
+:qv_TIME247780754328616_194
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780753665356_28
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754309801_216
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:AmazonlbcostTIME247780875111238
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780875111238" ;
+        price:hasValue  :qv_TIME247780875120646 .
+
+:CostperGBProcessedPC-PP_TIME247780874670775
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780874670775" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780874692157 .
+
+:qv_TIME247780754235820_327
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780874279490
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.011"^^xsd:double .
+
+:AmazonlbcostTIME247780872151156
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780872151156" ;
+        price:hasValue  :qv_TIME247780872168261 .
+
+:qv_TIME247780753788515_10
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:amazonElasticLB_lb_cost_TIME247780872651915
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780872651915" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780872677146_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780872677146
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780872677146_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780872677146_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780872735732_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780872735732
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780872735732_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780872735732_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780872716488_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780872716488
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780872716488_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780872716488_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780872677146_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780872735732_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780872716488_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780872677146 , :usagehoursTIME247780872735732 , :amazonnlbTIME247780872716488 .
+
+:amazonElasticLB_lb_cost_TIME247780874575840
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780874575840" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780874595084_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780874595084
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780874595084_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780874595084_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780874646827_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780874646827
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780874646827_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780874646827_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780874628439_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780874628439
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780874628439_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780874628439_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780874595084_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780874646827_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780874628439_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780874595084 , :usagehoursTIME247780874646827 , :amazonnlbTIME247780874628439 .
+
+:AmazonLBGBcostTIME247780872283295
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780872283295" ;
+        price:hasValue  :qv_TIME247780872293558 .
+
+:CostperGBProcessedPC-PP_TIME247780878095267
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780878095267" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780878113655 .
+
+:qv_TIME247780753740620_54
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780753812462_11
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:AmazonlbcostTIME247780869547293
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780869547293" ;
+        price:hasValue  :qv_TIME247780869564826 .
+
+:qv_TIME247780754217004_326
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780754254636_305
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:gbinTIME247780871789378
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780871789378" .
+
+:qv_TIME247780754096839_127
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:usagehoursTIME247780874646827
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780874646827" .
+
+:qv_TIME247780875120646
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.025"^^xsd:double .
+
+:qv_TIME247780875429397
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-west" .
+
+:qv_TIME247780754151576_175
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780754127629_82
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780875225844
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:AmazonElasticLB_TIME247780877042860
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780877042860" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754430821_312 , :qv_TIME247780754235820_304 , :qv_TIME247780754254636_305 , :qv_TIME247780877053551 , :qv_TIME247780754328616_309 , :qv_TIME247780754309801_308 , :qv_TIME247780754291840_307 , :qv_TIME247780754217004_303 , :qv_TIME247780754405163_311 , :qv_TIME247780754273024_306 , :qv_TIME247780754346577_310 , :qv_TIME247780754449209_313 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_302 .
+
+:usagehoursTIME247780876005848
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780876005848" .
+
+:AmazonCostperHperLBPC-PP_TIME247780862883475
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780862883475" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780868104884 .
+
+:qv_TIME247780754369242_210
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:gbinTIME247780874302582
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780874302582" .
+
+:qv_TIME247780754291840_192
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754254636_259
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780878032405
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.034"^^xsd:double .
+
+:AmazonCostperHperLBPC-PP_TIME247780877974674
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780877974674" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780877994345 .
+
+:usagehoursTIME247780872219578
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780872219578" .
+
+:AmazonElasticLB-sa-east-1_TIME247780874087482
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-sa-east-1_TIME247780874087482" ;
+        core:includes       :AmazonElasticLB_TIME247780874044291 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780874098173 .
+
+:AmazonlbcostTIME247780877142071
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780877142071" ;
+        price:hasValue  :qv_TIME247780877153190 .
+
+:AmazonLBGBcostTIME247780870559075
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780870559075" ;
+        price:hasValue  :qv_TIME247780870572332 .
+
+:AmazonElasticLB-apac-sin_TIME247780872561685
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-sin_TIME247780872561685" ;
+        core:includes       :AmazonElasticLB_TIME247780872526619 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780872578362 .
+
+:qv_TIME247780753740620_8
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754430821_358
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780751216725_165
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:AmazonLBGBcostTIME247780875216436
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780875216436" ;
+        price:hasValue  :qv_TIME247780875225844 .
+
+:qv_TIME247780754449209_313
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:qv_TIME247780753740620_123
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780873076128
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-tokyo" .
+
+:qv_TIME247780753761146_55
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780751216725_4
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:usagehoursTIME247780878076023
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780878076023" .
+
+:AmazonElasticLB-apac-tokyo_TIME247780877074077
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-tokyo_TIME247780877074077" ;
+        core:includes       :AmazonElasticLB_TIME247780877042860 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780877084340 .
+
+:qv_TIME247780754449209_267
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:qv_TIME247780873335702
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780754151576_129
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780754127629_36
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:amazonElasticLB_GB_cost_TIME247780878113655
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780878113655" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780878164116_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780878164116
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780878164116_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780878164116_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780878131616_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780878131616
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780878131616_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780878131616_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780878164116_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780878131616_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780878131616 , :gbinTIME247780878164116 .
+
+:qv_TIME247780754309801_354
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780874166167
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.034"^^xsd:double .
+
+:qv_TIME247780874501860
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-east" .
+
+:qv_TIME247780753718383_76
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754405163_334
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754254636_190
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:gbinTIME247780875665879
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780875665879" .
+
+:AmazonlbcostTIME247780876632331
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780876632331" ;
+        price:hasValue  :qv_TIME247780876655851 .
+
+:AmazonCostperHperLBPC-PP_TIME247780872109676
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780872109676" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780872130202 .
+
+:qv_TIME247780753812462_172
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:amazonElasticLB_GB_cost_TIME247780874246562
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780874246562" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780874302582_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780874302582
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780874302582_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780874302582_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780874268799_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780874268799
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780874268799_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780874268799_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780874302582_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780874268799_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780874268799 , :gbinTIME247780874302582 .
+
+:AmazonlbcostTIME247780872677146
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780872677146" ;
+        price:hasValue  :qv_TIME247780872689547 .
+
+:pp-AmazonElasticLB_TIME247780870941808
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780870941808" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780871110723 , :AmazonCostperHperLBPC-PP_TIME247780870970031 .
+
+:qv_TIME247780754235820_212
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780751216725_119
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780871759871
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780872689547
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:amazonnlbTIME247780875556832
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780875556832" .
+
+:AmazonElasticLB-us-west-2_TIME247780870926840
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-west-2_TIME247780870926840" ;
+        core:includes       :AmazonElasticLB_TIME247780870878518 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780870941808 .
+
+:AmazonLBGBcostTIME247780874268799
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780874268799" ;
+        price:hasValue  :qv_TIME247780874279490 .
+
+:qv_TIME247780754273024_329
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780753696574_6
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780754405163_288
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754328616_332
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780751216725_96
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:AmazonLBGBcostTIME247780877692008
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780877692008" ;
+        price:hasValue  :qv_TIME247780877700989 .
+
+:AmazonElasticLB-us-east_TIME247780874522814
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-east_TIME247780874522814" ;
+        core:includes       :AmazonElasticLB_TIME247780874489886 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780874533504 .
+
+:qv_TIME247780872538165
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-sin" .
+
+:amazonElasticLB_lb_cost_TIME247780875496536
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780875496536" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875514497_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780875514497
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875514497_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780875514497_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780875576503_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780875576503
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780875576503_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780875576503_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875556832_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780875556832
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875556832_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780875556832_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780875514497_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780875576503_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780875556832_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780875514497 , :usagehoursTIME247780875576503 , :amazonnlbTIME247780875556832 .
+
+:qv_TIME247780753761146_101
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780753696574_98
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780754217004_211
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780754096839_81
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:AmazonElasticLB_TIME247780872526619
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780872526619" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754096839_104 , :qv_TIME247780753812462_103 , :qv_TIME247780753788515_102 , :qv_TIME247780751216725_96 , :qv_TIME247780753665356_97 , :qv_TIME247780753761146_101 , :qv_TIME247780754127629_105 , :qv_TIME247780753718383_99 , :qv_TIME247780872538165 , :qv_TIME247780754151576_106 , :qv_TIME247780753740620_100 , :qv_TIME247780753696574_98 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_95 .
+
+:qv_TIME247780754328616_286
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:gbinTIME247780878164116
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780878164116" .
+
+:AmazonElasticLB_TIME247780874997915
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780874997915" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754328616_217 , :qv_TIME247780754430821_220 , :qv_TIME247780754449209_221 , :qv_TIME247780754291840_215 , :qv_TIME247780754217004_211 , :qv_TIME247780754309801_216 , :qv_TIME247780754346577_218 , :qv_TIME247780754273024_214 , :qv_TIME247780754254636_213 , :qv_TIME247780875018014 , :qv_TIME247780754405163_219 , :qv_TIME247780754235820_212 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_210 .
+
+:CostperGBProcessedPC-PP_TIME247780877656515
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780877656515" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780877674048 .
+
+:qv_TIME247780754309801_308
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780753665356_166
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780753718383_7
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754042102_95
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780876069993
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780753788515_148
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:CostperGBProcessedPC-PP_TIME247780876025091
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780876025091" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780876043052 .
+
+:AmazonCostperHperLBPC-PP_TIME247780870970031
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780870970031" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780870993979 .
+
+:qv_TIME247780753718383_168
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780753696574_121
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780753812462_126
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:qv_TIME247780871462238
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-west" .
+
+:qv_TIME247780754430821_243
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:pp-AmazonElasticLB_TIME247780876538252
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780876538252" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780876777727 , :AmazonCostperHperLBPC-PP_TIME247780876569469 .
+
+:qv_TIME247780874604919
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.025"^^xsd:double .
+
+:amazonElasticLB_GB_cost_TIME247780877674048
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780877674048" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780877723653_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780877723653
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780877723653_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780877723653_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780877692008_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780877692008
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780877692008_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780877692008_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780877723653_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780877692008_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780877692008 , :gbinTIME247780877723653 .
+
+:amazonnlbTIME247780877176709
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780877176709" .
+
+:qv_TIME247780873701329
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:qv_TIME247780754273024_260
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:pp-AmazonElasticLB_TIME247780873114188
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780873114188" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780873268563 , :AmazonCostperHperLBPC-PP_TIME247780873144977 .
+
+:qv_TIME247780754291840_330
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:amazonnlbTIME247780875143738
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780875143738" .
+
+:qv_TIME247780753788515_56
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780754096839_35
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:CostperGBProcessedPC-PP_TIME247780874228174
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780874228174" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780874246562 .
+
+:qv_TIME247780754430821_197
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:AmazonLBGBcostTIME247780873311327
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780873311327" ;
+        price:hasValue  :qv_TIME247780873335702 .
+
+:AmazonCostperHperLBPC-PP_TIME247780875919466
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780875919466" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780875938282 .
+
+:qv_TIME247780754346577_310
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:amazonnlbTIME247780870427792
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780870427792" .
+
+:qv_TIME247780753812462_57
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:qv_TIME247780754042102_49
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:usagehoursTIME247780875576503
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780875576503" .
+
+:qv_TIME247780872041682
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "eu-ireland" .
+
+:qv_TIME247780754369242_302
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780753665356_51
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754291840_284
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:usagehoursTIME247780871083782
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780871083782" .
+
+:AmazonLBGBcostTIME247780878131616
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780878131616" ;
+        price:hasValue  :qv_TIME247780878141024 .
+
+:qv_TIME247780754346577_264
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:CostperGBProcessedPC-PP_TIME247780870504766
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780870504766" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780870532562 .
+
+:amazonElasticLB_GB_cost_TIME247780871711121
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780871711121" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780871789378_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780871789378
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780871789378_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780871789378_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780871735496_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780871735496
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780871735496_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780871735496_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780871789378_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780871735496_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780871735496 , :gbinTIME247780871789378 .
+
+:AmazonlbcostTIME247780875514497
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780875514497" ;
+        price:hasValue  :qv_TIME247780875523904 .
+
+:AmazonLBGBcostTIME247780871735496
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780871735496" ;
+        price:hasValue  :qv_TIME247780871759871 .
+
+:AmazonlbcostTIME247780871598226
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780871598226" ;
+        price:hasValue  :qv_TIME247780871611910 .
+
+:qv_TIME247780754235820_350
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754369242_256
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780754309801_193
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780869564826
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.025"^^xsd:double .
+
+:gbinTIME247780873848863
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780873848863" .
+
+:qv_TIME247780873583730
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "apac-syd" .
+
+:qv_TIME247780871030755
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.025"^^xsd:double .
+
+:qv_TIME247780754273024_214
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:usagehoursTIME247780871662798
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780871662798" .
+
+:amazonElasticLB_lb_cost_TIME247780871573850
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780871573850" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780871598226_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780871598226
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780871598226_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780871598226_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780871662798_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780871662798
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780871662798_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780871662798_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780871640561_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780871640561
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780871640561_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780871640561_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780871598226_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780871662798_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780871640561_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780871598226 , :usagehoursTIME247780871662798 , :amazonnlbTIME247780871640561 .
+
+:qv_TIME247780876655851
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:usagehoursTIME247780873246754
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780873246754" .
+
+:qv_TIME247780875643642
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:AmazonCostperHperLBPC-PP_TIME247780877540198
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780877540198" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780877560297 .
+
+:AmazonLBGBcostTIME247780873813369
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780873813369" ;
+        price:hasValue  :qv_TIME247780873823632 .
+
+:amazonnlbTIME247780877611185
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780877611185" .
+
+:amazonElasticLB_GB_cost_TIME247780872260630
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780872260630" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780872319216_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780872319216
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780872319216_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780872319216_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780872283295_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780872283295
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780872283295_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780872283295_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780872319216_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780872283295_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780872283295 , :gbinTIME247780872319216 .
+
+:qv_TIME247780754096839_150
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754449209_359
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:qv_TIME247780753740620_169
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780875018014
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-west-2" .
+
+:amazonElasticLB_GB_cost_TIME247780871133815
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780871133815" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780871200098_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780871200098
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780871200098_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780871200098_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780871159901_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780871159901
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780871159901_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780871159901_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780871200098_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780871159901_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780871159901 , :gbinTIME247780871200098 .
+
+:qv_TIME247780754291840_238
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:amazonnlbTIME247780875987887
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780875987887" .
+
+:AmazonLBGBcostTIME247780875634234
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780875634234" ;
+        price:hasValue  :qv_TIME247780875643642 .
+
+:qv_TIME247780754346577_218
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:AmazonElasticLB_TIME247780875419134
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780875419134" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754328616_240 , :qv_TIME247780754273024_237 , :qv_TIME247780754291840_238 , :qv_TIME247780754430821_243 , :qv_TIME247780754254636_236 , :qv_TIME247780754449209_244 , :qv_TIME247780754346577_241 , :qv_TIME247780754235820_235 , :qv_TIME247780754217004_234 , :qv_TIME247780875429397 , :qv_TIME247780754405163_242 , :qv_TIME247780754309801_239 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_233 .
+
+:qv_TIME247780754254636_282
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:usagehoursTIME247780872735732
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780872735732" .
+
+:CostperGBProcessedPC-PP_TIME247780871687173
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780871687173" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780871711121 .
+
+:AmazonLBGBcostTIME247780877249835
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780877249835" ;
+        price:hasValue  :qv_TIME247780877259243 .
+
+:amazonnlbTIME247780872199051
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780872199051" .
+
+:qv_TIME247780754235820_304
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:pp-AmazonElasticLB_TIME247780875055645
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780875055645" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780875180942 , :AmazonCostperHperLBPC-PP_TIME247780875075317 .
+
+:pp-AmazonElasticLB_TIME247780875459332
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780875459332" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780875596175 , :AmazonCostperHperLBPC-PP_TIME247780875479003 .
+
+:usagehoursTIME247780877629146
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780877629146" .
+
+:pp-AmazonElasticLB_TIME247780874098173
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780874098173" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780874228174 , :AmazonCostperHperLBPC-PP_TIME247780874118700 .
+
+:AmazonElasticLB_TIME247780873057740
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780873057740" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780753718383_122 , :qv_TIME247780754096839_127 , :qv_TIME247780753812462_126 , :qv_TIME247780754151576_129 , :qv_TIME247780753740620_123 , :qv_TIME247780873076128 , :qv_TIME247780753696574_121 , :qv_TIME247780753665356_120 , :qv_TIME247780754127629_128 , :qv_TIME247780751216725_119 , :qv_TIME247780753788515_125 , :qv_TIME247780753761146_124 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_118 .
+
+:AmazonElasticLB-apac-syd_TIME247780873607677
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-syd_TIME247780873607677" ;
+        core:includes       :AmazonElasticLB_TIME247780873571756 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780873624355 .
+
+:qv_TIME247780753740620_31
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754235820_258
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:CostperGBProcessedPC-PP_TIME247780873772744
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780873772744" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780873791560 .
+
+:qv_TIME247780754217004_303
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780877923786
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "sa-east-1" .
+
+:qv_TIME247780754096839_104
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:usagehoursTIME247780873746658
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780873746658" .
+
+:qv_TIME247780754042102_164
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780754449209_290
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:AmazonElasticLB_TIME247780873571756
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780873571756" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780873583730 , :qv_TIME247780753788515_148 , :qv_TIME247780754127629_151 , :qv_TIME247780754151576_152 , :qv_TIME247780753761146_147 , :qv_TIME247780753812462_149 , :qv_TIME247780753696574_144 , :qv_TIME247780753718383_145 , :qv_TIME247780753740620_146 , :qv_TIME247780753665356_143 , :qv_TIME247780751216725_142 , :qv_TIME247780754096839_150 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_141 .
+
+:qv_TIME247780754151576_152
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:AmazonElasticLB-apac-tokyo_TIME247780873101786
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-tokyo_TIME247780873101786" ;
+        core:includes       :AmazonElasticLB_TIME247780873057740 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780873114188 .
+
+:qv_TIME247780753761146_147
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:amazonElasticLB_lb_cost_TIME247780874137515
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780874137515" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780874156759_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780874156759
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780874156759_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780874156759_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780874208503_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780874208503
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780874208503_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780874208503_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780874189687_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780874189687
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780874189687_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780874189687_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780874156759_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780874208503_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780874189687_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780874156759 , :usagehoursTIME247780874208503 , :amazonnlbTIME247780874189687 .
+
+:qv_TIME247780754217004_257
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:AmazonlbcostTIME247780875955815
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780875955815" ;
+        price:hasValue  :qv_TIME247780875965223 .
+
+:qv_TIME247780754254636_236
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:amazonnlbTIME247780872716488
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780872716488" .
+
+:gbinTIME247780872319216
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780872319216" .
+
+:AmazonLBGBcostTIME247780872796028
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780872796028" ;
+        price:hasValue  :qv_TIME247780872813561 .
+
+:amazonElasticLB_lb_cost_TIME247780873164648
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780873164648" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780873186885_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780873186885
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780873186885_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780873186885_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780873246754_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780873246754
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780873246754_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780873246754_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780873224089_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780873224089
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780873224089_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780873224089_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780873186885_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780873246754_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780873224089_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780873186885 , :usagehoursTIME247780873246754 , :amazonnlbTIME247780873224089 .
+
+:qv_TIME247780754430821_335
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780751216725_142
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780753696574_167
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:amazonElasticLB_GB_cost_TIME247780877231874
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780877231874" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780877286611_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780877286611
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780877286611_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780877286611_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780877249835_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780877249835
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780877249835_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780877249835_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780877286611_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780877249835_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780877249835 , :gbinTIME247780877286611 .
+
+:CostperGBProcessedPC-PP_TIME247780871110723
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780871110723" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780871133815 .
+
+:pp-AmazonElasticLB_TIME247780877084340
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780877084340" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780877213914 , :AmazonCostperHperLBPC-PP_TIME247780877104439 .
+
+:qv_TIME247780754273024_352
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780753740620_100
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:CostperGBProcessedPC-PP_TIME247780875180942
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780875180942" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780875198475 .
+
+:AmazonLBGBcostTIME247780874714394
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780874714394" ;
+        price:hasValue  :qv_TIME247780874726795 .
+
+:qv_TIME247780754127629_174
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:amazonElasticLB_lb_cost_TIME247780868104884
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780868104884" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780869547293_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780869547293
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780869547293_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780869547293_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780870464141_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780870464141
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780870464141_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780870464141_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780870427792_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780870427792
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780870427792_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780870427792_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780869547293_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780870464141_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780870427792_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780869547293 , :usagehoursTIME247780870464141 , :amazonnlbTIME247780870427792 .
+
+:amazonnlbTIME247780878058063
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780878058063" .
+
+:qv_TIME247780753761146_32
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:qv_TIME247780754430821_289
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:pp-AmazonElasticLB_TIME247780877500428
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780877500428" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780877656515 , :AmazonCostperHperLBPC-PP_TIME247780877540198 .
+
+:AmazonCostperHperLBPC-PP_TIME247780873652579
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780873652579" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780873671395 .
+
+:qv_TIME247780754151576_83
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:amazonElasticLB_lb_cost_TIME247780877122400
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780877122400" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780877142071_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780877142071
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780877142071_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780877142071_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780877194670_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780877194670
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780877194670_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780877194670_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780877176709_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780877176709
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780877176709_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780877176709_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780877142071_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780877194670_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780877176709_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780877142071 , :usagehoursTIME247780877194670 , :amazonnlbTIME247780877176709 .
+
+:usagehoursTIME247780874208503
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780874208503" .
+
+:qv_TIME247780754042102_118
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:pp-AmazonElasticLB_TIME247780872086156
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780872086156" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780872240959 , :AmazonCostperHperLBPC-PP_TIME247780872109676 .
+
+:amazonElasticLB_lb_cost_TIME247780877560297
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780877560297" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780877578685_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780877578685
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780877578685_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780877578685_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780877629146_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780877629146
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780877629146_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780877629146_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780877611185_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780877611185
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780877611185_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780877611185_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780877578685_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780877629146_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780877611185_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780877578685 , :usagehoursTIME247780877629146 , :amazonnlbTIME247780877611185 .
+
+:qv_TIME247780754042102_3
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780754449209_244
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:qv_TIME247780754151576_106
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780754127629_13
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:AmazonCostperHperLBPC-PP_TIME247780875075317
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780875075317" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780875093277 .
+
+:AmazonElasticLB_TIME247780871448554
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780871448554" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780753718383_53 , :qv_TIME247780753696574_52 , :qv_TIME247780753812462_57 , :qv_TIME247780753740620_54 , :qv_TIME247780753761146_55 , :qv_TIME247780753665356_51 , :qv_TIME247780751216725_50 , :qv_TIME247780753788515_56 , :qv_TIME247780754151576_60 , :qv_TIME247780754096839_58 , :qv_TIME247780871462238 , :qv_TIME247780754127629_59 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_49 .
+
+:qv_TIME247780754309801_331
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:amazonnlbTIME247780873727842
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780873727842" .
+
+:AmazonlbcostTIME247780873691493
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780873691493" ;
+        price:hasValue  :qv_TIME247780873701329 .
+
+:AmazonElasticLB_TIME247780872029280
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780872029280" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780753812462_80 , :qv_TIME247780753696574_75 , :qv_TIME247780872041682 , :qv_TIME247780753665356_74 , :qv_TIME247780753788515_79 , :qv_TIME247780754127629_82 , :qv_TIME247780754096839_81 , :qv_TIME247780753761146_78 , :qv_TIME247780753740620_77 , :qv_TIME247780753718383_76 , :qv_TIME247780754151576_83 , :qv_TIME247780751216725_73 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_72 .
+
+:qv_TIME247780873823632
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780753788515_171
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780872293558
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.008"^^xsd:double .
+
+:qv_TIME247780753718383_53
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754346577_356
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:AmazonElasticLB-apac-syd_TIME247780877490165
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-apac-syd_TIME247780877490165" ;
+        core:includes       :AmazonElasticLB_TIME247780877458948 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780877500428 .
+
+:qv_TIME247780754405163_311
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754449209_198
+        a           cloudtaxonomy:Windows , gr:QuantitativeValue ;
+        rdfs:label  "Windows" .
+
+:AmazonElasticLB_TIME247780859404246
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780859404246" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754096839_12 , :qv_TIME247780754151576_14 , :qv_TIME247780753761146_9 , :qv_TIME247780753696574_6 , :qv_TIME247780754127629_13 , :qv_TIME247780753740620_8 , :qv_TIME247780751216725_4 , :qv_TIME247780753812462_11 , :qv_TIME247780753718383_7 , :qv_TIME247780753788515_10 , :qv_TIME247780859422634 , :qv_TIME247780753665356_5 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_3 .
+
+:qv_TIME247780877588093
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:qv_TIME247780754369242_348
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780753665356_97
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:qv_TIME247780754309801_285
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:AmazonElasticLB_TIME247780874044291
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780874044291" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754151576_175 , :qv_TIME247780753761146_170 , :qv_TIME247780753812462_172 , :qv_TIME247780754096839_173 , :qv_TIME247780753740620_169 , :qv_TIME247780753665356_166 , :qv_TIME247780751216725_165 , :qv_TIME247780753718383_168 , :qv_TIME247780754127629_174 , :qv_TIME247780874060541 , :qv_TIME247780753696574_167 , :qv_TIME247780753788515_171 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_164 .
+
+:amazonElasticLB_GB_cost_TIME247780876800819
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780876800819" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780876855556_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780876855556
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780876855556_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780876855556_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780876819207_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780876819207
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780876819207_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780876819207_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780876855556_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780876819207_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780876819207 , :gbinTIME247780876855556 .
+
+:qv_TIME247780754273024_306
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:qv_TIME247780754405163_265
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780754127629_128
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:qv_TIME247780751216725_73
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:amazonElasticLB_GB_cost_TIME247780872775502
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780872775502" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780872842640_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780872842640
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780872842640_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780872842640_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780872796028_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780872796028
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780872796028_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780872796028_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780872842640_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780872796028_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780872796028 , :gbinTIME247780872842640 .
+
+:gbinTIME247780877286611
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780877286611" .
+
+:AmazonElasticLB-us-west-2_TIME247780875045382
+        a                   core:ServiceOffering ;
+        rdfs:label          "AmazonElasticLB-us-west-2_TIME247780875045382" ;
+        core:includes       :AmazonElasticLB_TIME247780874997915 ;
+        price:hasPricePlan  :pp-AmazonElasticLB_TIME247780875055645 .
+
+:amazonElasticLB_GB_cost_TIME247780874692157
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780874692157" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780874751170_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780874751170
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780874751170_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780874751170_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780874714394_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780874714394
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780874714394_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780874714394_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780874751170_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780874714394_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780874714394 , :gbinTIME247780874751170 .
+
+:qv_TIME247780754151576_37
+        a           cloudtaxonomy:Unix , gr:QuantitativeValue ;
+        rdfs:label  "Linux" .
+
+:qv_TIME247780753696574_75
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780859422634
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "us-east" .
+
+:AmazonCostperHperLBPC-PP_TIME247780876569469
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780876569469" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780876597693 .
+
+:AmazonElasticLB_TIME247780875857887
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780875857887" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754217004_257 , :qv_TIME247780875868150 , :qv_TIME247780754254636_259 , :qv_TIME247780754346577_264 , :qv_TIME247780754449209_267 , :qv_TIME247780754309801_262 , :qv_TIME247780754291840_261 , :qv_TIME247780754273024_260 , :qv_TIME247780754430821_266 , :qv_TIME247780754235820_258 , :qv_TIME247780754405163_265 , :qv_TIME247780754328616_263 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_256 .
+
+:AmazonLBGBcostTIME247780871159901
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780871159901" ;
+        price:hasValue  :qv_TIME247780871172302 .
+
+:AmazonElasticLB_TIME247780870878518
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780870878518" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780753812462_34 , :qv_TIME247780753740620_31 , :qv_TIME247780753696574_29 , :qv_TIME247780754151576_37 , :qv_TIME247780753718383_30 , :qv_TIME247780754127629_36 , :qv_TIME247780753761146_32 , :qv_TIME247780754096839_35 , :qv_TIME247780753788515_33 , :qv_TIME247780751216725_27 , :qv_TIME247780870894340 , :qv_TIME247780753665356_28 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754042102_26 .
+
+:qv_TIME247780754328616_263
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:AmazonCostperHperLBPC-PP_TIME247780874118700
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780874118700" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780874137515 .
+
+:qv_TIME247780753665356_143
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTP" .
+
+:usagehoursTIME247780870464141
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780870464141" .
+
+:qv_TIME247780753812462_80
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:qv_TIME247780754042102_72
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:amazonElasticLB_lb_cost_TIME247780876597693
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780876597693" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780876632331_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780876632331
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780876632331_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780876632331_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780876746510_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780876746510
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780876746510_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780876746510_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780876699898_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780876699898
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780876699898_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780876699898_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780876632331_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780876746510_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780876699898_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780876632331 , :usagehoursTIME247780876746510 , :amazonnlbTIME247780876699898 .
+
+:qv_TIME247780874060541
+        a           cloudtaxonomy:Location , gr:QuantitativeValue ;
+        rdfs:label  "sa-east-1" .
+
+:qv_TIME247780753788515_125
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:gbinTIME247780876855556
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780876855556" .
+
+:CostperGBProcessedPC-PP_TIME247780872240959
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780872240959" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780872260630 .
+
+:amazonnlbTIME247780871059834
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780871059834" .
+
+:qv_TIME247780753718383_145
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:AmazonElasticLB_TIME247780877458948
+        a           core:Service ;
+        rdfs:label  "AmazonElasticLB_TIME247780877458948" ;
+        gr:qualitativeProductOrServiceProperty
+                :qv_TIME247780754430821_335 , :qv_TIME247780754273024_329 , :qv_TIME247780754328616_332 , :qv_TIME247780877469211 , :qv_TIME247780754291840_330 , :qv_TIME247780754309801_331 , :qv_TIME247780754254636_328 , :qv_TIME247780754235820_327 , :qv_TIME247780754405163_334 , :qv_TIME247780754346577_333 , :qv_TIME247780754449209_336 , :qv_TIME247780754217004_326 ;
+        gr:quantitativeProductOrServiceProperty
+                :qv_TIME247780754369242_325 .
+
+:amazonnlbTIME247780873224089
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780873224089" .
+
+:amazonElasticLB_lb_cost_TIME247780872130202
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780872130202" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780872151156_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780872151156
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780872151156_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780872151156_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780872219578_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780872219578
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780872219578_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780872219578_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780872199051_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780872199051
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780872199051_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780872199051_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780872151156_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780872219578_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780872199051_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780872151156 , :usagehoursTIME247780872219578 , :amazonnlbTIME247780872199051 .
+
+:AmazonCostperHperLBPC-PP_TIME247780873144977
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780873144977" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780873164648 .
+
+:qv_TIME247780753812462_103
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:pp-AmazonElasticLB_TIME247780871514837
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780871514837" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780871687173 , :AmazonCostperHperLBPC-PP_TIME247780871547337 .
+
+:amazonElasticLB_GB_cost_TIME247780876043052
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780876043052" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780876093940_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780876093940
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780876093940_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780876093940_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780876060585_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780876060585
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780876060585_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780876060585_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780876093940_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780876060585_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780876060585 , :gbinTIME247780876093940 .
+
+:amazonElasticLB_lb_cost_TIME247780875938282
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_lb_cost_TIME247780875938282" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875955815_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :AmazonlbcostTIME247780875955815
+                                                   ] [ sp:object     [ sp:varName  "AmazonlbcostTIME247780875955815_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "AmazonlbcostTIME247780875955815_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "usagehoursTIME247780876005848_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :usagehoursTIME247780876005848
+                                                       ] [ sp:object     [ sp:varName  "usagehoursTIME247780876005848_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "usagehoursTIME247780876005848_instance"^^xsd:string ]
+                                                         ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875987887_instance"^^xsd:string ] ;
+                                                             sp:predicate  price:hasValue ;
+                                                             sp:subject    :amazonnlbTIME247780875987887
+                                                           ] [ sp:object     [ sp:varName  "amazonnlbTIME247780875987887_value"^^xsd:string ] ;
+                                                               sp:predicate  gr:hasValue ;
+                                                               sp:subject    [ sp:varName  "amazonnlbTIME247780875987887_instance"^^xsd:string ]
+                                                             ] [ a              sp:Bind ;
+                                                                 sp:expression  [ a        sp:mul ;
+                                                                                  sp:arg1  [ a        sp:mul ;
+                                                                                             sp:arg1  [ sp:varName  "AmazonlbcostTIME247780875955815_value"^^xsd:string ] ;
+                                                                                             sp:arg2  [ sp:varName  "usagehoursTIME247780876005848_value"^^xsd:string ]
+                                                                                           ] ;
+                                                                                  sp:arg2  [ sp:varName  "amazonnlbTIME247780875987887_value"^^xsd:string ]
+                                                                                ] ;
+                                                                 sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                               ] )
+                           ] ;
+        price:hasVariable  :AmazonlbcostTIME247780875955815 , :usagehoursTIME247780876005848 , :amazonnlbTIME247780875987887 .
+
+:qv_TIME247780875523904
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.028"^^xsd:double .
+
+:qv_TIME247780754309801_239
+        a             cloudtaxonomy:SSL , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing supports SSL termination at the load balancer, including offloading SSL decryption from application instances, centralized management of SSL certificates, and encryption to back-end instances with optional public key authentication." ;
+        rdfs:label    "SSL Offloading" .
+
+:amazonnlbTIME247780871640561
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780871640561" .
+
+:qv_TIME247780877153190
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.027"^^xsd:double .
+
+:qv_TIME247780754430821_220
+        a           cloudtaxonomy:Console , gr:QuantitativeValue ;
+        rdfs:label  "AWS Management Console" .
+
+:CostperGBProcessedPC-PP_TIME247780876777727
+        a                       price:PriceComponent ;
+        rdfs:label              "CostperGBProcessedPC-PP_TIME247780876777727" ;
+        price:hasPriceFunction  :amazonElasticLB_GB_cost_TIME247780876800819 .
+
+:AmazonLBGBcostTIME247780876060585
+        a               price:Constant ;
+        rdfs:label      "AmazonLBGBcostTIME247780876060585" ;
+        price:hasValue  :qv_TIME247780876069993 .
+
+:qv_TIME247780754405163_219
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:qv_TIME247780751216725_27
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780878141024
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.011"^^xsd:double .
+
+:qv_TIME247780753696574_29
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:qv_TIME247780753788515_33
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780754096839_12
+        a           cloudtaxonomy:Scalability , gr:QuantitativeValue ;
+        rdfs:label  "Auto-Scaling" .
+
+:amazonnlbTIME247780874189687
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780874189687" .
+
+:AmazonCostperHperLBPC-PP_TIME247780877104439
+        a                       price:PriceComponent ;
+        rdfs:label              "AmazonCostperHperLBPC-PP_TIME247780877104439" ;
+        price:hasPriceFunction  :amazonElasticLB_lb_cost_TIME247780877122400 .
+
+:usagehoursTIME247780875161699
+        a             price:Usage ;
+        rdfs:comment  "How long will you be needing the Load Balancers? (Hours)" ;
+        rdfs:label    "usagehoursTIME247780875161699" .
+
+:qv_TIME247780753740620_77
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754328616_217
+        a             cloudtaxonomy:LoadBalancing , gr:QuantitativeValue ;
+        rdfs:comment  "TCP ports." ;
+        rdfs:label    "25, 80, 443, and 1024-65535." .
+
+:qv_TIME247780753812462_34
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:qv_TIME247780754042102_26
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
+
+:qv_TIME247780754273024_191
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "TCP" .
+
+:AmazonlbcostTIME247780874595084
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780874595084" ;
+        price:hasValue  :qv_TIME247780874604919 .
+
+:qv_TIME247780754217004_349
+        a           cloudtaxonomy:Feature , gr:QuantitativeValue ;
+        rdfs:label  "Load Balancer" .
+
+:qv_TIME247780754291840_261
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "SSL" .
+
+:qv_TIME247780754254636_328
+        a           cloudtaxonomy:NetworkProtocol , gr:QuantitativeValue ;
+        rdfs:label  "HTTPS" .
+
+:gbinTIME247780874751170
+        a             price:Usage ;
+        rdfs:comment  "How many GB per month do you expect to receive on your service?" ;
+        rdfs:label    "gbinTIME247780874751170" .
+
+:qv_TIME247780873197149
+        a                        gr:QuantitativeValue ;
+        gr:hasUnitOfMeasurement  "USD" ;
+        gr:hasValue              "0.027"^^xsd:double .
+
+:qv_TIME247780754346577_241
+        a             cloudtaxonomy:Reliability , gr:QuantitativeValue ;
+        rdfs:comment  "Elastic Load Balancing can detect the health of Amazon EC2 instances. When it detects unhealthy Amazon EC2 instances, it no longer routes traffic to those instances and spreads the load across the remaining healthy instances." ;
+        rdfs:label    "Health Checks" .
+
+:amazonnlbTIME247780874628439
+        a             price:Usage ;
+        rdfs:comment  "How many Load Balancers do you need?" ;
+        rdfs:label    "amazonnlbTIME247780874628439" .
+
+:AmazonlbcostTIME247780877578685
+        a               price:Constant ;
+        rdfs:label      "AmazonlbcostTIME247780877578685" ;
+        price:hasValue  :qv_TIME247780877588093 .
+
+:pp-AmazonElasticLB_TIME247780873624355
+        a                        price:PricePlan ;
+        rdfs:label               "pp-AmazonElasticLB_TIME247780873624355" ;
+        price:hasPriceComponent  :CostperGBProcessedPC-PP_TIME247780873772744 , :AmazonCostperHperLBPC-PP_TIME247780873652579 .
+
+:amazonElasticLB_GB_cost_TIME247780870532562
+        a                  spin:Function ;
+        rdfs:label         "amazonElasticLB_GB_cost_TIME247780870532562" ;
+        spin:body          [ a                   sp:Select ;
+                             sp:resultVariables  ( [ sp:varName  "result"^^xsd:string ] ) ;
+                             sp:where            ( [ sp:object     [ sp:varName  "gbinTIME247780870614668_instance"^^xsd:string ] ;
+                                                     sp:predicate  price:hasValue ;
+                                                     sp:subject    :gbinTIME247780870614668
+                                                   ] [ sp:object     [ sp:varName  "gbinTIME247780870614668_value"^^xsd:string ] ;
+                                                       sp:predicate  gr:hasValue ;
+                                                       sp:subject    [ sp:varName  "gbinTIME247780870614668_instance"^^xsd:string ]
+                                                     ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780870559075_instance"^^xsd:string ] ;
+                                                         sp:predicate  price:hasValue ;
+                                                         sp:subject    :AmazonLBGBcostTIME247780870559075
+                                                       ] [ sp:object     [ sp:varName  "AmazonLBGBcostTIME247780870559075_value"^^xsd:string ] ;
+                                                           sp:predicate  gr:hasValue ;
+                                                           sp:subject    [ sp:varName  "AmazonLBGBcostTIME247780870559075_instance"^^xsd:string ]
+                                                         ] [ a              sp:Bind ;
+                                                             sp:expression  [ a        sp:mul ;
+                                                                              sp:arg1  [ sp:varName  "gbinTIME247780870614668_value"^^xsd:string ] ;
+                                                                              sp:arg2  [ sp:varName  "AmazonLBGBcostTIME247780870559075_value"^^xsd:string ]
+                                                                            ] ;
+                                                             sp:variable    [ sp:varName  "result"^^xsd:string ]
+                                                           ] )
+                           ] ;
+        price:hasVariable  :AmazonLBGBcostTIME247780870559075 , :gbinTIME247780870614668 .
+
+:qv_TIME247780754369242_233
+        a            cloudtaxonomy:DataProcessed , gr:QuantitativeValue ;
+        gr:hasValue  1.7976931348623157E308 .
