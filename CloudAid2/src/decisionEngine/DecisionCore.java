@@ -211,7 +211,7 @@ public class DecisionCore {
 			for(k=0;k<so.incomparableWith.size();k++)
 			{
 					s = s + ",";
-					s+= so.incomparableWith.get(k).getMyID()+ "["+so.inferior+"]";
+					s+= so.incomparableWith.get(k).getMyID()+ "["+so.incomparableWith.get(k).inferior+"]";
 			}
 			
 			s+="} ";

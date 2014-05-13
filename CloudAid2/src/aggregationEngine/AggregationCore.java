@@ -63,7 +63,7 @@ public class AggregationCore {
 				for(int l =1; l<r.size();l++)
 				{
 					alts = alts + ",";
-					alts+= r.get(l).getMyID()+ "["+r.get(0).inferior+"]";
+					alts+= r.get(l).getMyID()+ "["+r.get(l).inferior+"]";
 				}
 				alts=alts+" }";
 				System.out.println(rank++ + " - " + alts);
