@@ -423,6 +423,7 @@ public class SearchCore {
 		definedVariables.clear();
 		variables = Controller.requestVariablesInfo(variables);
 		
+		System.out.println(variables.getVars().size());
 		
 		for(PriceVariable newVar : variables.getVars())
 		{

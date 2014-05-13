@@ -178,8 +178,7 @@ public class Normalizer {
 				ConceptDistance cd = new ConceptDistance();
 				cd.setName(tempName);
 				concepts.add(cd);
-//				temps.put(tempName, tempValue);
-				
+				temps.put(tempName, -1.0);
 			}
 //			else{
 //				String[] msg = {tempName, preference};
@@ -196,9 +195,11 @@ public class Normalizer {
 		
 			for(FiltRes alt : normalized)
 			{
+				String tempName = (String) alt.getCritAttr().get(criterion.getName());
 				for(ConceptDistance cd : distancesRequest.getConcepts())
 				{
-					
+					if(cd.getName().equals(tempName))
+						alt.getNormalizedAttributes().put(criterion.getName(), cd.getDistVal());
 				}
 			}
 			

@@ -59,11 +59,11 @@ public class AggregationCore {
 		{
 			if(r.size() >= 1)
 			{
-				String alts = "{ " + r.get(0).getMyID();
+				String alts = "{ " + r.get(0).getMyID() + "["+r.get(0).inferior+"]";
 				for(int l =1; l<r.size();l++)
 				{
 					alts = alts + ",";
-					alts+= r.get(l).getMyID();
+					alts+= r.get(l).getMyID()+ "["+r.get(0).inferior+"]";
 				}
 				alts=alts+" }";
 				System.out.println(rank++ + " - " + alts);

@@ -205,16 +205,16 @@ public class DecisionCore {
 		for(FiltRes so : compResults.getServices())
 		{
 			String  s=  rank +" - {";
-			s+=so.getMyID() ;
+			s+=so.getMyID() + "["+so.inferior+"]" ;
 //			System.out.println(so.getMyID());
 			int k;
 			for(k=0;k<so.incomparableWith.size();k++)
 			{
 					s = s + ",";
-					s+= so.incomparableWith.get(k).getMyID();
+					s+= so.incomparableWith.get(k).getMyID()+ "["+so.inferior+"]";
 			}
 			
-			s+="} -> Inf: " + so.inferior;
+			s+="} ";
 			System.out.println(s);
 			rank++;
 		}
