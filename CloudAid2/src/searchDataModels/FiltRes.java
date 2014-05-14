@@ -14,7 +14,7 @@ public class FiltRes {
 	private String myID;
 	public Integer inferior=0;
 	public ArrayList<FiltRes> incomparableWith;
-
+	public int myRank=-1;
 	public FiltRes(Offering of, double price)
 	{
 		FiltRes.ID++;

@@ -60,5 +60,6 @@
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/xmlbeans-2.4.0.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SPIN_API"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/elementaryCycles"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

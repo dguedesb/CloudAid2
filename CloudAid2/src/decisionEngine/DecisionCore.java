@@ -193,6 +193,11 @@ public class DecisionCore {
 				}	
 			}
 		}
+		
+		for(FiltRes res : compResults.getServices())
+			Collections.sort(res.incomparableWith, Collections.reverseOrder(new CustomComparator()));
+		
+		
 		graphb.append("}\n");
 		
 		Collections.sort(compResults.getServices(), Collections.reverseOrder(new CustomComparator()));
@@ -212,6 +217,7 @@ public class DecisionCore {
 			{
 					s = s + ",";
 					s+= so.incomparableWith.get(k).getMyID()+ "["+so.incomparableWith.get(k).inferior+"]";
+					
 			}
 			
 			s+="} ";
@@ -230,7 +236,7 @@ public class DecisionCore {
 		for(int z=0;z<compResults.getServices().size();z++)
 		{
 			int ID =Integer.parseInt(compResults.getServices().get(z).getMyID().substring(3)) - 1;
-			if(mem[ID] == 0)
+			if(mem[ID] == 0 )
 			{
 				rankedList.get(z).add(compResults.getServices().get(z));
 				mem[ID]=1;
@@ -238,7 +244,7 @@ public class DecisionCore {
 			for(int k=0;k<compResults.getServices().get(z).incomparableWith.size();k++)
 			{
 				int IDinc =Integer.parseInt(compResults.getServices().get(z).incomparableWith.get(k).getMyID().substring(3)) - 1;
-				if (mem[IDinc] == 0) {
+				if (mem[IDinc]==0) {
 					rankedList.get(z).add(compResults.getServices().get(z).incomparableWith.get(k));
 					mem[IDinc]=1;
 				}
