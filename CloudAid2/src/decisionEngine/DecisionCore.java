@@ -648,6 +648,7 @@ public class DecisionCore {
 				}
 			}
 		}
+		
 
 		String nodes[] = new String[res.getAdjancyList().size()];
 
