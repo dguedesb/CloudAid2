@@ -1,6 +1,5 @@
 package searchDataModels;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import usdl.servicemodel.Offering;
@@ -12,9 +11,7 @@ public class FiltRes {
 	private HashMap<String,String> critAttr;
 	private HashMap<String, Double> normalizedAttributes;
 	private String myID;
-	public Integer inferior=0;
-	public ArrayList<FiltRes> incomparableWith;
-	public int myRank=-1;
+	
 	public FiltRes(Offering of, double price)
 	{
 		FiltRes.ID++;
@@ -23,7 +20,6 @@ public class FiltRes {
 		this.myPrice = price;
 		this.critAttr =new HashMap<String,String>();
 		this.normalizedAttributes = new HashMap<String,Double>();
-		incomparableWith = new ArrayList<FiltRes>();
 	}
 	
 	public FiltRes()

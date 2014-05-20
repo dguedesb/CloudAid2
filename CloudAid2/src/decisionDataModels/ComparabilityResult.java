@@ -9,17 +9,7 @@ public class ComparabilityResult{
 	
 	private ArrayList<FiltRes> services;
 	private int[][] compareMatrix;
-	
-	private ArrayList<ArrayList<FiltRes>> rankedList;
 
-	public ArrayList<ArrayList<FiltRes>> getRankedList() {
-		return rankedList;
-	}
-
-
-	public void setRankedList(ArrayList<ArrayList<FiltRes>> rankedList) {
-		this.rankedList = rankedList;
-	}
 
 
 	public ArrayList<FiltRes> getServices() {
@@ -46,6 +36,7 @@ public class ComparabilityResult{
 		this.services = serv;
 		this.compareMatrix = compare;
 	}
+
 
 
 }

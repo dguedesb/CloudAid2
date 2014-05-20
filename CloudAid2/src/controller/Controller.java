@@ -10,9 +10,6 @@ import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-
 
 import org.apache.commons.io.FileUtils;
 
@@ -23,12 +20,8 @@ import csadata.CSAData;
 import csadata.Criterion;
 import csadata.ServiceTemplate;
 import csaevaluator.CSAEvaluator;
-import decisionDataModels.ComparabilityResult;
+import decisionDataModels.DecisionResult;
 import decisionDataModels.DistancesContainer;
-import decisionDataModels.SAWResult;
-import decisionDataModels.SAWResults;
-import decisionDataModels.SMAAResult;
-import decisionDataModels.SMAAResults;
 import decisionEngine.DecisionCore;
 import exceptions.InvalidLinkedUSDLModelException;
 import searchDataModels.FiltRes;
@@ -68,6 +61,7 @@ public class Controller {
 //		searchModule.searchy();
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unused" })
 	private String readJSONRequests() throws IOException, InterruptedException
 	{
 
@@ -124,22 +118,7 @@ public class Controller {
 			if(data.getEvalResult() == CSAEvaluator.OK){
 				ArrayList<ArrayList<FiltRes>> foundOffs = new ArrayList<ArrayList<FiltRes>>();//save the found offerings of each service template
 				
-				ArrayList<ComparabilityResult> decisionComparabilityResults = null;
-				ArrayList<SAWResults> decisionSAWResults = null;
-				ArrayList<SMAAResults> decisionSMAAResults = null;
-				
-				if(data.getMethod() == Controller.ELECTRE ||  data.getMethod() == Controller.PROMETHEE)
-				{
-					decisionComparabilityResults =  new ArrayList<ComparabilityResult>();
-				}
-				else if(data.getMethod() == Controller.SMAA2)
-				{
-					decisionSMAAResults = new ArrayList<SMAAResults>();
-				}
-				else if(data.getMethod() == Controller.SAW)
-				{
-					decisionSAWResults = new ArrayList<SAWResults>();
-				}
+				ArrayList<DecisionResult> STGraphs = new ArrayList<DecisionResult>();
 				
 				String dir = "./XMCDA/"+methods[data.getMethod()]+"/"+System.currentTimeMillis()+"/";
 				for(ServiceTemplate st : data.getServiceTemplates())//Search Module
@@ -174,78 +153,21 @@ public class Controller {
 					}
 					//DECISION MODULE
 					st.setFoundAlternatives(offs);
-					Object decisionResult = decisionModule.decide(st, data.getMethod(),dir+st.getName());
+					DecisionResult  decisionResult = decisionModule.decide(st, data.getMethod(),dir+st.getName());
 					
-					if(data.getMethod() == Controller.ELECTRE || data.getMethod() == Controller.PROMETHEE)
-					{
-						ComparabilityResult compResults =(ComparabilityResult)decisionResult;
-						decisionComparabilityResults.add(compResults);
-						
-					}
-					else if(data.getMethod() == Controller.SMAA2)
-					{
-						SMAAResults smaaResults = (SMAAResults)decisionResult;
-						decisionSMAAResults.add(smaaResults);
-						for(SMAAResult res : smaaResults.getSmaaResults())
-							System.out.println(res.getService().getMyOff().getName() + "\nRanks:  "+Arrays.toString(res.getRanks()));
-						
-					}
-					else if(data.getMethod() == Controller.SAW)
-					{
-						SAWResults sawResults = (SAWResults)decisionResult;
-						decisionSAWResults.add(sawResults);
-						for(SAWResult res : sawResults.getSAWResults())
-							System.out.println(res.getService().getMyOff().getName() + " - " + res.getPerformance() + " - "  + res.getService().getMyPrice());
-					}
+					STGraphs.add(decisionResult);
 				}
 				
 				if(error == false)
 				{
-					if(data.getMethod() == Controller.ELECTRE || data.getMethod() == Controller.PROMETHEE)
-						aggregationModule.computeAggregation(data,decisionComparabilityResults);
-					else if(data.getMethod() == Controller.SMAA2)
-						aggregationModule.computeAggregation(data,decisionSMAAResults);
-					else if(data.getMethod() == Controller.SAW)
-						aggregationModule.computeAggregation(data,decisionSAWResults);
+						aggregationModule.computeAggregation(data,STGraphs);
 				}
 			}
 			else if(data.getEvalResult() == CSAEvaluator.ERROR_1){
 				System.out.println("There are no Service Templates in your cloud architecture. Please reconcider your options.");
 			}
 		}
-	}
-	
-//	@SuppressWarnings("unchecked")
-//	public static String askData(int code, String[] msg, Object data){
-//		switch(code){
-//		case PROMPT:
-//			frontend.getCi().prompt(msg[0]);
-//			return null;
-////		case PRINTCSA:
-////			frontend.getCi().printResults((CSAData) data);
-////			return null;
-//		case GET_WEIGHT:
-//			return frontend.getCi().askforCriterionWeight(msg[0], msg[1]);
-//		case GET_PREFERENCE_DIRECTION:
-//			return frontend.getCi().askforCritPrefDirection(msg[0], msg[1]);
-//		case GET_YESNO_ANSWER:
-//			return frontend.getCi().promptYesNo(msg[0]);
-//		case GET_PREFERENCE_VALUE:
-//			return frontend.getCi().askforPreferenceValue(msg[0]);
-//		case GET_DISTANCE_VALUE:
-//			return frontend.getCi().askforDistance(msg[0], msg[1]);
-//		case PRINTALTDATA:
-//			frontend.getCi().printAlternativesData((ArrayList<FiltRes>)data);
-//			return null;
-////		case PRINTRESULTLIST:
-////			frontend.getCi().printResultList(msg[0], (ArrayList<Result>) data);
-////			return null;
-//		default:
-//			System.out.println("ERROR: Unrecognized interface code!!!");
-//			return null;
-//		}
-//	}
-	
+	}	
 	
 	public static void main(String[] args) throws InterruptedException
 	{
@@ -257,7 +179,7 @@ public class Controller {
 			e.printStackTrace();
 		}
 	}
-
+	@SuppressWarnings({ "rawtypes", "unused" })
 	public static PricingVariables requestVariablesInfo(PricingVariables variables) {
 		String directoryToWrite = "C:/Users/daniel/workspace/CloudAid2-Client/JSONRequests-Variables";
 		// obtained Gson object
@@ -324,7 +246,7 @@ public class Controller {
 		
 	    return null;
 	}
-
+	@SuppressWarnings({ "rawtypes", "unused" })
 	public static DistancesContainer requestDistancesInfo(DistancesContainer distancesRequest) {
 		
 		String directoryToWrite = "C:/Users/daniel/workspace/CloudAid2-Client/JSONRequests-ConceptDistances";

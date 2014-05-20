@@ -14,9 +14,16 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.util.FileManager;
+
 
 
 
@@ -71,7 +78,33 @@ public class TripleStore {
 		this.setMyPrefixes(prefixes);
 		model = this.setPrefixes(model, prefixes);
 		
+		evaluateServiceSet(model);
 		return model;
+	}
+	
+	private void evaluateServiceSet(Model set){
+		int count = 0; 
+		String queryString =
+				" PREFIX pf: <http://jena.hpl.hp.com/ARQ/property#> " +
+		        " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
+				" PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " + 
+		        " SELECT (COUNT(*) as ?count)" +
+		        " WHERE { " +
+				" ?x ?y ?z . "  +
+				" }";
+				
+		Query query = QueryFactory.create(queryString);
+        QueryExecution exec = QueryExecutionFactory.create(query, set);
+		
+		ResultSet results = exec.execSelect();
+		
+		while(results.hasNext()){
+			QuerySolution row = results.next();
+			count = row.getLiteral("count").getInt();
+		}		
+		
+		exec.close();
+		System.out.println("SYSTEM: Total triples in ServiceSet: "+count);
 	}
 	
 	private ArrayList<String> getFileNames(String path) throws IOException{

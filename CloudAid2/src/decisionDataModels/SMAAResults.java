@@ -2,12 +2,9 @@ package decisionDataModels;
 
 import java.util.ArrayList;
 
-import searchDataModels.FiltRes;
 
 public class SMAAResults {
 	private ArrayList<SMAAResult> smaaResults;
-	
-	private ArrayList<ArrayList<FiltRes>> rankedList;
 	
 	public SMAAResults(ArrayList<SMAAResult> results)
 	{
@@ -23,13 +20,4 @@ public class SMAAResults {
 		this.smaaResults = smaaResults;
 	}
 
-
-	public ArrayList<ArrayList<FiltRes>> getRankedList() {
-		return rankedList;
-	}
-
-
-	public void setRankedList(ArrayList<ArrayList<FiltRes>> rankedList) {
-		this.rankedList = rankedList;
-	}
 }

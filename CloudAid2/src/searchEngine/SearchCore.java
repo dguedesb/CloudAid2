@@ -288,6 +288,7 @@ public class SearchCore {
 		
 		exec.close();
 		
+		System.out.println("Prior to price filtering:   "+offeringsList.size());
 		ArrayList<FiltRes> finalres = OfferingsPrice(priceReq,offeringsList,ts.getMyTripleStore());//add price restriction. after we've found the alternatives that fit every other requirement, apply a secondary filter to filter according to their price.
 		setCritAttr(finalres,st.getCriteria());
 		
