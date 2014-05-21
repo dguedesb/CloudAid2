@@ -14,14 +14,14 @@ public class AggregationCore {
 
 	public void computeAggregation(CSAData data,ArrayList<DecisionResult> decisionResults) {
 		for (DecisionResult res : decisionResults) {
-			this.printAdjancyList(res.getAdjancyList());
+			this.printAdjacencyList(res.getAdjacencyList());
 		}
 	}
 
 
-	public void printAdjancyList(ArrayList<GNode> graph)
+	public void printAdjacencyList(ArrayList<GNode> graph)
 	{
-		System.out.println("------------------------[AggregationModule] ADJANCY LIST  ------------------------------");
+		System.out.println("------------------------[AggregationModule] ADJACENCY LIST  ------------------------------");
 		int rank = 1;
 		for(GNode so : graph)
 		{
@@ -38,6 +38,6 @@ public class AggregationCore {
 			System.out.println(s);
 			rank++;
 		}
-		System.out.println("------------------------[AggregationModule] /ADJANCY LIST  ------------------------------");
+		System.out.println("------------------------[AggregationModule] /ADJACENCY LIST  ------------------------------");
 	}
 }

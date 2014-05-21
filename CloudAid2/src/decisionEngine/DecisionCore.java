@@ -634,12 +634,12 @@ public class DecisionCore {
 	@SuppressWarnings("rawtypes")
 	private void frcycles(DecisionResult res) {
 		// TODO Auto-generated method stub
-		int[][] m = res.getAdjancyMatrix();
+		int[][] m = res.getAdjacencyMatrix();
 
-		boolean[][] mcopy = new boolean[res.getAdjancyList().size()][res.getAdjancyList().size()];
+		boolean[][] mcopy = new boolean[res.getAdjacencyList().size()][res.getAdjacencyList().size()];
 
-		for (int i = 0; i < res.getAdjancyList().size(); i++) {
-			for (int j = 0; j < res.getAdjancyList().size(); j++) {
+		for (int i = 0; i < res.getAdjacencyList().size(); i++) {
+			for (int j = 0; j < res.getAdjacencyList().size(); j++) {
 				if (m[i][j] == 1)
 					mcopy[i][j] = true;
 				else if (m[i][j] == 0) {
@@ -650,18 +650,18 @@ public class DecisionCore {
 		}
 		
 
-		String nodes[] = new String[res.getAdjancyList().size()];
+		String nodes[] = new String[res.getAdjacencyList().size()];
 
-		for (int i = 0; i < res.getAdjancyList().size(); i++) {
+		for (int i = 0; i < res.getAdjacencyList().size(); i++) {
 			nodes[i] = "Alt" + (i + 1);
 		}
 		
-		ArrayList<GNode> newInc = new ArrayList<GNode>();
+		
 		ElementaryCyclesSearch ecs = new ElementaryCyclesSearch(mcopy, nodes);
 		List cycles = ecs.getElementaryCycles();
 		for (int i = 0; i < cycles.size(); i++) {
 			List cycle = (List) cycles.get(i);
-			
+			ArrayList<GNode> newInc = new ArrayList<GNode>();
 			if (cycle.size() > 1) {
 				for (int j = 0; j < cycle.size(); j++) {
 					String node = (String) cycle.get(j);
@@ -670,7 +670,7 @@ public class DecisionCore {
 					} else {
 						System.out.print(node);
 					}
-					for (GNode gn : res.getAdjancyList()) {
+					for (GNode gn : res.getAdjacencyList()) {
 						if (gn.getData().getMyID().equals(node))
 							newInc.add(gn);
 					}
