@@ -73,7 +73,7 @@ public class AggregationCore {
 			tested.add(sol);
 			this.printSolution(sol);
 			if(AggChecker.checkAdmissability(userData, sol)) {
-				if(!checkInAdmissable(sol,admissables,adjMatrixes)) {
+				if(!checkDominatedOrIncomparable(sol,admissables,adjMatrixes)) {
 					admissables.add(sol);
 				}
 			}
@@ -82,7 +82,7 @@ public class AggregationCore {
 					ArrayList<ArrayList<GNode>> newSol = moveForward(sol.get(i),sol,i);//move forward in the graph by choosing the next less dominated alternative. It also considers the incomparable alternatives with the chosen alternative
 					for(ArrayList<GNode> newSolution : newSol) {
 						if(!queue.contains(newSolution) && !tested.contains(newSolution)) {
-							if(!checkInAdmissable(newSolution,admissables,adjMatrixes)) {
+							if(!checkDominatedOrIncomparable(newSolution,admissables,adjMatrixes)) {
 								queue.add(newSolution);
 							}
 						}
@@ -93,7 +93,6 @@ public class AggregationCore {
 
 		return admissables;
 	}
-
 
 	private void printSolution(ArrayList<GNode> sol) {
 		String solution = "";
@@ -142,7 +141,7 @@ public class AggregationCore {
 	}
 
 
-	private boolean checkInAdmissable(ArrayList<GNode> toTest,ArrayList<ArrayList<GNode>> admissables,ArrayList<int[][]> matrixes) {
+	private boolean checkDominatedOrIncomparable(ArrayList<GNode> toTest,ArrayList<ArrayList<GNode>> admissables,ArrayList<int[][]> matrixes) {
 		boolean dominated = true;
 		
 		if(admissables.size() == 0)
@@ -153,7 +152,7 @@ public class AggregationCore {
 					int[][] m = matrixes.get(i);
 					int toTestindex=Integer.parseInt(toTest.get(i).getData().getMyID().substring(3))-1;
 					int Solindex=Integer.parseInt(fsol.get(i).getData().getMyID().substring(3))-1;
-					if(m[Solindex][toTestindex] == 1 || m[Solindex][toTestindex] == 0) {
+					if(m[toTestindex][Solindex] == 1 || m[toTestindex][Solindex] == 0) {
 						dominated=false;
 						break;
 					}
@@ -166,7 +165,6 @@ public class AggregationCore {
 		
 		return dominated;
 	}
-
 
 	public void printAdjacencyList(ArrayList<GNode> graph)
 	{
