@@ -1,5 +1,5 @@
 { "evalCode" : 0,
-  "method" : 3,
+  "method" : 2,
   "requirements" : [  ],
   "serviceTemplates" : [ { "criteria" : [ { "id" : "Crit0",
               "indifference_threshold" : 10.0,

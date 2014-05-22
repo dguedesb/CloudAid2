@@ -562,6 +562,8 @@ public class DecisionCore {
 							if(m[index1][index2] != 0) { // if they're not incompatible already
 								m[index1][index2] = 0;
 								inc.getIncomparableWith().add(inc2);
+								if(inc.getPreferableTo().contains(inc2))
+									inc.getPreferableTo().remove(inc2);
 							}
 						}
 					}
