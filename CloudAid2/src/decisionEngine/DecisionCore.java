@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 import org.decisiondeck.jmcda.persist.xmcda2.generated.XMCDADoc.XMCDA;
@@ -435,128 +434,6 @@ public class DecisionCore {
 		System.out.println("------------------------ /ADJACENCY LIST  ------------------------------");
 	}
 	
-	private void dfs_paths(HashSet<ArrayList<GNode>> paths,int[] visited, GNode source,ArrayList<GNode> container,int level)
-	{
-		int ind=Integer.parseInt(source.getData().getMyID().substring(3)) - 1;
-		
-		visited[ind]=1;
-
-		container.add(source);
-
-		for (GNode inc : source.getIncomparableWith()) {
-			int indb = Integer.parseInt(inc.getData().getMyID().substring(3)) - 1;
-			inc.setLevel(level);
-			if (visited[indb] == 0) {
-				ArrayList<GNode> newPath = new ArrayList<GNode>();
-
-				for (int g = 0; g < container.size() - 1; g++) {
-					newPath.add(container.get(g));
-				}
-				visited[indb] = 1;
-				dfs_paths(paths, visited.clone(), inc, newPath, level);
-			}
-		}
-
-		if (source.getPreferableTo().size() >= 1) {
-			int idc = Integer.parseInt(source.getPreferableTo().get(0).getData().getMyID().substring(3)) - 1;
-			if (visited[idc] == 0) {
-				dfs_paths(paths, visited, source.getPreferableTo().get(0),container, level + 1);
-			}
-		}
-		else {
-			if (container.size() >= 1) {
-				ArrayList<GNode> cp = new ArrayList<GNode>();
-				for (int j = 0; j < container.size(); j++) {
-					cp.add(container.get(j));
-				}
-				// cp.add(source);
-				paths.add(cp);
-			}
-			container.clear();
-		}
-	}
-	
-
-//	private void bfs(GNode root,int NNodes)
-//	{
-//		// BFS uses Queue data structure
-//		int level = 0;
-//		Queue<ArrayList<GNode>> queue = new LinkedList<ArrayList<GNode>>();
-//		Queue<ArrayList<GNode>> queueb = new LinkedList<ArrayList<GNode>>();
-//		int[] visited =new int[NNodes];
-//		int[] visitedInc =new int[NNodes];
-//	
-//		ArrayList<GNode> p = new ArrayList<GNode>();
-//		p.add(root);
-//
-//		queue.add(p);
-//		while (!queue.isEmpty()) {
-//			ArrayList<GNode> path = queue.remove();
-//
-//			GNode node = path.get(path.size()-1);
-//			if(node.getPreferableTo().size() >= 1)
-//			{
-//				if(level > 0)
-//				{
-//					for(GNode inc : node.getIncomparableWith())
-//					{
-//						int inc_id=Integer.parseInt(inc.getData().getMyID().substring(3)) - 1;
-//						int source=Integer.parseInt(node.getData().getMyID().substring(3)) - 1;
-//						if(visitedInc[inc_id]==0)
-//						{
-//							visitedInc[inc_id] = 1;
-//							visitedInc[source] = 1;
-//							inc.setLevel(level);
-//							ArrayList<GNode> pathcp = new ArrayList<GNode>();
-//							
-//							for(int h =0;h<path.size()-1;h++)
-//								pathcp.add(path.get(h));
-//							
-//							pathcp.add(inc);
-//							System.out.println("ALT");
-//							for(GNode gf : pathcp)
-//								System.out.print(gf.getData().getMyID() + "["+gf.getIn()+"] ,");
-//							System.out.println("\n/ALT");
-//							queue.add(pathcp);
-//						}
-//					}
-//				}
-//			
-//			
-//				GNode nodeb= node.getPreferableTo().get(0);
-//				int cid=Integer.parseInt(nodeb.getData().getMyID().substring(3)) - 1;
-////				if(visited[cid]==0)
-////				{
-////					visited[cid]=1;
-////				System.out.println("[" + level++ + "]"+ node.getData().getMyID() + "[" + node.getIn() + "]");
-//				level++;
-//				nodeb.setLevel(level);
-//				path.add(nodeb);
-//				queue.add(path);
-////				}
-//			}
-//			else
-//				queueb.add(path);
-//			
-//			
-//			for(GNode gf : path)
-//				System.out.print(gf.getData().getMyID() + "["+gf.getIn()+"] ,");
-//			System.out.println();
-//		}
-//		System.out.println("POSSIBLE PATHS: "+queueb.size());
-//		
-//		while(!queueb.isEmpty())
-//		{
-//			for(GNode s : queueb.remove())
-//			{
-//				System.out.print(s.getData().getMyID() + "["+s.getLevel()+"] ,");
-//			}
-//			System.out.println();
-//		}
-//	}
-//	
-	
-
 	private void exportDotFile(StringBuilder graphb, String dir) throws FileNotFoundException {
 		System.out.println("------------------------ DOT-LANGUAGE ------------------------------");
 		System.out.println(graphb.toString());

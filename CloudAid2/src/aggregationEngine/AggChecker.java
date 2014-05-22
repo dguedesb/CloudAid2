@@ -26,13 +26,4 @@ public class AggChecker {
 		else
 			return false;
 	}
-	
-	private void printSolution(ArrayList<GNode> sol) {
-		String solution = "";
-		for(GNode g : sol) {
-			solution += g.getData().getMyID()+"["+g.getIn()+"] "+"["+g.getOut()+"]  |";
-		}
-		
-		System.out.println(solution);
-	}
 }
