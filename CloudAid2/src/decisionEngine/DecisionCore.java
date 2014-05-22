@@ -204,7 +204,7 @@ public class DecisionCore {
 		Collections.sort(graph, new CustomComparator());
 		
 		this.exportDotFile(graphb,dir);
-		this.printAdjancyList(graph);
+		this.printAdjacencyList(graph);
 		
 		DecisionResult result = new DecisionResult(graph,matrix);
 		this.frcycles(result);
@@ -305,7 +305,7 @@ public class DecisionCore {
 		Collections.sort(graph, new CustomComparator());
 		
 		this.exportDotFile(graphb,dir);
-		this.printAdjancyList(graph);
+		this.printAdjacencyList(graph);
 
 		// /////////////////////////////
 		
@@ -393,7 +393,7 @@ public class DecisionCore {
 		Collections.sort(graph,new CustomComparator());
 		
 		this.exportDotFile(graphb,dir);
-		this.printAdjancyList(graph);
+		this.printAdjacencyList(graph);
 		
 		DecisionResult result = new DecisionResult(graph,matrix);
 		this.frcycles(result);
@@ -411,9 +411,9 @@ public class DecisionCore {
 
 	}
 	
-	public void printAdjancyList(ArrayList<GNode> graph)
+	public void printAdjacencyList(ArrayList<GNode> graph)
 	{
-		System.out.println("------------------------ ADJANCY LIST  ------------------------------");
+		System.out.println("------------------------ ADJACENCY LIST  ------------------------------");
 		int rank = 1;
 		for(GNode so : graph)
 		{
@@ -432,7 +432,7 @@ public class DecisionCore {
 			System.out.println(s);
 			rank++;
 		}
-		System.out.println("------------------------ /ADJANCY LIST  ------------------------------");
+		System.out.println("------------------------ /ADJACENCY LIST  ------------------------------");
 	}
 	
 	private void dfs_paths(HashSet<ArrayList<GNode>> paths,int[] visited, GNode source,ArrayList<GNode> container,int level)
@@ -643,8 +643,8 @@ public class DecisionCore {
 				if (m[i][j] == 1)
 					mcopy[i][j] = true;
 				else if (m[i][j] == 0) {
-					mcopy[i][j] = true;
-					mcopy[j][i] = true;
+//					mcopy[i][j] = true;
+//					mcopy[j][i] = true;
 				}
 			}
 		}
@@ -692,7 +692,7 @@ public class DecisionCore {
 				System.out.print("\n");
 			}
 			else
-				System.out.println((String) cycle.get(i));
+				System.out.println((String) cycle.get(0));
 		}
 	}
 
