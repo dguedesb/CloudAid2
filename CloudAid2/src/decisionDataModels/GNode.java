@@ -12,7 +12,7 @@ public class GNode {
 	private Integer in=0;
 	private ArrayList<GNode> incomparableWith;
 	private ArrayList<GNode> preferableTo;
-	private int level=0;
+	private int level=-1;
 
 	private FiltRes data=null;
 	

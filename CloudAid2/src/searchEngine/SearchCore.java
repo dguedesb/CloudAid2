@@ -257,7 +257,7 @@ public class SearchCore {
 	{
 		ArrayList<Requirement> mergedReqs = new ArrayList<Requirement>();
 		mergedReqs.addAll(st.getRequirements());
-		mergedReqs.addAll(globalReqs);
+//		mergedReqs.addAll(globalReqs);
 		ArrayList<Requirement> exclusiveRequirements = this.getExclusiveReqs( mergedReqs );
 		
 		ArrayList<Object> obj = this.queryBuilder(exclusiveRequirements);
