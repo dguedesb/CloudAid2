@@ -32,17 +32,6 @@ import usdl.servicemodel.QuantitativeValue;
 
 public class Controller {
 	
-	// User Interface Data Codes
-	public static final int GET_WEIGHT = 100;
-	public static final int GET_PREFERENCE_DIRECTION = 101;
-	public static final int GET_PREFERENCE_VALUE = 102;
-	public static final int GET_DISTANCE_VALUE = 103;
-	public static final int GET_YESNO_ANSWER = 200;
-	public static final int PROMPT = 300;
-	public static final int PRINTCSA = 301;
-	public static final int PRINTALTDATA = 302;
-	public static final int PRINTRESULTLIST = 303;
-
 	private SearchCore searchModule;
 	private DecisionCore decisionModule;
 	private AggregationCore aggregationModule;

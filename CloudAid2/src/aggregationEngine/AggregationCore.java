@@ -32,13 +32,6 @@ public class AggregationCore {
 		ArrayList<ArrayList<GNode>> tested = new ArrayList<ArrayList<GNode>>();
 		ArrayList<int[][]> adjMatrixes = new ArrayList<int[][]>();
 		ArrayList<GNode> solution = new ArrayList<GNode>();
-		
-		ArrayList<ArrayList<ArrayList<GNode>>> groupedAdmissable = new ArrayList<ArrayList<ArrayList<GNode>>>();
-		groupedAdmissable.add(new ArrayList<ArrayList<GNode>>());//for the first possibility
-		int nSol=0;
-		
-		Queue<Integer> incSet = new LinkedList<Integer>();
-		int groupSize=0;
 
 		for(DecisionResult res: decisionResults) {//the least dominated on the graph
 			GNode n = res.getAdjacencyList().get(0);
@@ -46,10 +39,9 @@ public class AggregationCore {
 			adjMatrixes.add(res.getAdjacencyMatrix());
 		}
 		
-		
 		Queue<ArrayList<GNode>> queue = (Queue<ArrayList<GNode>>) new LinkedList<ArrayList<GNode>>();
 		queue.add(solution);
-		groupSize++;
+
 		
 		//if there's alternatives not comparable with the least dominated of the graphs, we have to consider them as well
 		for (int q = 0; q < solution.size(); q++) {
@@ -71,84 +63,51 @@ public class AggregationCore {
 					if (newSol.size() >= 1) {
 						if(!queue.contains(newSol) && !tested.contains(newSol)) {
 							queue.add(newSol);
-							groupSize++;
 						}
 					}
 				}
 			}
 		}
-		incSet.add(groupSize);
 		System.out.println("-----------");
 		while(!queue.isEmpty())//bfs transversal
 		{
 			ArrayList<GNode> sol = queue.poll();
 			tested.add(sol);
 			
-			groupSize--;
-			
-			
-			
 			this.printSolution(sol);
 			if(AggChecker.checkAdmissability(userData, sol)) {
 				if(!checkDominatedOrIncomparable(sol,admissables,adjMatrixes)) {
 					admissables.add(sol);	
-					groupedAdmissable.get(nSol).add(sol);
-					
-					 if(groupSize == 0){
-						 nSol++;
-						 groupedAdmissable.add(new ArrayList<ArrayList<GNode>>());
-					 }
 				}
 			}
 			else {
 				for(int i=0;i<sol.size();i++) {
 					ArrayList<ArrayList<GNode>> newSol = moveForward(sol.get(i),sol,i);//move forward in the graph by choosing the next less dominated alternative. It also considers the incomparable alternatives with the chosen alternative
-					int size=0;
 					for(ArrayList<GNode> newSolution : newSol) {
 						if(!queue.contains(newSolution) && !tested.contains(newSolution)) {
 							if(!checkDominatedOrIncomparable(newSolution,admissables,adjMatrixes)) {
 								queue.add(newSolution);
-								size++;
 							}
 						}
 					}
-					if(size > 0)
-						incSet.add(size);
-				}
-			}
-			
-			if(groupSize == 0) {
-//				if(!incSet.isEmpty())
-					incSet.poll();
-				if(!incSet.isEmpty()) {
-					groupSize=incSet.peek();
-					
 				}
 			}
 		}
-		
-		
-		int size=0;
-		for(ArrayList<ArrayList<GNode>> group : groupedAdmissable) {
-			if(group.size() >= 1)
-				size++;
-		}
-		System.out.println("Grouped admissable:  " + size + "   actual size:" +groupedAdmissable.size()+"\n");
-		printGroupedAdmissables(groupedAdmissable);
+
 		return admissables;
 	}
 	
-	private void printGroupedAdmissables(ArrayList<ArrayList<ArrayList<GNode>>> admissables) {
-		
-		System.out.println("[Aggregation Module] Grouped admissables");
-		
-		for(ArrayList<ArrayList<GNode>>group : admissables) {
-			for(ArrayList<GNode> set : group) {
-				printSolution(set);
-			}
-			System.out.println("         *********            ");
-		}
-	}
+//	private void printGroupedAdmissables(ArrayList<ArrayList<ArrayList<GNode>>> admissables) {
+//		
+//		System.out.println("[Aggregation Module] Grouped admissables");
+//		
+//		for(ArrayList<ArrayList<GNode>>group : admissables) {
+//			for(ArrayList<GNode> set : group) {
+//				printSolution(set);
+//			}
+//			System.out.println("         *********            ");
+//		}
+//	}
 
 	private void printSolution(ArrayList<GNode> sol) {
 		String solution = "";
