@@ -88,21 +88,20 @@ public class SearchCore {
 		query = query + 
 				" SELECT REDUCED ?offering  " + 
 				" WHERE { ";
-		int count = 0;
-		for(Requirement req : reqs){
+
+		for(int i=0;i<reqs.size();i++){
 			//build the requirement query
-			if(count > 0 && req.getType() != 2)
-				query = query + ".";
-		
-			if(req.getType()  == 1){
-				query = query + " { " +this.qualitativeReqQueryBuilder(req) +" } ";
-				count++;
-			}else if(req.getType() == 0){
-				query = query + " { " +this.quantitativeReqQueryBuilder(req) +" } ";
-				count++;
+
+			if(reqs.get(i).getType()  == 1){
+					query = query + " { " +this.qualitativeReqQueryBuilder(reqs.get(i)) +" } ";
+			}else if(reqs.get(i).getType() == 0){
+					query = query + " { " +this.quantitativeReqQueryBuilder(reqs.get(i)) +" } ";
 			}else{
-				priceReq=req;
+				priceReq=reqs.get(i);
 			}
+			
+			if(i < reqs.size() - 1 && reqs.get(i).getType() != 2)
+				query = query+".";
 			
 		}
 		//close the query
@@ -141,7 +140,7 @@ public class SearchCore {
 					filter +
 				" }UNION{ " +
 					" ?serv " + USDLCoreEnum.HAS_SERVICE_MODEL.getPropertyString() + " ?model . " +
-					" ?model "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" ?f. " +
+					" ?model "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" ?f . " +
 					" ?f "+RDFEnum.RDF_TYPE.getPropertyString()+" " + req.getCloudtype() +" . " +
 					" ?f " +RDFSEnum.LABEL.getPropertyString()+" ?value " +
 					filter +
@@ -153,14 +152,14 @@ public class SearchCore {
 						" ?serv "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" "+req.getCloudtype()+" . " +
 					" }UNION{ " +
 						" ?serv "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" ?f . " +
-						" ?f "+RDFEnum.RDF_TYPE.getPropertyString()+" "+ req.getCloudtype() +" " +
+						" ?f "+RDFEnum.RDF_TYPE.getPropertyString()+" "+ req.getCloudtype() +" . " +
 					" }UNION{ " +
 						" ?serv "+USDLCoreEnum.HAS_SERVICE_MODEL.getPropertyString()+" ?model . " +
 						" ?model "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" "+ req.getCloudtype() +" . " +
 					" }UNION{ " +
 						" ?serv "+USDLCoreEnum.HAS_SERVICE_MODEL.getPropertyString()+" ?model . " +
-						" ?model "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" ?f. " +
-						" ?f "+RDFEnum.RDF_TYPE.getPropertyString()+" "+ req.getCloudtype() +" " +
+						" ?model "+GREnum.QUAL_PROD_OR_SERV.getPropertyString()+" ?f . " +
+						" ?f "+RDFEnum.RDF_TYPE.getPropertyString()+" "+ req.getCloudtype() +" ." +
 					" } ";
 		}
 		//close the MINUS statement

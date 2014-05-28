@@ -3,33 +3,17 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Scraper/Libraries/jsoup-1.7.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Scraper/Libraries/jsoup-1.7.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/commons-codec-1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/httpclient-4.2.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/httpcore-4.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jcl-over-slf4j-1.6.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jena-arq-2.11.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jena-core-2.11.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jena-iri-1.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jena-sdb-1.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/jena-tdb-1.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/log4j-1.2.16.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/slf4j-api-1.6.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/slf4j-log4j12-1.6.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/xercesImpl-2.11.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/apache-jena-2.11.1/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/collections-generic-4.01.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/commons-lang3-3.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/commons-lang3-3.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/guava-r09.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/javacsv-2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/matheclipse-parser-0.0.10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/slf4j-api-1.6.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/symja-0.0.7a.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/xmcda-0.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/xmlbeans-2.4.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/json-simple-1.1.1.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/aopalliance-1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/collections-generic-4.01.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/commons-cli-1.2.jar"/>
@@ -37,9 +21,6 @@
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/javacsv-2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/jcl-over-slf4j-1.6.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/jmcda-base-0.5.1-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/logback-classic-0.9.28.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/logback-core-0.9.28.jar"/>
-	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/slf4j-api-1.6.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/spring-aop-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/spring-asm-3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/JMCDA/J-MCDA/lib/spring-beans-3.0.5.RELEASE.jar"/>
@@ -61,5 +42,20 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/SPIN_API"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/google-gson-2.2.4/gson-2.2.4.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/elementaryCycles"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jena-arq-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jena-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jena-iri-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jena-sdb-1.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/jena-tdb-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/apache-jena-2.11.0/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
