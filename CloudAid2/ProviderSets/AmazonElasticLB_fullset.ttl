@@ -1,23 +1,23 @@
-@prefix :      <http://PricingAPIAmazonElasticLBOfferings.com#> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix org:   <http://www.w3.org/ns/org#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cloudtaxonomy: <http://rdfs.genssiz.org/CloudTaxonomy#> .
-@prefix gr:    <http://purl.org/goodrelations/v1#> .
-@prefix spl:   <http://spinrdf.org/spl#> .
-@prefix core:  <http://www.linked-usdl.org/ns/usdl-core#> .
-@prefix usdk:  <http://www.linked-usdl.org/ns/usdl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix price: <http://www.linked-usdl.org/ns/usdl-price#> .
-@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
-@prefix spin:  <http://spinrdf.org/spin#> .
-@prefix legal: <http://www.linked-usdl.org/ns/usdl-legal#> .
-@prefix vann:  <http://purl.org/vocab/vann/> .
-@prefix sp:    <http://spinrdf.org/sp#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix :      <http://PricingAPIAmazonElasticLBOfferings.com#> 
+@prefix owl:   <http://www.w3.org/2002/07/owl#> 
+@prefix org:   <http://www.w3.org/ns/org#> 
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> 
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> 
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> 
+@prefix cloudtaxonomy: <http://rdfs.genssiz.org/CloudTaxonomy#> 
+@prefix gr:    <http://purl.org/goodrelations/v1#> 
+@prefix spl:   <http://spinrdf.org/spl#> 
+@prefix core:  <http://www.linked-usdl.org/ns/usdl-core#> 
+@prefix usdk:  <http://www.linked-usdl.org/ns/usdl#> 
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix price: <http://www.linked-usdl.org/ns/usdl-price#> 
+@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> 
+@prefix spin:  <http://spinrdf.org/spin#> 
+@prefix legal: <http://www.linked-usdl.org/ns/usdl-legal#> 
+@prefix vann:  <http://purl.org/vocab/vann#> 
+@prefix sp:    <http://spinrdf.org/sp#> 
+@prefix foaf:  <http://xmlns.com/foaf/0.1#> 
+@prefix dc:    <http://purl.org/dc/elements/1.1#> 
 
 :CostperGBProcessedPC-PP_TIME247780873268563
         a                       price:PriceComponent ;
