@@ -37,8 +37,12 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 ----Structure the MCDM output into a more suitable output for the problem at hand - Done
 
-----Research about aggregation techniques/approaches - Ongoing
+----Research about aggregation techniques/approaches - Done
 
-----Algorithm development - Ongoing
+----Algorithm development - Done
 
-----Algorith testing
+----Algorith testing - Ongoing
+
+---- Admissibility test expansion - Ongoing
+
+---Graphic Interface development - Next
