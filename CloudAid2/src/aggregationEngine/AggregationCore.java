@@ -120,7 +120,7 @@ public class AggregationCore {
 //		}
 //	}
 
-	private ArrayList<Requirement> getAggregationValidRequirements(CSAData userData, ArrayList<DecisionResult> decisionResults) {//get the features in common. only aggregated based on the features that every offering has in common
+	private ArrayList<Requirement> getAggregationValidRequirements(CSAData userData, ArrayList<DecisionResult> decisionResults) {//get the features in common. only aggregate based on the features that every offering in every ST has in common
 		// TODO Auto-generated method stub
 		
 		ArrayList<Requirement> req = new ArrayList<Requirement>();
