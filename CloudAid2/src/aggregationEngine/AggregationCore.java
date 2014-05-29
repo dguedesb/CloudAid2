@@ -4,7 +4,11 @@ package aggregationEngine;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+
+import usdl.servicemodel.QualitativeValue;
+import usdl.servicemodel.QuantitativeValue;
 import csadata.CSAData;
+import csadata.Requirement;
 import decisionDataModels.DecisionResult;
 import decisionDataModels.GNode;
 
@@ -41,8 +45,15 @@ public class AggregationCore {
 		
 		Queue<ArrayList<GNode>> queue = (Queue<ArrayList<GNode>>) new LinkedList<ArrayList<GNode>>();
 		queue.add(solution);
-
 		
+		ArrayList<Requirement> aggReqs= this.getAggregationValidRequirements(userData,decisionResults);
+		
+		if(aggReqs.size()==0){
+			System.out.println("[AggregationCore] Aggregation requirements not valid! Alternatives don't share the same feature(s) to perform the aggregation!");
+		}
+		else {
+			System.out.println("[AggregationCore] Defined aggregation requirements: "+userData.getRequirements().size() + "\tAggregation requirements being used: "+aggReqs.size());
+		}
 		//if there's alternatives not comparable with the least dominated of the graphs, we have to consider them as well
 		for (int q = 0; q < solution.size(); q++) {
 			if (solution.get(q).getIncomparableWith().size() >= 1) {
@@ -75,7 +86,7 @@ public class AggregationCore {
 			tested.add(sol);
 			
 			this.printSolution(sol);
-			if(AggChecker.checkAdmissability(userData, sol)) {
+			if(AggChecker.checkAdmissability(aggReqs, sol)) {
 				if(!checkDominatedOrIncomparable(sol,admissables,adjMatrixes)) {
 					admissables.add(sol);	
 				}
@@ -108,6 +119,53 @@ public class AggregationCore {
 //			System.out.println("         *********            ");
 //		}
 //	}
+
+	private ArrayList<Requirement> getAggregationValidRequirements(CSAData userData, ArrayList<DecisionResult> decisionResults) {//get the features in common. only aggregated based on the features that every offering has in common
+		// TODO Auto-generated method stub
+		
+		ArrayList<Requirement> req = new ArrayList<Requirement>();
+		for(Requirement r : userData.getRequirements()) {
+			int st=0;
+			for(DecisionResult dres : decisionResults) {
+				int n=0;
+				for(GNode node : dres.getAdjacencyList()) {
+					if(r.getType() == 0) {//quantitative
+						nextNode:
+						for(QuantitativeValue qv : node.getData().getMyOff().getIncludes().get(0).getQuantfeatures()) {//each offering only includes one service. this is pre-defined on the data set, in case there are more than one, necessary to modify to iterate over every service 
+							for(String type : qv.getTypes()) {
+								if(type.contains(r.getCloudtype().replaceAll("cloudtaxonomy:", ""))) {
+									n++;
+									break nextNode;
+								}
+							}
+						}
+					}
+					else if(r.getType() == 1) {//qualitative
+						nextNode:
+						for(QualitativeValue qv : node.getData().getMyOff().getIncludes().get(0).getQualfeatures()) {//each offering only includes one service. this is pre-defined on the data set, in case there are more than one, necessary to modify to iterate over every service 
+							for(String type : qv.getTypes()) {
+//								System.out.println(type + "   ->    "+r.getCloudtype().replaceAll("cloudtaxonomy:", ""));
+								if(type.contains(r.getCloudtype().replaceAll("cloudtaxonomy:", ""))) {
+									n++;
+									break nextNode;
+								}
+							}
+						}
+					}
+					else if(r.getType() == 2)
+						n++;
+				}
+				
+				if(n==dres.getAdjacencyList().size())
+					st++;
+			}
+			if(st == decisionResults.size())
+				req.add(r);
+		}
+		
+		return req;
+	}
+
 
 	private void printSolution(ArrayList<GNode> sol) {
 		String solution = "";
