@@ -16,8 +16,11 @@ import decisionDataModels.GNode;
 
 
 public class AggregationCore {
-
-	public void computeAggregation(CSAData data,ArrayList<DecisionResult> decisionResults) {
+	
+	private double init = 0;
+	private double end = 0;
+	private double ncomb = 0;
+	public ArrayList<ArrayList<GNode>> computeAggregation(CSAData data,ArrayList<DecisionResult> decisionResults) {
 		for (DecisionResult res : decisionResults) {
 			this.printAdjacencyList(res.getAdjacencyList());
 		}
@@ -25,9 +28,8 @@ public class AggregationCore {
 		ArrayList<ArrayList<GNode>> admissable =this.getAdmissables(decisionResults,data);
 		
 		System.out.println("[AggregationModule]Possible Admissable Aggregations (ungrouped): " +admissable.size());
-		for(ArrayList<GNode> solution : admissable) {
-			printSolution(solution);
-		}
+		
+		return admissable;
 	}
 
 
@@ -80,11 +82,13 @@ public class AggregationCore {
 			}
 		}
 		System.out.println("-----------");
+		this.init = System.currentTimeMillis();
+		double ncombinations = 0;
 		while(!queue.isEmpty())//bfs transversal
 		{
 			ArrayList<GNode> sol = queue.poll();
 			tested.add(sol);
-			
+			ncombinations++;
 			this.printSolution(sol);
 			if(AggChecker.checkAdmissability(aggReqs, sol)) {
 				if(!checkDominatedOrIncomparable(sol,admissables,adjMatrixes)) {
@@ -104,7 +108,8 @@ public class AggregationCore {
 				}
 			}
 		}
-
+		this.end = System.currentTimeMillis();
+		this.setNcomb(ncombinations);
 		return admissables;
 	}
 	
@@ -167,7 +172,7 @@ public class AggregationCore {
 	}
 
 
-	private void printSolution(ArrayList<GNode> sol) {
+	public void printSolution(ArrayList<GNode> sol) {
 		String solution = "";
 		for(GNode g : sol) {
 			solution += g.getData().getMyID()+"["+g.getIn()+"]  "+"["+g.getOut()+"]  |";
@@ -262,5 +267,19 @@ public class AggregationCore {
 			rank++;
 		}
 		System.out.println("------------------------[AggregationModule] /ADJACENCY LIST  ------------------------------");
+	}
+	
+	public double AlgorithmRunningTime(){
+		return this.end - this.init;
+	}
+
+
+	public double getPerformedCombinations() {
+		return ncomb;
+	}
+
+
+	public void setNcomb(double ncomb) {
+		this.ncomb = ncomb;
 	}
 }

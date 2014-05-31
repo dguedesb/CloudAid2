@@ -22,6 +22,7 @@ import csadata.ServiceTemplate;
 import csaevaluator.CSAEvaluator;
 import decisionDataModels.DecisionResult;
 import decisionDataModels.DistancesContainer;
+import decisionDataModels.GNode;
 import decisionEngine.DecisionCore;
 import exceptions.InvalidLinkedUSDLModelException;
 import searchDataModels.FiltRes;
@@ -147,9 +148,20 @@ public class Controller {
 					STGraphs.add(decisionResult);
 				}
 				
+				ArrayList<ArrayList<GNode>> aggregatedSolutions = new ArrayList<ArrayList<GNode>>();
 				if(error == false)
 				{
-						aggregationModule.computeAggregation(data,STGraphs);
+						aggregatedSolutions = aggregationModule.computeAggregation(data,STGraphs);
+				}
+				
+				if(aggregatedSolutions.size() >= 1) {
+					System.out.println("[Controller] Aggregated Solutions found:");
+					for(ArrayList<GNode> solution : aggregatedSolutions) {
+						aggregationModule.printSolution(solution);
+					}
+				}
+				else {
+					System.out.println("[Controller] No Aggregated Solutions found, please reconsider your parameters..!");
 				}
 			}
 			else if(data.getEvalResult() == CSAEvaluator.ERROR_1){

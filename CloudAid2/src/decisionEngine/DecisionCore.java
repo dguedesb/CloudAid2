@@ -11,6 +11,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 import org.decisiondeck.jmcda.persist.xmcda2.generated.XMCDADoc.XMCDA;
 
@@ -62,6 +63,8 @@ public class DecisionCore {
 	private DecisionResult postXMCDA(ArrayList<XMCDA> files, ServiceTemplate comp, int method,String dir) throws FileNotFoundException{
 		//attach timestamp in the method messages
 		
+		double SMAAIndifferenceDelta = 3;
+		
 		if(method == Controller.SAW)
 		{
 //			ArrayList<Result> results =SAW.solve(files);
@@ -102,7 +105,7 @@ public class DecisionCore {
 			XMCDA results = SMAA.solve(files,dir);
 			SMAAResults smaaResults =XMCDAConverter.processSMAAResults(results,comp);
 
-			return this.getSMAAGraphSolution(smaaResults,dir);
+			return this.getSMAAGraphSolution(smaaResults,SMAAIndifferenceDelta,dir);
 		}
 		
 		return null;
@@ -212,7 +215,7 @@ public class DecisionCore {
 //		sawResults.setRankedList(rankedList);
 	}
 	
-	private DecisionResult getSMAAGraphSolution(SMAAResults smaaResults,String dir) throws FileNotFoundException {
+	public DecisionResult getSMAAGraphSolution(SMAAResults smaaResults,double delta,String dir) throws FileNotFoundException {
 		
 		ArrayList<ArrayList<FiltRes>> rankedList = new ArrayList<ArrayList<FiltRes>>();
 		for (int i=0; i < smaaResults.getSmaaResults().size(); i++) {
@@ -227,10 +230,28 @@ public class DecisionCore {
 			int index = 0;
 			for(int i = 1; i<ranks.length;i++)//find the rank with highest probability 
 			{
-				if(ranks[i] > max)
+				if(ranks[i] > max) {
 					index = i;
+					max=ranks[i];
+				}
 			}
-			rankedList.get(index).add(res.getService());//place it on rankedList
+			ArrayList<Integer> possibleRanks = new ArrayList<Integer>();
+			possibleRanks.add(index);
+			for(int i=0;i<ranks.length;i++) {//find if there's any rank x where P(x)-P(index_with_max_prob) < delta
+				if(i!=index) {
+					if(Math.abs(ranks[i] - max) < delta) {
+						possibleRanks.add(i);
+					}
+				}
+			}
+			
+			if(possibleRanks.size() > 1){
+				Random generator = new Random(); 
+				index = generator.nextInt(possibleRanks.size());
+				rankedList.get(possibleRanks.get(index)).add(res.getService());//place it on rankedList
+			}
+			else
+				rankedList.get(possibleRanks.get(0)).add(res.getService());//place it on rankedList
 		}
 			
 			////////////////////////////////
