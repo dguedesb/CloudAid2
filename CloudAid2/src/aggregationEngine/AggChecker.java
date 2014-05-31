@@ -38,16 +38,16 @@ public class AggChecker {
 			for(QualitativeValue qv : off.getData().getMyOff().getIncludes().get(0).getQualfeatures()) {//modify in case Offering includes more than one Service
 				for(String type : qv.getTypes()) {
 					if(type.contains(req.getCloudtype().replaceAll("cloudtaxonomy:", ""))) {
-						if(req.getQualValue() != null || !req.getQualValue().equals("")) {//if the qualitative aggregation requirement has a defined value
-							if(!(qv.getHasValue().contains(req.getQualValue()))){ //if the alternative from the aggregated solution contains the value defined by the user, its valid else the aggregation as a whole is invalid
-								return false;
+						if(req.getQualValue() != null) {//if the qualitative aggregation requirement has a defined value
+							if(!(req.getQualValue().equals(""))) {
+								if(!(qv.getHasValue().contains(req.getQualValue()))){ //if the alternative from the aggregated solution contains the value defined by the user, its valid else the aggregation as a whole is invalid
+									return false;
+								}
+								else
+									break b1;
 							}
-							else
-								break b1;
 						}
 					}
-					else
-						return false;
 				}
 			}
 		}
@@ -93,8 +93,6 @@ public class AggChecker {
 							
 						}
 					}
-					else
-						return false;
 				}
 			}
 		}
