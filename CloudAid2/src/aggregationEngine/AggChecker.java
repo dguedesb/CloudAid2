@@ -40,7 +40,7 @@ public class AggChecker {
 					if(type.contains(req.getCloudtype().replaceAll("cloudtaxonomy:", ""))) {
 						if(req.getQualValue() != null) {//if the qualitative aggregation requirement has a defined value
 							if(!(req.getQualValue().equals(""))) {
-								if(!(qv.getHasValue().contains(req.getQualValue()))){ //if the alternative from the aggregated solution contains the value defined by the user, its valid else the aggregation as a whole is invalid
+								if(!(qv.getHasValue().toLowerCase().contains(req.getQualValue().toLowerCase()))){ //if the alternative from the aggregated solution contains the value defined by the user, its valid else the aggregation as a whole is invalid
 									return false;
 								}
 								else

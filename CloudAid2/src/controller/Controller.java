@@ -109,10 +109,11 @@ public class Controller {
 				ArrayList<ArrayList<FiltRes>> foundOffs = new ArrayList<ArrayList<FiltRes>>();//save the found offerings of each service template
 				
 				ArrayList<DecisionResult> STGraphs = new ArrayList<DecisionResult>();
-				
+				String STName="";
 				String dir = "./XMCDA/"+methods[data.getMethod()]+"/"+System.currentTimeMillis()+"/";
 				for(ServiceTemplate st : data.getServiceTemplates())//Search Module
 				{
+					STName = st.getName();
 					System.out.println("#######################################################----"+st.getName()+"----################################################################");
 					ArrayList<FiltRes> offs=null;
 					try {
@@ -153,6 +154,8 @@ public class Controller {
 				{
 						aggregatedSolutions = aggregationModule.computeAggregation(data,STGraphs);
 				}
+				else if(error == true)
+					System.out.println("[Controller] Service Template: " + STName + " returned 0 results. Please, reconsider your parameters.");
 				
 				if(aggregatedSolutions.size() >= 1) {
 					System.out.println("[Controller] Aggregated Solutions found:");
