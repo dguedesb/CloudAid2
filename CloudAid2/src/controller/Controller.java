@@ -32,7 +32,7 @@ import usdl.servicemodel.QualitativeValue;
 import usdl.servicemodel.QuantitativeValue;
 
 public class Controller {
-	
+	public static String ClientPath="";
 	private SearchCore searchModule;
 	private DecisionCore decisionModule;
 	private AggregationCore aggregationModule;
@@ -43,11 +43,12 @@ public class Controller {
 	public static final int PROMETHEE = 2;
 	public static final int SMAA2 = 3;
 	private static final String[] methods = {"SAW","ELECTRE","PROMETHEE","SMAA"};
-	public Controller()
+	public Controller(String cp)
 	{
 		searchModule = new SearchCore();
 		decisionModule = new DecisionCore();
 		aggregationModule = new AggregationCore();
+		ClientPath = cp;
 //		searchModule.searchy();
 	}
 	
@@ -142,7 +143,7 @@ public class Controller {
 							System.out.println(qv.getTypes().get(0) + " --->" +qv.getHasValue());
 						}
 					}
-					//DECISION MODULE
+					
 					st.setFoundAlternatives(offs);
 					DecisionResult  decisionResult = decisionModule.decide(st, data.getMethod(),dir+st.getName());
 					
@@ -175,7 +176,8 @@ public class Controller {
 	
 	public static void main(String[] args) throws InterruptedException
 	{
-		Controller cont = new Controller();
+		String ClientPath="C:/Users/daniel/workspace/CloudAid2-GUI";
+		Controller cont = new Controller(ClientPath);
 		try {
 			cont.run();
 		} catch (IOException e) {
@@ -185,7 +187,7 @@ public class Controller {
 	}
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static PricingVariables requestVariablesInfo(PricingVariables variables) {
-		String directoryToWrite = "C:/Users/daniel/workspace/CloudAid2-Client/JSONRequests-Variables";
+		String directoryToWrite = ClientPath+"/JSONRequests-Variables";
 		// obtained Gson object
 		Gson gson = new Gson();
 
@@ -253,7 +255,7 @@ public class Controller {
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static DistancesContainer requestDistancesInfo(DistancesContainer distancesRequest) {
 		
-		String directoryToWrite = "C:/Users/daniel/workspace/CloudAid2-Client/JSONRequests-ConceptDistances";
+		String directoryToWrite = ClientPath+"/JSONRequests-ConceptDistances";
 		// obtained Gson object
 		Gson gson = new Gson();
 

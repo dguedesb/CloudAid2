@@ -190,7 +190,7 @@ public class Normalizer {
 			}
 		
 			distancesRequest.setConcepts(concepts);
-			
+			distancesRequest.setCriterionType(criterion.getName());
 			distancesRequest = Controller.requestDistancesInfo(distancesRequest);
 		
 			for(FiltRes alt : normalized)

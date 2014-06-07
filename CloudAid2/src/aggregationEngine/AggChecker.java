@@ -12,13 +12,14 @@ public class AggChecker {
 	
 	public static boolean checkAdmissability(ArrayList<Requirement> reqs, ArrayList<GNode> solution){
 		boolean admissable = false;
+
 		for(Requirement req : reqs){
 			
 			if(req.getType() == 1){
-//				System.out.println("Checking a qualitative requirement");
+//					System.out.println("Checking a qualitative requirement");
 				admissable = checkQualitative(solution,req);
 			}else if(req.getType() == 0){
-//				System.out.println("Checking a quantitative requirement");
+//					System.out.println("Checking a quantitative requirement");
 				admissable = checkQuantitative(solution,req);
 			}else{
 				admissable = checkPrice(solution, req);
@@ -27,6 +28,8 @@ public class AggChecker {
 			if(admissable == false)//if the solutions fails to comply with one requirement it's no longer admissable, no point in checking for admissibility with the other aggregation requirements
 				break;
 		}
+
+		
 		return admissable;
 	}
 	

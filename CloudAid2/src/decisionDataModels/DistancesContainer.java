@@ -6,6 +6,13 @@ public class DistancesContainer {
 	
 	private String prefered;
 	private List<ConceptDistance> concepts = null;
+	private String CriterionType;
+	public String getCriterionType() {
+		return CriterionType;
+	}
+	public void setCriterionType(String criterionType) {
+		CriterionType = criterionType;
+	}
 	public String getPrefered() {
 		return prefered;
 	}
@@ -18,4 +25,5 @@ public class DistancesContainer {
 	public void setConcepts(List<ConceptDistance> concepts) {
 		this.concepts = concepts;
 	}
+
 }

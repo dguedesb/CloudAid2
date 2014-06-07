@@ -52,6 +52,7 @@ public class AggregationCore {
 		
 		if(aggReqs.size()==0){
 			System.out.println("[AggregationCore] Aggregation requirements not valid! Alternatives don't share the same feature(s) to perform the aggregation!");
+			return null;
 		}
 		else {
 			System.out.println("[AggregationCore] Defined aggregation requirements: "+userData.getRequirements().size() + "\tAggregation requirements being used: "+aggReqs.size());
