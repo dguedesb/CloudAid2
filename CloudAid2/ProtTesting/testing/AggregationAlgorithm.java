@@ -20,10 +20,10 @@ import decisionEngine.DecisionCore;
 
 public class AggregationAlgorithm {
 	
-	private static int NALTERNATIVES = 5;
+	private static int NALTERNATIVES = 6;
 	private static int MINCOST = 50;
 	private static int MAXCOST = 500;
-	private static int NST = 5;
+	private static int NST = 6;
 	
 	public static void main(String[] args) throws JsonSyntaxException, IOException {
 		DecisionCore decisionModule = new DecisionCore();
