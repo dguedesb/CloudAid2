@@ -23,6 +23,7 @@ public class Requirement {
 	private String description; 
 	private String Cloudtype=null;
 	private int type;//0 - Quantitative, 1-Qualitative, 2 - Price
+	private int maxAgST=-1;
 	public Requirement(){
 		count++;
 		setId("Req"+count);
@@ -166,5 +167,13 @@ public class Requirement {
 				+ ", needed=" + positive + ", qualValue=" + qualValue
 			    + ", criterion=" + criterion
 				+ ", exclusive=" + exclusive + "]";
+	}
+
+	public int getMaxAgST() {
+		return maxAgST;
+	}
+
+	public void setMaxAgST(int maxAgST) {
+		this.maxAgST = maxAgST;
 	}
 }

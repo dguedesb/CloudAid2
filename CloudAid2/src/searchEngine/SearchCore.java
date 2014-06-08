@@ -296,7 +296,6 @@ public class SearchCore {
 	}
 	
 	private void setCritAttr(ArrayList<FiltRes> finalres, ArrayList<Criterion> crits) {
-		
 		for(Criterion crit : crits)
 		{
 			for(FiltRes of : finalres)
@@ -304,9 +303,7 @@ public class SearchCore {
 				if(crit.getType() == 0 || crit.getType()==2)
 				{
 					if(crit.getName().toLowerCase().contains("price"))
-					{
-						of.getCritAttr().put(crit.getName().toLowerCase(), Double.toString(of.getMyPrice()));
-					}
+					{}
 					else
 					{
 						boolean found = false;
@@ -331,7 +328,7 @@ public class SearchCore {
 							else
 								of.getCritAttr().put(crit.getName(),Double.toString(Double.MAX_VALUE));
 						}
-							
+
 					}
 				}
 				else if(crit.getType() == 1)
@@ -354,6 +351,13 @@ public class SearchCore {
 				{
 					System.out.println("Criterion type is not recognized! Type: "+crit.getType());
 				}
+			}
+		}
+		
+		for(Criterion crit : crits){
+			for(FiltRes f : finalres) {
+				if(crit.getName().toLowerCase().contains("price"))
+					f.getCritAttr().put(crit.getName().toLowerCase(), Double.toString(f.getMyPrice()));
 			}
 		}
 	}

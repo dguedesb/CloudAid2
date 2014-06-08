@@ -10,11 +10,15 @@ import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 
 import com.google.gson.Gson;
 
+import aggregationDataModels.AggregatedSolution;
+import aggregationDataModels.AggregationComponent;
+import aggregationDataModels.AggregationSolutions;
 import aggregationEngine.AggregationCore;
 import csadata.CSAData;
 import csadata.Criterion;
@@ -163,6 +167,7 @@ public class Controller {
 					for(ArrayList<GNode> solution : aggregatedSolutions) {
 						aggregationModule.printSolution(solution);
 					}
+					sendResults(aggregatedSolutions);
 				}
 				else {
 					System.out.println("[Controller] No Aggregated Solutions found, please reconsider your parameters..!");
@@ -173,7 +178,7 @@ public class Controller {
 			}
 		}
 	}	
-	
+
 	public static void main(String[] args) throws InterruptedException
 	{
 		String ClientPath="C:/Users/daniel/workspace/CloudAid2-GUI";
@@ -185,6 +190,80 @@ public class Controller {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	private void sendResults(ArrayList<ArrayList<GNode>> aggregatedSolutions) {
+		// TODO Auto-generated method stub
+		AggregationSolutions res = createAggregationJSONModels(aggregatedSolutions);
+		
+		String directoryToWrite = ClientPath+"/JSONRequests-Results";
+		
+		Gson gson = new Gson();
+
+		// called toJson() method and passed student object as parameter
+		// print generated json to console
+
+		String json = gson.toJson(res);
+		System.out.println(json);
+		
+		try {
+			FileUtils.writeStringToFile(new File(directoryToWrite + "/Results"+"-"+System.nanoTime()+".json"), json);
+			System.out.println("[Controller] Wrote JSON Results!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private AggregationSolutions createAggregationJSONModels(ArrayList<ArrayList<GNode>> aggregatedSolutions) {
+		
+		AggregationSolutions solsj = new AggregationSolutions();
+		
+		List<AggregatedSolution> solutionContainer = new ArrayList<AggregatedSolution>();
+		
+		for(ArrayList<GNode> sol : aggregatedSolutions) {
+			
+			List<AggregationComponent> aggregatedSol = new ArrayList<AggregationComponent>();
+			for(GNode alt : sol) {
+				AggregationComponent comp = new AggregationComponent();
+				List<String> features = new ArrayList<String>();
+				List<String> fvals = new ArrayList<String>();
+				
+				features.add("Name:");
+				fvals.add(alt.getData().getMyOff().getName().replaceAll("TIME\\d+.*", "") + " - " + alt.getData().getMyOff().getIncludes().get(0).getName().replaceAll("TIME\\d+.*", ""));
+				
+				features.add("Price");
+				fvals.add(String.valueOf(alt.getData().getMyPrice()));
+				
+				for(QuantitativeValue v : alt.getData().getMyOff().getIncludes().get(0).getQuantfeatures()){
+					features.add(v.getTypes().get(0));
+					if(v.getValue() >= 0)
+						fvals.add(""+v.getValue());
+					else if(v.getMaxValue() >= 0)
+						fvals.add(""+v.getMaxValue());
+					else if(v.getMinValue() >= 0)
+						fvals.add(""+v.getMinValue());
+				}
+				
+				for(QualitativeValue v : alt.getData().getMyOff().getIncludes().get(0).getQualfeatures()){
+					features.add(v.getTypes().get(0));
+					fvals.add(v.getHasValue());
+				}
+				
+				comp.setFeatures(features);
+				comp.setFeatureValues(fvals);
+				aggregatedSol.add(comp);
+			}
+			
+			AggregatedSolution solution = new AggregatedSolution();
+			solution.setComponents(aggregatedSol);
+			solutionContainer.add(solution);
+		}
+		solsj.setSolutions(solutionContainer);
+		
+		return solsj;
+	}
+
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static PricingVariables requestVariablesInfo(PricingVariables variables) {
 		String directoryToWrite = ClientPath+"/JSONRequests-Variables";

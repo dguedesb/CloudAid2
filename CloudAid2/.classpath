@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="ProtTesting"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Scraper/Libraries/jsoup-1.7.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Scraper/Libraries/jsoup-1.7.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/daniel/Desktop/MEI/Estágio/Development/4-Implementation/Libraries/collections-generic-4.01.jar"/>

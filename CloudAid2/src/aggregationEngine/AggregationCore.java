@@ -56,6 +56,10 @@ public class AggregationCore {
 		}
 		else {
 			System.out.println("[AggregationCore] Defined aggregation requirements: "+userData.getRequirements().size() + "\tAggregation requirements being used: "+aggReqs.size());
+			
+			for(Requirement r : aggReqs) {
+				System.out.println("[AggregationCore]: "+r.getCloudtype());
+			}
 		}
 		//if there's alternatives not comparable with the least dominated of the graphs, we have to consider them as well
 		for (int q = 0; q < solution.size(); q++) {
