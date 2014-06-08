@@ -230,7 +230,10 @@ public class Controller {
 				List<String> fvals = new ArrayList<String>();
 				
 				features.add("Name:");
-				fvals.add(alt.getData().getMyOff().getName().replaceAll("TIME\\d+.*", "") + " - " + alt.getData().getMyOff().getIncludes().get(0).getName().replaceAll("TIME\\d+.*", ""));
+				fvals.add(alt.getData().getMyOff().getName().replaceAll("TIME\\d+.*", "") );
+				
+				features.add("Comment:");
+				fvals.add(alt.getData().getMyOff().getComment() );
 				
 				features.add("Price");
 				fvals.add(String.valueOf(alt.getData().getMyPrice()));
