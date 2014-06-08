@@ -25,24 +25,19 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 --Decision Module: Completed.
 
---Aggregation Module: Under Development
+--Aggregation Module: Completed.
 
-----Extract specialized service offering's data: Load Balances,Databases,Caching,..
+---Graphic Interface development - Finished, source code [here](https://github.com/dguedesb/CloudAid2-GUI).
 
-------AmazonElastinc Loadbalancing - Done
 
-------Amazon Glacier - Done
+Runnable version of the prototype [here](https://www.dropbox.com/s/doggbl4i8djiio4/CloudAid2.rar).
 
-------Amazon RDS - Done
+Instructions:
 
-----Structure the MCDM output into a more suitable output for the problem at hand - Done
+1- Extract the Cloudaid2.rar file into a folder of your choice.
+2- Open you console in the folder where you extracted the contents of the .rar file and type:
+        
+		a) java -jar CloudAid2.jar
+		b) java -jar CloudAid2-GUI.jar
 
-----Research about aggregation techniques/approaches - Done
-
-----Algorithm development - Done
-
-----Algorith testing - Ongoing
-
----- Admissibility test expansion - Ongoing
-
----Graphic Interface development - Next
+3- Choose one of the two examples to test the application or create your own!
