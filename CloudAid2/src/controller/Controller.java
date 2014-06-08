@@ -171,6 +171,7 @@ public class Controller {
 				}
 				else {
 					System.out.println("[Controller] No Aggregated Solutions found, please reconsider your parameters..!");
+					sendResults(null);
 				}
 			}
 			else if(data.getEvalResult() == CSAEvaluator.ERROR_1){
@@ -194,7 +195,9 @@ public class Controller {
 	
 	private void sendResults(ArrayList<ArrayList<GNode>> aggregatedSolutions) {
 		// TODO Auto-generated method stub
-		AggregationSolutions res = createAggregationJSONModels(aggregatedSolutions);
+		AggregationSolutions res=new AggregationSolutions();
+		if(aggregatedSolutions != null)
+			res = createAggregationJSONModels(aggregatedSolutions);
 		
 		String directoryToWrite = ClientPath+"/JSONRequests-Results";
 		
@@ -229,10 +232,10 @@ public class Controller {
 				List<String> features = new ArrayList<String>();
 				List<String> fvals = new ArrayList<String>();
 				
-				features.add("Name:");
+				features.add("Name");
 				fvals.add(alt.getData().getMyOff().getName().replaceAll("TIME\\d+.*", "") );
 				
-				features.add("Comment:");
+				features.add("Comment");
 				fvals.add(alt.getData().getMyOff().getComment() );
 				
 				features.add("Price");
