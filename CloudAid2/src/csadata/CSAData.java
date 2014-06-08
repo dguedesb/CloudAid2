@@ -9,7 +9,7 @@ public class CSAData {
 	private List<Requirement> requirements;
 	private int evalCode; // 0 = OK, 1 = Not enough components
 	private int method;
-	
+	private String name="";
 	
 
 
@@ -60,6 +60,14 @@ public class CSAData {
 
 	public void setMethod(int method) {
 		this.method = method;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 
