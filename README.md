@@ -35,6 +35,7 @@ Runnable version of the prototype [here](https://www.dropbox.com/s/doggbl4i8djii
 Instructions:
 
 1- Extract the Cloudaid2.rar file into a folder of your choice.
+
 2- Open you console in the folder where you extracted the contents of the .rar file and type:
         
 		a) java -jar CloudAid2.jar
