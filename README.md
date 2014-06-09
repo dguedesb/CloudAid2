@@ -27,7 +27,7 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 
 --Aggregation Module: Completed.
 
----Graphic Interface development - Finished, source code [here](https://github.com/dguedesb/CloudAid2-GUI).
+---Graphic Interface development - Completed, source code [here](https://github.com/dguedesb/CloudAid2-GUI).
 
 --- Communication is JSON based. The information exchanged between the CloudAid2 and user interface is kept in memory located under the respective folders.
 
