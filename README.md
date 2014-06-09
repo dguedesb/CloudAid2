@@ -30,8 +30,6 @@ Continuation of the CloudAid1 project [https://github.com/jorgearj/CloudAid]:
 ---Graphic Interface development - Finished, source code [here](https://github.com/dguedesb/CloudAid2-GUI).
 
 
-Runnable version of the prototype [here](https://www.dropbox.com/s/doggbl4i8djiio4/CloudAid2.rar).
-
 Instructions:
 
 1- Extract the Cloudaid2.rar file into a folder of your choice.
