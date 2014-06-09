@@ -35,6 +35,13 @@ Runnable version of the prototype [here](https://www.dropbox.com/s/qti1i5pd38wa1
 
 NOTE: GUI Requires [JAVA8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
+Full dataset of services [here](https://www.dropbox.com/s/8zoz0107ky83mdf/ServiceVault.rar). Includes the modeling of the following services:
+
+- [Amazon EC2 virtual machines(on demand, reserved and spot instances)](http://aws.amazon.com/ec2/).
+- [Amazon RDS](http://aws.amazon.com/rds/).
+- [Amazon Glacier](http://aws.amazon.com/glacier/).
+- [Amazon Elastic Load Balancing](http://aws.amazon.com/elasticloadbalancing/).
+
 Instructions:
 
 1- Extract the Cloudaid2.rar file into a folder of your choice.
