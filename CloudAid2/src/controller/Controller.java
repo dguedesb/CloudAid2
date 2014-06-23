@@ -45,6 +45,8 @@ public class Controller {
 	public static final int ELECTRE = 1;
 	public static final int PROMETHEE = 2;
 	public static final int SMAA2 = 3;
+	
+	private static String ClientPath="C:/Users/daniel/git/CloudAid2-GUI/CloudAid2-GUI";
 	private static final String[] methods = {"SAW","ELECTRE","PROMETHEE","SMAA"};
 	public Controller(String cp)
 	{
@@ -58,7 +60,7 @@ public class Controller {
 	private String readJSONRequests() throws IOException, InterruptedException
 	{
 
-		Path faxFolder = Paths.get("./[Server]JSONRequests/");
+		Path faxFolder = Paths.get("./JSONRequests/");
 	    WatchService watchService = FileSystems.getDefault().newWatchService();
 	    faxFolder.register(watchService, StandardWatchEventKinds.ENTRY_CREATE);
 	 
@@ -72,7 +74,7 @@ public class Controller {
 	        if (StandardWatchEventKinds.ENTRY_CREATE.equals(event.kind())) {
 	          String fileName = event.context().toString();
 	          System.out.println("File Created:" + fileName);
-	          return FileUtils.readFileToString(new File("./[Server]JSONRequests/" + fileName));
+	          return FileUtils.readFileToString(new File("./JSONRequests/" + fileName));
 	        }
 	      }
 	      System.out.println(valid);
@@ -113,7 +115,7 @@ public class Controller {
 				
 				ArrayList<DecisionResult> STGraphs = new ArrayList<DecisionResult>();
 				String STName="";
-				String dir = "./[Server]XMCDA/"+methods[data.getMethod()]+"/"+System.currentTimeMillis()+"/";
+				String dir = "./XMCDA/"+methods[data.getMethod()]+"/"+System.currentTimeMillis()+"/";
 				for(ServiceTemplate st : data.getServiceTemplates())//Search Module
 				{
 					STName = st.getName();
@@ -196,7 +198,8 @@ public class Controller {
 		if(aggregatedSolutions != null)
 			res = createAggregationJSONModels(aggregatedSolutions);
 		
-		String directoryToWrite = "./[Client]JSONRequests-Results";
+		String directoryToWrite = ClientPath+"/JSONRequests-Results";
+//		String directoryToWrite = "./[Client]JSONRequests-Results";
 		
 		Gson gson = new Gson();
 
@@ -269,7 +272,8 @@ public class Controller {
 
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static PricingVariables requestVariablesInfo(PricingVariables variables) {
-		String directoryToWrite = "./[Client]JSONRequests-Variables";
+		String directoryToWrite = ClientPath+"/JSONRequests-Variables";
+//		String directoryToWrite = "./[Client]JSONRequests-Variables";
 		// obtained Gson object
 		Gson gson = new Gson();
 
@@ -288,7 +292,7 @@ public class Controller {
 		}
 		
 		
-		Path faxFolder = Paths.get("./[Server]JSONPricingVariables/");
+		Path faxFolder = Paths.get("./JSONPricingVariables/");
 	    WatchService watchService = null;
 		try {
 			watchService = FileSystems.getDefault().newWatchService();
@@ -320,7 +324,7 @@ public class Controller {
 	          String fileName = event.context().toString();
 	          System.out.println("File Created:" + fileName);
 	          try {
-				return gson.fromJson(FileUtils.readFileToString(new File("./[Server]JSONPricingVariables/" + fileName)), PricingVariables.class);
+				return gson.fromJson(FileUtils.readFileToString(new File("./JSONPricingVariables/" + fileName)), PricingVariables.class);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -337,7 +341,8 @@ public class Controller {
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static DistancesContainer requestDistancesInfo(DistancesContainer distancesRequest) {
 		
-		String directoryToWrite = "./[Client]JSONRequests-ConceptDistances";
+		String directoryToWrite = ClientPath+"/JSONRequests-ConceptDistances";
+//		String directoryToWrite = "./[Client]JSONRequests-ConceptDistances";
 		// obtained Gson object
 		Gson gson = new Gson();
 
@@ -356,7 +361,7 @@ public class Controller {
 		}
 		
 		
-		Path faxFolder = Paths.get("./[Server]JSONConceptDistances/");
+		Path faxFolder = Paths.get("./JSONConceptDistances/");
 	    WatchService watchService = null;
 		try {
 			watchService = FileSystems.getDefault().newWatchService();
@@ -388,7 +393,7 @@ public class Controller {
 	          String fileName = event.context().toString();
 	          System.out.println("File Created:" + fileName);
 	          try {
-				return gson.fromJson(FileUtils.readFileToString(new File("./[Server]JSONConceptDistances/" + fileName)), DistancesContainer.class);
+				return gson.fromJson(FileUtils.readFileToString(new File("./JSONConceptDistances/" + fileName)), DistancesContainer.class);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

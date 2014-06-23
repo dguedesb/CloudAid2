@@ -357,8 +357,8 @@ public class XMCDAConverter {
 			}
 			else
 			{
-				comparisonMatrix[Integer.parseInt(best)-1][Integer.parseInt(worst)-1] = 1;
-				comparisonMatrix[Integer.parseInt(worst)-1][Integer.parseInt(best)-1] = -1;
+				comparisonMatrix[Integer.parseInt(best)-1][Integer.parseInt(worst)-1] = -1;
+				comparisonMatrix[Integer.parseInt(worst)-1][Integer.parseInt(best)-1] = 1;
 			}
 			
 		}
