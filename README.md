@@ -3,16 +3,26 @@ CloudAid2
 
 Agregation of Linked USDL Cloud Services using Multi-Criteria Methods
 
-Augmented version of the [CloudAid1 prototype](https://github.com/jorgearj/CloudAid). Includes:
 
-- New MCDM methods: ELECTRE III, PROMETHEE I, SMAA-2, SAW hosted by [Decision Deck group](http://www.decision-deck.org/project/).
 
+- Augmented version of the [CloudAid1 prototype](https://github.com/jorgearj/CloudAid). Includes:
+
+- New MCDM methods, hosted by [Decision Deck group](http://www.decision-deck.org/project/):
+
+ - ELECTRE III
+
+ - PROMETHEE I
+
+ - SMAA-2
+ 
+ - SAW
+ 
 - New cloud services repository with the following use cases:
 
--- [Amazon EC2 virtual machines(on demand, reserved and spot instances)](http://aws.amazon.com/ec2/).
--- [Amazon RDS](http://aws.amazon.com/rds/).
--- [Amazon Glacier](http://aws.amazon.com/glacier/).
--- [Amazon Elastic Load Balancing](http://aws.amazon.com/elasticloadbalancing/).
+ - [Amazon EC2 virtual machines(on demand, reserved and spot instances)](http://aws.amazon.com/ec2/).
+ - [Amazon RDS](http://aws.amazon.com/rds/).
+ - [Amazon Glacier](http://aws.amazon.com/glacier/).
+ - [Amazon Elastic Load Balancing](http://aws.amazon.com/elasticloadbalancing/).
 
 
 - Includes the [Linked USDL Pricing API](https://github.com/jorgearj/USDLPricing_API) for dynamic price calculation.
