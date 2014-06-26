@@ -23,13 +23,14 @@ Augmented version of the [CloudAid1 prototype](https://github.com/jorgearj/Cloud
  - [Amazon RDS](http://aws.amazon.com/rds/).
  - [Amazon Glacier](http://aws.amazon.com/glacier/).
  - [Amazon Elastic Load Balancing](http://aws.amazon.com/elasticloadbalancing/).
+ - [Arsys Dedicated servers](http://www.arsys.net/servers/dedicated.html).
 
 
 - Includes the [Linked USDL Pricing API](https://github.com/jorgearj/USDLPricing_API) for dynamic price calculation.
 
 - New graph-theory based aggregation algorithm that can deal incomparability and incomplete information on Multi-Criteria Decision Problems. 
 
-- New JavaFX (Graphical User Interface)(https://github.com/dguedesb/CloudAid2-GUI)  which establishes a communication with the server side of the application through JSON "requests"
+- New JavaFX (Graphical User Interface)(https://github.com/dguedesb/CloudAid2-GUI)  which establishes a communication with the server side of the application through JSON "requests".
 
 
 Prototype's runnable:
