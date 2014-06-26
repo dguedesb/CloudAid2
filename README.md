@@ -5,7 +5,7 @@ Agregation of Linked USDL Cloud Services using Multi-Criteria Methods
 
 
 
-- Augmented version of the [CloudAid1 prototype](https://github.com/jorgearj/CloudAid). Includes:
+Augmented version of the [CloudAid1 prototype](https://github.com/jorgearj/CloudAid). Includes:
 
 - New MCDM methods, hosted by [Decision Deck group](http://www.decision-deck.org/project/):
 
