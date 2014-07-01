@@ -38,7 +38,7 @@ Prototype's runnable:
 
 Prototype can be downloaded from [here](https://www.dropbox.com/s/qti1i5pd38wa1qu/CloudAid2.rar).
 
-NOTE: GUI Requires [JAVA8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+**NOTE: GUI Requires [JAVA8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).**
 
 
 Instructions:
@@ -53,7 +53,7 @@ Instructions:
 3- Choose one of the two examples from History to test the application or create your own!
 
 
-
+A **video** demonstrating the use of the prototype can be found [here](http://youtu.be/x4b_EyJ-xek).
 
 Dataset
 ==
